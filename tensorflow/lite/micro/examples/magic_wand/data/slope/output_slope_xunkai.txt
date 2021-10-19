@@ -1,8 +1,4 @@
-Script started on Tue Aug 13 13:38:11 2019
-[?1034hbash-3.2$ exitscreen ${DEVICENAME} 115200
-[?1049h[!p[?3;4l[4l>[4l[?1h=[0m(B[1;74r[H[2J[H[2J
-
- -,-,-
+-,-,-
 -319.0,163.0,812.0
 -332.0,122.0,812.0
 -348.0,80.0,922.0
@@ -1873,10 +1869,3 @@ Script started on Tue Aug 13 13:38:11 2019
 110.0,115.0,1101.0
 109.0,113.0,1064.0
 100.0,72.0,1020.0
-[7mReally kill this window [y/n][27m[K
-�                                                                                                                                                                                                                                             [74;2H[?1l>[74;1H
-[?1049l[screen is terminating]
-bash-3.2$ exit
-exit
-
-Script done on Tue Aug 13 13:40:54 2019
