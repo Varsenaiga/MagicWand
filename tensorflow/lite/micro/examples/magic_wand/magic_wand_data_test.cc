@@ -70,18 +70,19 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TfLiteTensor* model_input = interpreter.input(0);
   if ((model_input->dims->size != 4) || (model_input->dims->data[0] != 1) ||
       (model_input->dims->data[1] != 128) ||
-      (model_input->dims->data[2] != kChannelNumber) ||
+      (model_input->dims->data[2] != 3) ||
       (model_input->type != kTfLiteFloat32)) {
-    TF_LITE_REPORT_ERROR(error_reporter,
+    TF_LITE_REPORT_ERROR(micro_error_reporter,
                          "Bad input tensor parameters in model");;
   }
 
 
-  ifstream DataFile("data\wing\output_wing_dengyl.txt");
+  string data;
+  std::ifstream DataFile("data\wing\output_wing_dengyl.txt");
 
-  while (getline (DataFile, myText)) {
+  while (getline (DataFile, data)) {
   // Output the text from the file
-  cout << myText;
+  std::cout << data;
   }
 
   // Close the file
@@ -90,14 +91,14 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   /*
   // Attempt to read new data from the accelerometer.
   bool got_data =
-      ReadAccelerometer(error_reporter, model_input->data.f, input_length);
+      ReadAccelerometer(micro_error_reporter, model_input->data.f, input_length);
   // If there was no new data, wait until next time.
   if (!got_data) return;
 
   // Run inference, and report any error.
   TfLiteStatus invoke_status = interpreter->Invoke();
   if (invoke_status != kTfLiteOk) {
-    TF_LITE_REPORT_ERROR(error_reporter, "Invoke failed on index: %d\n",
+    TF_LITE_REPORT_ERROR(micro_error_reporter, "Invoke failed on index: %d\n",
                          begin_index);
     return;
   }
@@ -105,7 +106,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   int gesture_index = PredictGesture(interpreter->output(0)->data.f);
 
   // Produce an output
-  HandleOutput(error_reporter, gesture_index);
+  HandleOutput(micro_error_reporter, gesture_index);
   */
 }
 
