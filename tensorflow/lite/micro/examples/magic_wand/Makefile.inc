@@ -35,6 +35,7 @@ tensorflow/lite/micro/examples/magic_wand/gesture_predictor.h \
 
 magic_wand_TEST_SRCS := \
 tensorflow/lite/micro/examples/magic_wand/magic_wand_test.cc \
+tensorflow/lite/micro/examples/magic_wand/magic_wand_data_test.cc \
 tensorflow/lite/micro/examples/magic_wand/slope_micro_features_data.cc \
 tensorflow/lite/micro/examples/magic_wand/ring_micro_features_data.cc
 
