@@ -64,6 +64,53 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   interpreter.AllocateTensors();
 
   // Obtain a pointer to the model's input tensor
+  TfLiteTensor* model_input = interpreter.input(0);
+  if ((model_input->dims->size != 4) || (model_input->dims->data[0] != 1) ||
+      (model_input->dims->data[1] != 128) ||
+      (model_input->dims->data[2] != 3) ||
+      (model_input->type != kTfLiteFloat32)) {
+    TF_LITE_REPORT_ERROR(&micro_error_reporter,
+                         "Bad input tensor parameters in model");;
+  }
+
+
+  std::string data;
+  std::ifstream DataFile("data/wing/output_wing_dengyl.txt");
+
+  while (getline (DataFile, data)) {
+  // Output the text from the file
+  std::cout << data;
+  }
+
+  // Close the file
+  DataFile.close();
+
+  /*
+  // Attempt to read new data from the accelerometer.
+  bool got_data =
+      ReadAccelerometer(micro_error_reporter, model_input->data.f, input_length);
+  // If there was no new data, wait until next time.
+  if (!got_data) return;
+
+  // Run inference, and report any error.
+  TfLiteStatus invoke_status = interpreter->Invoke();
+  if (invoke_status != kTfLiteOk) {
+    TF_LITE_REPORT_ERROR(micro_error_reporter, "Invoke failed on index: %d\n",
+                         begin_index);
+    return;
+  }
+  // Analyze the results to obtain a prediction
+  int gesture_index = PredictGesture(interpreter->output(0)->data.f);
+
+  // Produce an output
+  HandleOutput(micro_error_reporter, gesture_index);
+  */
+
+
+
+
+  /*
+  // Obtain a pointer to the model's input tensor
   TfLiteTensor* input = interpreter.input(0);
 
   // Make sure the input has the properties we expect
@@ -143,7 +190,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   negative_score = output->data.f[kNegativeIndex];
   TF_LITE_MICRO_EXPECT_GT(slope_score, wing_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, ring_score);
-  TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);
+  TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);*/
 }
 
 TF_LITE_MICRO_TESTS_END
