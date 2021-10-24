@@ -22,9 +22,10 @@ limitations under the License.
 #include "tensorflow/lite/micro/testing/micro_test.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 
-TF_LITE_MICRO_TESTS_BEGIN
+//TF_LITE_MICRO_TESTS_BEGIN
 
-TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
+//TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
+void main(int argc, char** argv) {
   // Set up logging
   tflite::MicroErrorReporter micro_error_reporter;
 
@@ -192,5 +193,3 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TF_LITE_MICRO_EXPECT_GT(slope_score, ring_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);*/
 }
-
-TF_LITE_MICRO_TESTS_END
