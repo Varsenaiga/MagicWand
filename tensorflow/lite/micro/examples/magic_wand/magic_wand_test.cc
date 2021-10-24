@@ -13,6 +13,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
+#include <iostream>
+#include <fstream>
+
 #include "tensorflow/lite/micro/examples/magic_wand/magic_wand_model_data.h"
 #include "tensorflow/lite/micro/examples/magic_wand/ring_micro_features_data.h"
 #include "tensorflow/lite/micro/examples/magic_wand/slope_micro_features_data.h"
@@ -22,10 +25,11 @@ limitations under the License.
 #include "tensorflow/lite/micro/testing/micro_test.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 
-//TF_LITE_MICRO_TESTS_BEGIN
+TF_LITE_MICRO_TESTS_BEGIN
 
-//TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
-void main(int argc, char** argv) {
+TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
+  std::cout << '\n';
+
   // Set up logging
   tflite::MicroErrorReporter micro_error_reporter;
 
@@ -78,13 +82,17 @@ void main(int argc, char** argv) {
   std::string data;
   std::ifstream DataFile("data/wing/output_wing_dengyl.txt");
 
+  std::cout << "Teste\n";
+
   while (getline (DataFile, data)) {
   // Output the text from the file
-  std::cout << data;
+  std::cout << data << '\n';
   }
 
   // Close the file
   DataFile.close();
+
+  std::cout << '\n';
 
   /*
   // Attempt to read new data from the accelerometer.
@@ -193,3 +201,5 @@ void main(int argc, char** argv) {
   TF_LITE_MICRO_EXPECT_GT(slope_score, ring_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);*/
 }
+
+TF_LITE_MICRO_TESTS_END
