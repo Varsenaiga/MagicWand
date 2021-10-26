@@ -78,7 +78,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
                          "Bad input tensor parameters in model");;
   }
 
-
+  /*
   std::string data;
   std::ifstream DataFile("data/wing/output_wing_dengyl.txt");
 
@@ -94,7 +94,6 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
 
   std::cout << '\n';
 
-  /*
   // Attempt to read new data from the accelerometer.
   bool got_data =
       ReadAccelerometer(micro_error_reporter, model_input->data.f, input_length);
@@ -118,7 +117,6 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
 
 
 
-  /*
   // Obtain a pointer to the model's input tensor
   TfLiteTensor* input = interpreter.input(0);
 
@@ -199,7 +197,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   negative_score = output->data.f[kNegativeIndex];
   TF_LITE_MICRO_EXPECT_GT(slope_score, wing_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, ring_score);
-  TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);*/
+  TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);
 }
 
 TF_LITE_MICRO_TESTS_END
