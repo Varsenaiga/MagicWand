@@ -15,6 +15,7 @@ limitations under the License.
 
 #include <iostream>
 #include <fstream>
+#include <string>
 
 #include "tensorflow/lite/micro/examples/magic_wand/magic_wand_model_data.h"
 #include "tensorflow/lite/micro/examples/magic_wand/ring_micro_features_data.h"
@@ -24,11 +25,12 @@ limitations under the License.
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/micro/testing/micro_test.h"
 #include "tensorflow/lite/schema/schema_generated.h"
+using namespace std;
 
 TF_LITE_MICRO_TESTS_BEGIN
 
 TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
-  std::cout << '\n';
+  cout << '\n';
 
   // Set up logging
   tflite::MicroErrorReporter micro_error_reporter;
@@ -78,21 +80,21 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
                          "Bad input tensor parameters in model");;
   }
 
+
   /*
-  std::string data;
-  std::ifstream DataFile("data/wing/output_wing_dengyl.txt");
+  string data;
+  ifstream dataFile("tensorflow/lite/micro/examples/magic_wand/data/wing/output_wing_dengyl.txt");
+  if (!dataFile) cerr << "Could not open the file!\t" << endl;
 
-  std::cout << "Teste\n";
-
-  while (getline (DataFile, data)) {
-  // Output the text from the file
-  std::cout << data << '\n';
+  while (getline (dataFile, data)) {
+    // Output the text from the file
+    cout << data << '\n';
   }
 
   // Close the file
-  DataFile.close();
+  dataFile.close();
 
-  std::cout << '\n';
+  cout << '\n';
 
   // Attempt to read new data from the accelerometer.
   bool got_data =
