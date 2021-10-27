@@ -13,6 +13,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
+#include <iostream>
+#include <chrono>
+
 #include "tensorflow/lite/micro/micro_graph.h"
 
 #include "flatbuffers/flatbuffers.h"  // from @flatbuffers
@@ -145,6 +148,7 @@ TfLiteStatus MicroGraph::FreeSubgraphs() {
 }
 
 TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
+  std::cout << "\nStarting InvokeSubgraph:" << std::endl;
   int previous_subgraph_idx = current_subgraph_index_;
   current_subgraph_index_ = subgraph_idx;
 
@@ -154,7 +158,11 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
     return kTfLiteError;
   }
   uint32_t operators_size = NumSubgraphOperators(model_, subgraph_idx);
+  
+  std::cout << "Operators Size: " << operators_size << std::endl;
+  
   for (size_t i = 0; i < operators_size; ++i) {
+    auto start = std::chrono::high_resolution_clock::now();
     TfLiteNode* node =
         &(subgraph_allocations_[subgraph_idx].node_and_registrations[i].node);
     const TfLiteRegistration* registration = subgraph_allocations_[subgraph_idx]
@@ -164,12 +172,15 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
 // This ifdef is needed (even though ScopedMicroProfiler itself is a no-op with
 // -DTF_LITE_STRIP_ERROR_STRINGS) because the function OpNameFromRegistration is
 // only defined for builds with the error strings.
+
+    //auto start = std::chrono::high_resolution_clock::now();
+
 #if !defined(TF_LITE_STRIP_ERROR_STRINGS)
     ScopedMicroProfiler scoped_profiler(
         OpNameFromRegistration(registration),
         reinterpret_cast<MicroProfiler*>(context_->profiler));
 #endif
-
+    //auto start = std::chrono::high_resolution_clock::now();
     TFLITE_DCHECK(registration->invoke);
     TfLiteStatus invoke_status = registration->invoke(context_, node);
 
@@ -186,8 +197,18 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
     } else if (invoke_status != kTfLiteOk) {
       return invoke_status;
     }
+    
+    auto stop = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
+
+    std::cout << "Operator number " << i << std::endl;
+    //std::cout << "\tData: " << (context_->GetTensor(context_, i)->type)context_->GetTensor(context_, i)->data.data << std::endl;
+    //std::cout << "\tData: " << input(0) << std::endl;
+    std::cout << "\tRegistration: " << OpNameFromRegistration(registration) << std::endl;
+    std::cout << "\tTime Duration: " << duration.count() << "μs" << std::endl;
   }
   current_subgraph_index_ = previous_subgraph_idx;
+  
   return kTfLiteOk;
 }
 

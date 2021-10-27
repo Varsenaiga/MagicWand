@@ -140,12 +140,23 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
     input->data.f[i] = ring_features_data[i];
   }
 
+  for(size_t i = 0; i < (input->bytes / sizeof(float)); ++i) {
+    std::cout << "Input Data "<< i << ": " << input->data.f[i] << std::endl;
+  }
+  std::cout << std::endl;
+
   // Run the model on this input and check that it succeeds
   TfLiteStatus invoke_status = interpreter.Invoke();
   if (invoke_status != kTfLiteOk) {
     TF_LITE_REPORT_ERROR(&micro_error_reporter, "Invoke failed\n");
   }
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteOk, invoke_status);
+
+  /*TfLiteTensor* ipt = interpreter.inputs().Get(1);
+
+  for(size_t i = 0; i < (ipt->bytes / sizeof(float)); i+=3) {
+    std::cout << left << setw(18) << setfill(' ') << "2nd Data Check "<< i/3 << ": " << left << setw(20) << setfill(' ') << "(" << ipt->data.f[i] << ",\t\t       " << ipt->data.f[i+1] << ",\t\t    " << ipt->data.f[i+2] << ")" << std::endl;
+  }*/
 
   // Obtain a pointer to the output tensor and make sure it has the
   // properties we expect.

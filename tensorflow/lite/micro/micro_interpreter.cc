@@ -17,6 +17,7 @@ limitations under the License.
 #include <cstdarg>
 #include <cstddef>
 #include <cstdint>
+#include <iostream>
 
 #include "flatbuffers/flatbuffers.h"  // from @flatbuffers
 #include "tensorflow/lite/c/common.h"
@@ -290,6 +291,18 @@ TfLiteStatus MicroInterpreter::Invoke() {
   // difficult to debug segfaults.
   if (!tensors_allocated_) {
     TF_LITE_ENSURE_OK(&context_, AllocateTensors());
+  }
+  
+  for (int  id = 0; id < 8; id++) {
+    TfLiteTensor *tensor = GetTensor(&context_, id);
+    std::cout << "Doing " << id << " tensor:" << std::endl;
+
+
+    for (size_t i = 0; i < (tensor->bytes / sizeof(float))+3; i+=3) {
+      std::cout << std::left << std::setw(18) << std::setfill(' ') << "1st Data Check "<< i/3 << ": " << std::left << std::setw(20) << std::setfill(' ') << "(" << tensor->data.f[i] << ",\t\t       " << tensor->data.f[i+1] << ",\t\t    " << tensor->data.f[i+2] << ")" << std::endl;
+    }
+    std::cout << std::endl << std::endl;
+
   }
   return graph_.InvokeSubgraph(0);
 }
