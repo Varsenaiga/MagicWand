@@ -140,10 +140,14 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
     input->data.f[i] = ring_features_data[i];
   }
 
-  for(size_t i = 0; i < (input->bytes / sizeof(float)); ++i) {
-    std::cout << "Input Data "<< i << ": " << input->data.f[i] << std::endl;
+  for (size_t i = 0; i < (input->bytes / sizeof(float)); i+=3) {
+    std::cout << "\t";
+    std::cout << "Input Data " << i/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
+    std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i];
+    std::cout << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i+1];
+    std::cout << input->data.f[i+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
+    std::cout << std::endl;
   }
-  std::cout << std::endl;
 
   // Run the model on this input and check that it succeeds
   TfLiteStatus invoke_status = interpreter.Invoke();
@@ -152,11 +156,14 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   }
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteOk, invoke_status);
 
-  /*TfLiteTensor* ipt = interpreter.inputs().Get(1);
-
-  for(size_t i = 0; i < (ipt->bytes / sizeof(float)); i+=3) {
-    std::cout << left << setw(18) << setfill(' ') << "2nd Data Check "<< i/3 << ": " << left << setw(20) << setfill(' ') << "(" << ipt->data.f[i] << ",\t\t       " << ipt->data.f[i+1] << ",\t\t    " << ipt->data.f[i+2] << ")" << std::endl;
-  }*/
+  for (size_t i = 0; i < (input->bytes / sizeof(float)); i+=3) {
+    std::cout << "\t";
+    std::cout << "New input Data " << i/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
+    std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i];
+    std::cout << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i+1];
+    std::cout << input->data.f[i+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
+    std::cout << std::endl;
+  }
 
   // Obtain a pointer to the output tensor and make sure it has the
   // properties we expect.
@@ -165,6 +172,12 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TF_LITE_MICRO_EXPECT_EQ(1, output->dims->data[0]);
   TF_LITE_MICRO_EXPECT_EQ(4, output->dims->data[1]);
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32, output->type);
+
+  for(size_t i = 0; i < (output->bytes / sizeof(float)); ++i) {
+    std::cout << "Output Data "<< i << ": " << output->data.f[i] << std::endl;
+  }
+  std::cout << std::endl;
+
 
   // There are four possible classes in the output, each with a score.
   const int kWingIndex = 0;
@@ -182,6 +195,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TF_LITE_MICRO_EXPECT_GT(ring_score, slope_score);
   TF_LITE_MICRO_EXPECT_GT(ring_score, negative_score);
 
+  /*
   // Now test with a different input, from a recording of "Slope".
   const float* slope_features_data = g_slope_micro_f2e59fea_nohash_1_data;
   for (size_t i = 0; i < (input->bytes / sizeof(float)); ++i) {
@@ -211,6 +225,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TF_LITE_MICRO_EXPECT_GT(slope_score, wing_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, ring_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);
+  */
 }
 
 TF_LITE_MICRO_TESTS_END

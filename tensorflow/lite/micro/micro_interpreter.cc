@@ -293,18 +293,31 @@ TfLiteStatus MicroInterpreter::Invoke() {
     TF_LITE_ENSURE_OK(&context_, AllocateTensors());
   }
   
-  for (int  id = 0; id < 8; id++) {
-    TfLiteTensor *tensor = GetTensor(&context_, id);
-    std::cout << "Doing " << id << " tensor:" << std::endl;
+  TfLiteStatus status = graph_.InvokeSubgraph(0);
+  
+  for (int id = 0; id < 16; ++id) {
 
+    TfLiteTensor* tensor = GetTensor(&context_, id);
+    int sz = 1;
 
-    for (size_t i = 0; i < (tensor->bytes / sizeof(float))+3; i+=3) {
-      std::cout << std::left << std::setw(18) << std::setfill(' ') << "1st Data Check "<< i/3 << ": " << std::left << std::setw(20) << std::setfill(' ') << "(" << tensor->data.f[i] << ",\t\t       " << tensor->data.f[i+1] << ",\t\t    " << tensor->data.f[i+2] << ")" << std::endl;
+    std::cout << "Doing " << id << " tensor (size " << tensor->dims->size << "):" << std::endl;
+    for (int i = 0; i < tensor->dims->size; i++) {
+      std::cout << "Dim " << i << " is " << tensor->dims->data[i] << std::endl;
+      sz *= tensor->dims->data[i];
+    }
+
+    for (int i = 0; i < sz; i+=3) {
+      std::cout << "\t";
+      std::cout << id << "º Data Check "<< i/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
+      std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i];
+      std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+1];
+      std::cout << tensor->data.f[i+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
+      std::cout << std::endl;
     }
     std::cout << std::endl << std::endl;
 
   }
-  return graph_.InvokeSubgraph(0);
+  return status;
 }
 
 TfLiteTensor* MicroInterpreter::input(size_t index) {

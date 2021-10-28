@@ -206,6 +206,7 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
     //std::cout << "\tData: " << input(0) << std::endl;
     std::cout << "\tRegistration: " << OpNameFromRegistration(registration) << std::endl;
     std::cout << "\tTime Duration: " << duration.count() << "μs" << std::endl;
+
   }
   current_subgraph_index_ = previous_subgraph_idx;
   
