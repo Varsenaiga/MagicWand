@@ -133,7 +133,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   // The input is a 32 bit floating point value
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32, input->type);
 
-  // Provide an input value
+  /*// Provide an input value
   const float* ring_features_data = g_ring_micro_f9643d42_nohash_4_data;
   TF_LITE_REPORT_ERROR(&micro_error_reporter, "%d", input->bytes);
   for (size_t i = 0; i < (input->bytes / sizeof(float)); ++i) {
@@ -177,7 +177,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
     std::cout << "Output Data "<< i << ": " << output->data.f[i] << std::endl;
   }
   std::cout << std::endl;
-
+  */
 
   // There are four possible classes in the output, each with a score.
   const int kWingIndex = 0;
@@ -185,6 +185,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   const int kSlopeIndex = 2;
   const int kNegativeIndex = 3;
 
+  /*
   // Make sure that the expected "Ring" score is higher than the other
   // classes.
   float wing_score = output->data.f[kWingIndex];
@@ -194,38 +195,62 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TF_LITE_MICRO_EXPECT_GT(ring_score, wing_score);
   TF_LITE_MICRO_EXPECT_GT(ring_score, slope_score);
   TF_LITE_MICRO_EXPECT_GT(ring_score, negative_score);
-
-  /*
+  */
+  
   // Now test with a different input, from a recording of "Slope".
   const float* slope_features_data = g_slope_micro_f2e59fea_nohash_1_data;
   for (size_t i = 0; i < (input->bytes / sizeof(float)); ++i) {
     input->data.f[i] = slope_features_data[i];
   }
 
+  for (size_t i = 0; i < (input->bytes / sizeof(float)); i+=3) {
+    std::cout << "\t";
+    std::cout << "Input Data " << i/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
+    std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i];
+    std::cout << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i+1];
+    std::cout << input->data.f[i+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
+    std::cout << std::endl;
+  }
+
   // Run the model on this "Slope" input.
-  invoke_status = interpreter.Invoke();
+  TfLiteStatus invoke_status = interpreter.Invoke();
   if (invoke_status != kTfLiteOk) {
     TF_LITE_REPORT_ERROR(&micro_error_reporter, "Invoke failed\n");
   }
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteOk, invoke_status);
 
+  for (size_t i = 0; i < (input->bytes / sizeof(float)); i+=3) {
+    std::cout << "\t";
+    std::cout << "New input Data " << i/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
+    std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i];
+    std::cout << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i+1];
+    std::cout << input->data.f[i+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
+    std::cout << std::endl;
+  }
+
   // Get the output from the model, and make sure it's the expected size and
   // type.
-  output = interpreter.output(0);
+  TfLiteTensor* output = interpreter.output(0);
   TF_LITE_MICRO_EXPECT_EQ(2, output->dims->size);
   TF_LITE_MICRO_EXPECT_EQ(1, output->dims->data[0]);
   TF_LITE_MICRO_EXPECT_EQ(4, output->dims->data[1]);
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32, output->type);
 
+  for(size_t i = 0; i < (output->bytes / sizeof(float)); ++i) {
+    std::cout << "Output Data "<< i << ": " << output->data.f[i] << std::endl;
+  }
+  std::cout << std::endl;
+
+
   // Make sure that the expected "Slope" score is higher than the other classes.
-  wing_score = output->data.f[kWingIndex];
-  ring_score = output->data.f[kRingIndex];
-  slope_score = output->data.f[kSlopeIndex];
-  negative_score = output->data.f[kNegativeIndex];
+  float wing_score = output->data.f[kWingIndex];
+  float ring_score = output->data.f[kRingIndex];
+  float slope_score = output->data.f[kSlopeIndex];
+  float negative_score = output->data.f[kNegativeIndex];
   TF_LITE_MICRO_EXPECT_GT(slope_score, wing_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, ring_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);
-  */
+ 
 }
 
 TF_LITE_MICRO_TESTS_END

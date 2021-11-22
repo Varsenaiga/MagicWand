@@ -306,14 +306,36 @@ TfLiteStatus MicroInterpreter::Invoke() {
       sz *= tensor->dims->data[i];
     }
 
-    for (int i = 0; i < sz; i+=3) {
-      std::cout << "\t";
-      std::cout << id << "º Data Check "<< i/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
-      std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i];
-      std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+1];
-      std::cout << tensor->data.f[i+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
-      std::cout << std::endl;
+    float min = tensor->data.f[0];
+    float max = tensor->data.f[0];
+
+    if (id == 2 || id == 4) {
+      for (int i = 0; i < sz; i+=(3*8)) {
+        std::cout << "\t";
+        std::cout << id << "º Data Check "<< i/(3*8) << std::left << std::setw(27) << std::setfill(' ') << ": ";
+        std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i];
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+8];
+        std::cout << tensor->data.f[i+16] << std::left << std::setw(15) << std::setfill(' ') << ")";
+        std::cout << std::endl;
+        min = std::min(min, std::min(tensor->data.f[i], std::min(tensor->data.f[i+1], tensor->data.f[i+2])));
+        max = std::max(max, std::max(tensor->data.f[i], std::max(tensor->data.f[i+1], tensor->data.f[i+2])));
+      }
+    } else {
+      for (int i = 0; i < sz; i+=(3)) {
+        std::cout << "\t";
+        std::cout << id << "º Data Check "<< i/(3) << std::left << std::setw(27) << std::setfill(' ') << ": ";
+        std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i];
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+1];
+        std::cout << tensor->data.f[i+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
+        std::cout << std::endl;
+        min = std::min(min, std::min(tensor->data.f[i], std::min(tensor->data.f[i+1], tensor->data.f[i+2])));
+        max = std::max(max, std::max(tensor->data.f[i], std::max(tensor->data.f[i+1], tensor->data.f[i+2])));
+      }
     }
+   
+    std::cout << "Min: " << min << std::endl;
+    std::cout << "Max: " << max << std::endl;
+ 
     std::cout << std::endl << std::endl;
 
   }

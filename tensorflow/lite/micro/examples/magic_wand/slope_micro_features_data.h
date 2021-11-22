@@ -19,5 +19,6 @@ limitations under the License.
 extern const int g_slope_micro_f2e59fea_nohash_1_length;
 extern const int g_slope_micro_f2e59fea_nohash_1_dim;
 extern const float g_slope_micro_f2e59fea_nohash_1_data[];
+//extern const int g_slope_micro_f2e59fea_nohash_1_data[];
 
 #endif  // TENSORFLOW_LITE_MICRO_EXAMPLES_MAGIC_WAND_SLOPE_MICRO_FEATURES_DATA_H_
