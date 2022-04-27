@@ -1,0 +1,32 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+
+Out:
+[[0.0436,	0.4380,	0.0860,	0.4323]]
+
+
+
+
+Out:
+[[0.0390,	0.4136,	0.0753,	0.4721]]
+
+
+
+
+Out:
+[[0.0000,	0.0000,	0.0000,	1.0000]]
+
+
+
+
+Out:
+[[0.0000,	0.0000,	0.0000,	1.0000]]
+
+
+
+
+
+Comparing Files:
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

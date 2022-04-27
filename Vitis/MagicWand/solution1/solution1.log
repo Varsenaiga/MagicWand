@@ -1,0 +1,1027 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.933 seconds; current allocated memory: 127.184 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.403 seconds; current allocated memory: 127.199 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.769 seconds; current allocated memory: 127.166 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.535 seconds; current allocated memory: 127.227 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.329 seconds; current allocated memory: 1018.571 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.298 seconds; current allocated memory: 127.261 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.666 seconds; current allocated memory: 127.232 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.534 seconds; current allocated memory: 127.227 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.535 seconds; current allocated memory: 127.227 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.398 seconds; current allocated memory: 127.313 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.656 seconds; current allocated memory: 127.263 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.296 seconds; current allocated memory: 127.333 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.684 seconds; current allocated memory: 127.305 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.372 seconds; current allocated memory: 1018.648 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.787 seconds; current allocated memory: 127.305 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.615 seconds; current allocated memory: 127.300 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.347 seconds; current allocated memory: 1018.644 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 1018.561 MB.
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/utils.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/model_functions.c' ... 
+WARNING: [HLS 207-5301] unused parameter 'kCol': MagicWand/model_functions.c:74:134
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/master.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/file.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.842 seconds; current allocated memory: 129.273 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)' into 'ap_int_base<32, false>::operator[](int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1113:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false>*, int)' into 'ap_int_base<1, false>::operator[](int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1113:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:38)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::operator=(unsigned long long)' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)' into 'ap_int_base<32, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::range(int, int)' into 'ap_int_base<32, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int)' into 'ap_int_base<8, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int)' into 'ap_int_base<23, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint(unsigned int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:312:28)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:20)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false> const*, int)' into 'ap_int_base<1, false>::operator[](int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1129:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::to_bool() const' into 'ap_int_base<1, false>::operator[](int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1130:15)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1039:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int) const' into 'ap_int_base<8, false>::operator()(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1073:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::get() const' into 'ap_int_base<8, false>::ap_int_base<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_int_base<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<8, false>(ap_range_ref<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1039:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int) const' into 'ap_int_base<23, false>::operator()(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1073:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::get() const' into 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<23, false>(ap_int_base<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_int_base<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_int_base<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:17)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:19)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:20)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator=(bool)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:15)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::to_uint() const' into 'fp_struct<float>::to_float() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:350:24)
+INFO: [HLS 214-178] Inlining function 'dense1' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'dense2' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'softmax' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'printData2D' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const' into 'fp_struct<float>::to_float() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:346:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const' into 'fp_struct<float>::to_ieee() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:370:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c/fabsfloat.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'compareFiles' (MagicWand/utils.c:68:0)
+INFO: [HLS 214-178] Inlining function 'openFile' into 'master' (MagicWand/master.c:6:0)
+INFO: [HLS 214-178] Inlining function 'closeFile' into 'master' (MagicWand/master.c:6:0)
+INFO: [HLS 214-178] Inlining function 'compareFiles' into 'master' (MagicWand/master.c:6:0)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/file.c:13:12)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fopen (MagicWand/file.c:33:17)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fgets (MagicWand/file.c:46:29)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fflush (MagicWand/utils.c:23:5)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:95:13)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:95:46)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:96:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:101:24)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:103:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:105:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:107:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:109:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:111:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fclose (MagicWand/file.c:124:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/file.c:23:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:70:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:71:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:72:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fscanf (MagicWand/utils.c:79:29)
+ERROR: [HLS 214-194] in function 'master': Undefined function strtof (MagicWand/utils.c:81:16)
+ERROR: [HLS 214-194] in function 'master': Undefined function fscanf (MagicWand/utils.c:82:12)
+ERROR: [HLS 214-194] in function 'master': Undefined function strcmp (MagicWand/utils.c:83:17)
+ERROR: [HLS 214-194] in function 'master': Undefined function strtof (MagicWand/utils.c:84:24)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:113:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:114:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:115:5)
+WARNING: [HLS 214-167] The program may have out of bound array access
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:50:50)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:60:56)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:60:84)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:64:56)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:100:31)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:100:44)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:115:30)
+ERROR: [HLS 214-135] Syn check fail!
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 11.484 seconds; current allocated memory: 130.322 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.644 seconds; peak allocated memory: 1018.561 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.345 seconds; current allocated memory: 1018.660 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.38 seconds; current allocated memory: 1018.761 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.807 seconds; current allocated memory: 127.418 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 1018.594 MB.
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/file.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/master.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/model_functions.c' ... 
+WARNING: [HLS 207-5301] unused parameter 'kCol': MagicWand/model_functions.c:74:134
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/utils.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.671 seconds; current allocated memory: 129.335 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)' into 'ap_int_base<32, false>::operator[](int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1113:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false>*, int)' into 'ap_int_base<1, false>::operator[](int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1113:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:38)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::operator=(unsigned long long)' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)' into 'ap_int_base<32, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::range(int, int)' into 'ap_int_base<32, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int)' into 'ap_int_base<8, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int)' into 'ap_int_base<23, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint(unsigned int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:312:28)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:20)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false> const*, int)' into 'ap_int_base<1, false>::operator[](int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1129:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::to_bool() const' into 'ap_int_base<1, false>::operator[](int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1130:15)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1039:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int) const' into 'ap_int_base<8, false>::operator()(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1073:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::get() const' into 'ap_int_base<8, false>::ap_int_base<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_int_base<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<8, false>(ap_range_ref<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1039:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int) const' into 'ap_int_base<23, false>::operator()(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1073:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::get() const' into 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<23, false>(ap_int_base<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_int_base<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_int_base<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:17)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:19)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:20)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator=(bool)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:15)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::to_uint() const' into 'fp_struct<float>::to_float() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:350:24)
+INFO: [HLS 214-178] Inlining function 'dense1' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'dense2' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'softmax' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'printData2D' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const' into 'fp_struct<float>::to_float() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:346:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const' into 'fp_struct<float>::to_ieee() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:370:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c/fabsfloat.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'compareFiles' (MagicWand/utils.c:68:0)
+INFO: [HLS 214-178] Inlining function 'openFile' into 'master' (MagicWand/master.c:6:0)
+INFO: [HLS 214-178] Inlining function 'closeFile' into 'master' (MagicWand/master.c:6:0)
+INFO: [HLS 214-178] Inlining function 'compareFiles' into 'master' (MagicWand/master.c:6:0)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/file.c:13:12)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fopen (MagicWand/file.c:33:17)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fgets (MagicWand/file.c:46:29)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fflush (MagicWand/utils.c:23:5)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:95:13)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:95:46)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:96:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:101:24)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:103:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:105:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:107:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:109:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:111:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fclose (MagicWand/file.c:124:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/file.c:23:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:70:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:71:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:72:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fscanf (MagicWand/utils.c:79:29)
+ERROR: [HLS 214-194] in function 'master': Undefined function strtof (MagicWand/utils.c:81:16)
+ERROR: [HLS 214-194] in function 'master': Undefined function fscanf (MagicWand/utils.c:82:12)
+ERROR: [HLS 214-194] in function 'master': Undefined function strcmp (MagicWand/utils.c:83:17)
+ERROR: [HLS 214-194] in function 'master': Undefined function strtof (MagicWand/utils.c:84:24)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:113:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:114:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:115:5)
+WARNING: [HLS 214-167] The program may have out of bound array access
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:50:50)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:60:56)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:60:84)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:64:56)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:100:31)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:100:44)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:115:30)
+ERROR: [HLS 214-135] Syn check fail!
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 11.438 seconds; current allocated memory: 130.352 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.732 seconds; peak allocated memory: 1018.594 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.373 seconds; current allocated memory: 1018.761 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.793 seconds; current allocated memory: 127.418 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.717 seconds; current allocated memory: 127.418 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.688 seconds; current allocated memory: 127.418 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.635 seconds; current allocated memory: 127.418 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.707 seconds; current allocated memory: 127.418 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 1018.594 MB.
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/utils.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/model_functions.c' ... 
+WARNING: [HLS 207-5301] unused parameter 'kCol': MagicWand/model_functions.c:74:134
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/master.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/file.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.879 seconds; current allocated memory: 129.320 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)' into 'ap_int_base<32, false>::operator[](int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1113:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false>*, int)' into 'ap_int_base<1, false>::operator[](int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1113:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:38)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::operator=(unsigned long long)' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)' into 'ap_int_base<32, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::range(int, int)' into 'ap_int_base<32, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int)' into 'ap_int_base<8, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int)' into 'ap_int_base<23, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint(unsigned int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:312:28)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:20)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false> const*, int)' into 'ap_int_base<1, false>::operator[](int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1129:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::to_bool() const' into 'ap_int_base<1, false>::operator[](int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1130:15)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1039:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int) const' into 'ap_int_base<8, false>::operator()(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1073:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::get() const' into 'ap_int_base<8, false>::ap_int_base<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_int_base<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<8, false>(ap_range_ref<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1039:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int) const' into 'ap_int_base<23, false>::operator()(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1073:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::get() const' into 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<23, false>(ap_int_base<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_int_base<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_int_base<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:17)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:19)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:20)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator=(bool)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:15)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::to_uint() const' into 'fp_struct<float>::to_float() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:350:24)
+INFO: [HLS 214-178] Inlining function 'dense1' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'dense2' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'softmax' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'printData2D' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const' into 'fp_struct<float>::to_float() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:346:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const' into 'fp_struct<float>::to_ieee() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:370:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c/fabsfloat.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'compareFiles' (MagicWand/utils.c:68:0)
+INFO: [HLS 214-178] Inlining function 'openFile' into 'master' (MagicWand/master.c:6:0)
+INFO: [HLS 214-178] Inlining function 'closeFile' into 'master' (MagicWand/master.c:6:0)
+INFO: [HLS 214-178] Inlining function 'compareFiles' into 'master' (MagicWand/master.c:6:0)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/file.c:13:12)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fopen (MagicWand/file.c:33:17)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fgets (MagicWand/file.c:46:29)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fflush (MagicWand/utils.c:23:5)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:95:13)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:95:46)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:96:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:101:24)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:103:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:105:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:107:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:109:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:111:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fclose (MagicWand/file.c:124:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/file.c:23:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:70:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:71:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:72:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fscanf (MagicWand/utils.c:79:29)
+ERROR: [HLS 214-194] in function 'master': Undefined function strtof (MagicWand/utils.c:81:16)
+ERROR: [HLS 214-194] in function 'master': Undefined function fscanf (MagicWand/utils.c:82:12)
+ERROR: [HLS 214-194] in function 'master': Undefined function strcmp (MagicWand/utils.c:83:17)
+ERROR: [HLS 214-194] in function 'master': Undefined function strtof (MagicWand/utils.c:84:24)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:113:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:114:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:115:5)
+WARNING: [HLS 214-167] The program may have out of bound array access
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:50:50)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:60:56)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:60:84)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:64:56)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:100:31)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:100:44)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:115:30)
+ERROR: [HLS 214-135] Syn check fail!
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 11.894 seconds; current allocated memory: 130.352 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.173 seconds; peak allocated memory: 1018.594 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 1018.594 MB.
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/utils.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/model_functions.c' ... 
+WARNING: [HLS 207-5301] unused parameter 'kCol': MagicWand/model_functions.c:74:134
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/master.c' ... 
+INFO: [HLS 200-10] Analyzing design file 'MagicWand/file.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.388 seconds; current allocated memory: 129.320 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)' into 'ap_int_base<32, false>::operator[](int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1113:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false>*, int)' into 'ap_int_base<1, false>::operator[](int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1113:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:38)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::operator=(unsigned long long)' into 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:839:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)' into 'ap_int_base<32, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::range(int, int)' into 'ap_int_base<32, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int)' into 'ap_int_base<8, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>::get() const' into 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1032:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int)' into 'ap_int_base<23, false>::operator()(int, int)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1069:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)' into 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint(unsigned int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:312:28)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:320:20)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:319:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::fp_struct(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:318:19)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false> const*, int)' into 'ap_int_base<1, false>::operator[](int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1129:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<1, false>::to_bool() const' into 'ap_int_base<1, false>::operator[](int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1130:15)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)' into 'ap_int_base<8, false>::range(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1039:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::range(int, int) const' into 'ap_int_base<8, false>::operator()(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1073:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<8, false>::get() const' into 'ap_int_base<8, false>::ap_int_base<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_int_base<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<8, false>(ap_range_ref<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)' into 'ap_int_base<23, false>::range(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1039:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::range(int, int) const' into 'ap_int_base<23, false>::operator()(int, int) const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:1073:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<23, false>::get() const' into 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_base.h:351:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<23, false>(ap_int_base<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_int_base<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:367:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:22)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_int_base<23, false> const&)' into 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/include/header_files\ap_int_ref.h:382:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::operator[](int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:17)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<23, false>(ap_range_ref<23, false> const&)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<23, false>::operator()(int, int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:337:19)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<32, false>& ap_range_ref<32, false>::operator=<8, false>(ap_range_ref<8, false> const&)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator()(int, int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator()(int, int) const' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:336:20)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator=(bool)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:15)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'fp_struct<float>::data() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:335:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::to_uint() const' into 'fp_struct<float>::to_float() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:350:24)
+INFO: [HLS 214-178] Inlining function 'dense1' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'dense2' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'softmax' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'printData2D' into 'readFile' (MagicWand/file.c:26:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const' into 'fp_struct<float>::to_float() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:346:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const' into 'fp_struct<float>::to_ieee() const' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/src/hls\utils/x_hls_utils.h:370:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (r:/builds/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c/fabsfloat.cpp:7:0)
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'compareFiles' (MagicWand/utils.c:68:0)
+INFO: [HLS 214-178] Inlining function 'openFile' into 'master' (MagicWand/master.c:6:0)
+INFO: [HLS 214-178] Inlining function 'closeFile' into 'master' (MagicWand/master.c:6:0)
+INFO: [HLS 214-178] Inlining function 'compareFiles' into 'master' (MagicWand/master.c:6:0)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/file.c:13:12)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fopen (MagicWand/file.c:33:17)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fgets (MagicWand/file.c:46:29)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fflush (MagicWand/utils.c:23:5)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:95:13)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:95:46)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strcmp (MagicWand/file.c:96:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:101:24)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:103:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:105:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:107:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtok (MagicWand/file.c:109:18)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function strtof (MagicWand/file.c:111:22)
+ERROR: [HLS 214-194] in function 'readFile': Undefined function fclose (MagicWand/file.c:124:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/file.c:23:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:70:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:71:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fopen (MagicWand/utils.c:72:19)
+ERROR: [HLS 214-194] in function 'master': Undefined function fscanf (MagicWand/utils.c:79:29)
+ERROR: [HLS 214-194] in function 'master': Undefined function strtof (MagicWand/utils.c:81:16)
+ERROR: [HLS 214-194] in function 'master': Undefined function fscanf (MagicWand/utils.c:82:12)
+ERROR: [HLS 214-194] in function 'master': Undefined function strcmp (MagicWand/utils.c:83:17)
+ERROR: [HLS 214-194] in function 'master': Undefined function strtof (MagicWand/utils.c:84:24)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:113:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:114:5)
+ERROR: [HLS 214-194] in function 'master': Undefined function fclose (MagicWand/utils.c:115:5)
+WARNING: [HLS 214-167] The program may have out of bound array access
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:50:50)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:60:56)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:60:84)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:64:56)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:100:31)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:100:44)
+WARNING: [HLS 214-167] The program may have out of bound array access (MagicWand/model_functions.c:115:30)
+ERROR: [HLS 214-135] Syn check fail!
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 10.883 seconds; current allocated memory: 130.353 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.074 seconds; peak allocated memory: 1018.594 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 7.568 seconds; current allocated memory: 127.418 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 16.197 seconds; current allocated memory: 127.418 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.867 seconds; current allocated memory: 127.433 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.424 seconds; current allocated memory: 1018.777 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 7.894 seconds; current allocated memory: 127.433 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.992 seconds; current allocated memory: 127.433 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.859 seconds; current allocated memory: 127.433 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name master master 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.799 seconds; current allocated memory: 127.427 MB.

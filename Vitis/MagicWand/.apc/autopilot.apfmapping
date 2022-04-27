@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="file.c" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\file.c"/>
+    <originFiles name="file.h" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\file.h"/>
+    <originFiles name="master.c" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\master.c"/>
+    <originFiles name="master.h" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\master.h"/>
+    <originFiles name="model_functions.c" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\model_functions.c"/>
+    <originFiles name="model_functions.h" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\model_functions.h"/>
+    <originFiles name="parameters.h" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\parameters.h"/>
+    <originFiles name="utils.c" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\utils.c"/>
+    <originFiles name="utils.h" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\utils.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.c" path="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis\MagicWand\main.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

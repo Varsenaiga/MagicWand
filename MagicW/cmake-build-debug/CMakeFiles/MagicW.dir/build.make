@@ -52,10 +52,10 @@ RM = "D:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW
+CMAKE_SOURCE_DIR = C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MagicW.dir/depend.make
@@ -71,58 +71,58 @@ include CMakeFiles/MagicW.dir/flags.make
 CMakeFiles/MagicW.dir/main.c.obj: CMakeFiles/MagicW.dir/flags.make
 CMakeFiles/MagicW.dir/main.c.obj: ../main.c
 CMakeFiles/MagicW.dir/main.c.obj: CMakeFiles/MagicW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/MagicW.dir/main.c.obj"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MagicW.dir/main.c.obj -MF CMakeFiles\MagicW.dir\main.c.obj.d -o CMakeFiles\MagicW.dir\main.c.obj -c C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/MagicW.dir/main.c.obj"
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MagicW.dir/main.c.obj -MF CMakeFiles\MagicW.dir\main.c.obj.d -o CMakeFiles\MagicW.dir\main.c.obj -c C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\main.c
 
 CMakeFiles/MagicW.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MagicW.dir/main.c.i"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\main.c > CMakeFiles\MagicW.dir\main.c.i
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\main.c > CMakeFiles\MagicW.dir\main.c.i
 
 CMakeFiles/MagicW.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MagicW.dir/main.c.s"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\main.c -o CMakeFiles\MagicW.dir\main.c.s
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\main.c -o CMakeFiles\MagicW.dir\main.c.s
 
 CMakeFiles/MagicW.dir/utils.c.obj: CMakeFiles/MagicW.dir/flags.make
 CMakeFiles/MagicW.dir/utils.c.obj: ../utils.c
 CMakeFiles/MagicW.dir/utils.c.obj: CMakeFiles/MagicW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MagicW.dir/utils.c.obj"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MagicW.dir/utils.c.obj -MF CMakeFiles\MagicW.dir\utils.c.obj.d -o CMakeFiles\MagicW.dir\utils.c.obj -c C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MagicW.dir/utils.c.obj"
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MagicW.dir/utils.c.obj -MF CMakeFiles\MagicW.dir\utils.c.obj.d -o CMakeFiles\MagicW.dir\utils.c.obj -c C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\utils.c
 
 CMakeFiles/MagicW.dir/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MagicW.dir/utils.c.i"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\utils.c > CMakeFiles\MagicW.dir\utils.c.i
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\utils.c > CMakeFiles\MagicW.dir\utils.c.i
 
 CMakeFiles/MagicW.dir/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MagicW.dir/utils.c.s"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\utils.c -o CMakeFiles\MagicW.dir\utils.c.s
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\utils.c -o CMakeFiles\MagicW.dir\utils.c.s
 
 CMakeFiles/MagicW.dir/model_functions.c.obj: CMakeFiles/MagicW.dir/flags.make
 CMakeFiles/MagicW.dir/model_functions.c.obj: ../model_functions.c
 CMakeFiles/MagicW.dir/model_functions.c.obj: CMakeFiles/MagicW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/MagicW.dir/model_functions.c.obj"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MagicW.dir/model_functions.c.obj -MF CMakeFiles\MagicW.dir\model_functions.c.obj.d -o CMakeFiles\MagicW.dir\model_functions.c.obj -c C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\model_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/MagicW.dir/model_functions.c.obj"
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MagicW.dir/model_functions.c.obj -MF CMakeFiles\MagicW.dir\model_functions.c.obj.d -o CMakeFiles\MagicW.dir\model_functions.c.obj -c C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\model_functions.c
 
 CMakeFiles/MagicW.dir/model_functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MagicW.dir/model_functions.c.i"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\model_functions.c > CMakeFiles\MagicW.dir\model_functions.c.i
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\model_functions.c > CMakeFiles\MagicW.dir\model_functions.c.i
 
 CMakeFiles/MagicW.dir/model_functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MagicW.dir/model_functions.c.s"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\model_functions.c -o CMakeFiles\MagicW.dir\model_functions.c.s
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\model_functions.c -o CMakeFiles\MagicW.dir\model_functions.c.s
 
 CMakeFiles/MagicW.dir/file.c.obj: CMakeFiles/MagicW.dir/flags.make
 CMakeFiles/MagicW.dir/file.c.obj: ../file.c
 CMakeFiles/MagicW.dir/file.c.obj: CMakeFiles/MagicW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MagicW.dir/file.c.obj"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MagicW.dir/file.c.obj -MF CMakeFiles\MagicW.dir\file.c.obj.d -o CMakeFiles\MagicW.dir\file.c.obj -c C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MagicW.dir/file.c.obj"
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MagicW.dir/file.c.obj -MF CMakeFiles\MagicW.dir\file.c.obj.d -o CMakeFiles\MagicW.dir\file.c.obj -c C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\file.c
 
 CMakeFiles/MagicW.dir/file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MagicW.dir/file.c.i"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\file.c > CMakeFiles\MagicW.dir\file.c.i
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\file.c > CMakeFiles\MagicW.dir\file.c.i
 
 CMakeFiles/MagicW.dir/file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MagicW.dir/file.c.s"
-	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\file.c -o CMakeFiles\MagicW.dir\file.c.s
+	"D:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\file.c -o CMakeFiles\MagicW.dir\file.c.s
 
 # Object files for target MagicW
 MagicW_OBJECTS = \
@@ -142,7 +142,7 @@ MagicW.exe: CMakeFiles/MagicW.dir/build.make
 MagicW.exe: CMakeFiles/MagicW.dir/linklibs.rsp
 MagicW.exe: CMakeFiles/MagicW.dir/objects1.rsp
 MagicW.exe: CMakeFiles/MagicW.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable MagicW.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable MagicW.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MagicW.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +154,6 @@ CMakeFiles/MagicW.dir/clean:
 .PHONY : CMakeFiles/MagicW.dir/clean
 
 CMakeFiles/MagicW.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\MagicW\cmake-build-debug\CMakeFiles\MagicW.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\MagicW\cmake-build-debug\CMakeFiles\MagicW.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MagicW.dir/depend
 

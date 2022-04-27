@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug"/>
+				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MagicW">
-				<Option output="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/MagicW.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug"/>
+				<Option output="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/MagicW.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -29,15 +29,15 @@
 					<Add directory="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 MagicW"/>
-					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 MagicW"/>
+					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MagicW/fast">
-				<Option output="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/MagicW.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug"/>
+				<Option output="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/MagicW.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -47,58 +47,58 @@
 					<Add directory="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 MagicW/fast"/>
-					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 MagicW/fast"/>
+					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug"/>
+				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug"/>
+				<Option working_dir="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/file.c">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/file.c">
 			<Option target="MagicW"/>
 		</Unit>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/file.h">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/file.h">
 			<Option target="MagicW"/>
 		</Unit>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/main.c">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/main.c">
 			<Option target="MagicW"/>
 		</Unit>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/model_functions.c">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/model_functions.c">
 			<Option target="MagicW"/>
 		</Unit>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/model_functions.h">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/model_functions.h">
 			<Option target="MagicW"/>
 		</Unit>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/parameters.h">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/parameters.h">
 			<Option target="MagicW"/>
 		</Unit>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/utils.c">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/utils.c">
 			<Option target="MagicW"/>
 		</Unit>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/utils.h">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/utils.h">
 			<Option target="MagicW"/>
 		</Unit>
-		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/CMakeLists.txt">
+		<Unit filename="C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

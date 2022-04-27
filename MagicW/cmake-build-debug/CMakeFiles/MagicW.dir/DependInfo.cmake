@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/file.c" "CMakeFiles/MagicW.dir/file.c.obj" "gcc" "CMakeFiles/MagicW.dir/file.c.obj.d"
-  "C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/main.c" "CMakeFiles/MagicW.dir/main.c.obj" "gcc" "CMakeFiles/MagicW.dir/main.c.obj.d"
-  "C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/model_functions.c" "CMakeFiles/MagicW.dir/model_functions.c.obj" "gcc" "CMakeFiles/MagicW.dir/model_functions.c.obj.d"
-  "C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/MagicW/utils.c" "CMakeFiles/MagicW.dir/utils.c.obj" "gcc" "CMakeFiles/MagicW.dir/utils.c.obj.d"
+  "C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/file.c" "CMakeFiles/MagicW.dir/file.c.obj" "gcc" "CMakeFiles/MagicW.dir/file.c.obj.d"
+  "C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/main.c" "CMakeFiles/MagicW.dir/main.c.obj" "gcc" "CMakeFiles/MagicW.dir/main.c.obj.d"
+  "C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/model_functions.c" "CMakeFiles/MagicW.dir/model_functions.c.obj" "gcc" "CMakeFiles/MagicW.dir/model_functions.c.obj.d"
+  "C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/MagicW/utils.c" "CMakeFiles/MagicW.dir/utils.c.obj" "gcc" "CMakeFiles/MagicW.dir/utils.c.obj.d"
   )
 
 # Targets to which this target links.
