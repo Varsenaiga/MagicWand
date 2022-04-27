@@ -126,13 +126,37 @@ typedef union {
   float Float;
   double Double;
 } llvmBitCastUnion;
+/* Structure forward decls */
+typedef struct l_struct_OC__iobuf l_struct_OC__iobuf;
+
+/* Structure contents */
+struct l_struct_OC__iobuf {
+   char *field0;
+  unsigned int field1;
+   char *field2;
+  unsigned int field3;
+  unsigned int field4;
+  unsigned int field5;
+  unsigned int field6;
+   char *field7;
+};
+
+
+/* External Global Variable Declarations */
 
 /* Function Declarations */
 double fmod(double, double);
 float fmodf(float, float);
 long double fmodl(long double, long double);
 signed int main(void);
-signed int master();
+l_struct_OC__iobuf *openFile( char *,  char *);
+void readFile(l_struct_OC__iobuf *);
+void closeFile(l_struct_OC__iobuf *);
+
+
+/* Global Variable Definitions and Initialization */
+static  char aesl_internal__OC_str[40] = "../../../data/negative/output_teste.txt";
+static  char aesl_internal__OC_str1[2] = "r";
 
 
 /* Function Bodies */
@@ -153,21 +177,44 @@ static inline int llvm_fcmp_oge(double X, double Y) { return X >= Y ; }
 
 signed int main(void) {
   static  unsigned long long aesl_llvm_cbe_1_count = 0;
-  unsigned int llvm_cbe_tmp__1;
+  l_struct_OC__iobuf *llvm_cbe_tmp__1;
   static  unsigned long long aesl_llvm_cbe_2_count = 0;
+  static  unsigned long long aesl_llvm_cbe_3_count = 0;
+  static  unsigned long long aesl_llvm_cbe_4_count = 0;
+  static  unsigned long long aesl_llvm_cbe_5_count = 0;
+  static  unsigned long long aesl_llvm_cbe_6_count = 0;
+  static  unsigned long long aesl_llvm_cbe_7_count = 0;
 
   CODE_FOR_MAIN();
 const char* AESL_DEBUG_TRACE = getenv("DEBUG_TRACE");
 if (AESL_DEBUG_TRACE)
 printf("\n\{ BEGIN @main\n");
 if (AESL_DEBUG_TRACE)
-printf("\n  %%1 = tail call i32 bitcast (i32 (...)* @master to i32 ()*)() nounwind, !dbg !1 for 0x%I64xth hint within @main  --> \n", ++aesl_llvm_cbe_1_count);
-  llvm_cbe_tmp__1 = (unsigned int ) /*tail*/ master();
+printf("\n  %%1 = tail call %%struct._iobuf* @openFile(i8* getelementptr inbounds ([40 x i8]* @aesl_internal_.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8]* @aesl_internal_.str1, i64 0, i64 0)) nounwind, !dbg !1 for 0x%I64xth hint within @main  --> \n", ++aesl_llvm_cbe_1_count);
+  llvm_cbe_tmp__1 = (l_struct_OC__iobuf *) /*tail*/ openFile(( char *)((&aesl_internal__OC_str[(((signed long long )0ull))
+#ifdef AESL_BC_SIM
+ % 40
+#endif
+])), ( char *)((&aesl_internal__OC_str1[(((signed long long )0ull))
+#ifdef AESL_BC_SIM
+ % 2
+#endif
+])));
 if (AESL_DEBUG_TRACE) {
 printf("\nReturn  = 0x%X",llvm_cbe_tmp__1);
 }
+if (AESL_DEBUG_TRACE)
+printf("\n  tail call void @readFile(%%struct._iobuf* %%1) nounwind, !dbg !3 for 0x%I64xth hint within @main  --> \n", ++aesl_llvm_cbe_5_count);
+   /*tail*/ readFile((l_struct_OC__iobuf *)llvm_cbe_tmp__1);
+if (AESL_DEBUG_TRACE) {
+}
+if (AESL_DEBUG_TRACE)
+printf("\n  tail call void @closeFile(%%struct._iobuf* %%1) nounwind, !dbg !3 for 0x%I64xth hint within @main  --> \n", ++aesl_llvm_cbe_6_count);
+   /*tail*/ closeFile((l_struct_OC__iobuf *)llvm_cbe_tmp__1);
+if (AESL_DEBUG_TRACE) {
+}
   if (AESL_DEBUG_TRACE)
       printf("\nEND @main}\n");
-  return llvm_cbe_tmp__1;
+  return 0u;
 }
 

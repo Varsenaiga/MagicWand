@@ -5,16 +5,14 @@
 ############################################################
 open_project MagicWand
 set_top master
-add_files MagicWand/file.c
-add_files MagicWand/file.h
-add_files MagicWand/master.c
-add_files MagicWand/master.h
 add_files MagicWand/model_functions.c
 add_files MagicWand/model_functions.h
 add_files MagicWand/parameters.h
-add_files MagicWand/utils.c
-add_files MagicWand/utils.h
+add_files -tb MagicWand/file.c
+add_files -tb MagicWand/file.h
 add_files -tb MagicWand/main.c -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb MagicWand/utils.c
+add_files -tb MagicWand/utils.h
 open_solution "solution1" -flow_target vivado
 set_part {xczu7ev-ffvf1517-3-e}
 create_clock -period 10 -name default

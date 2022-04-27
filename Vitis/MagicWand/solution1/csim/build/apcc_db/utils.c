@@ -159,22 +159,22 @@ float ldexpf(float , signed int );
 
 
 /* Global Variable Definitions and Initialization */
-static  char aesl_internal__OC_str1[7] = "%.4f,\t";
 static  char aesl_internal__OC_str2[5] = "%.4f";
 static  char aesl_internal__OC_str5[8] = "%.20f,\t";
 static  char aesl_internal__OC_str6[6] = "%.20f";
-static  char aesl_internal__OC_str8[2] = "w";
-static  char aesl_internal__OC_str15[7] = "%.30f\n";
+static  char aesl_internal__OC_str1[7] = "%.4f,\t";
 static  char aesl_internal__OC_str10[7] = "%.20f\n";
-static  char aesl_internal__OC_str11[2] = "r";
+static  char aesl_internal__OC_str8[2] = "w";
 static  char aesl_internal__OC_str12[15] = "ErrorsFile.txt";
-static  char aesl_internal__OC_str13[3] = "%s";
 static  char aesl_internal__OC_str14[2] = "\n";
-static  char aesl_internal__OC_str17[4] = "%d-";
+static  char aesl_internal__OC_str13[3] = "%s";
+static  char aesl_internal_str3[20] = "Error opening file!";
+static  char aesl_internal__OC_str15[7] = "%.30f\n";
+static  char aesl_internal__OC_str11[2] = "r";
+static  char aesl_internal_str1[3] = "],";
 static  char aesl_internal_str2[4] = "],\n";
 static  char aesl_internal_str4[28] = "Files with different sizes!";
-static  char aesl_internal_str3[20] = "Error opening file!";
-static  char aesl_internal_str1[3] = "],";
+static  char aesl_internal__OC_str17[4] = "%d-";
 
 
 /* Function Bodies */

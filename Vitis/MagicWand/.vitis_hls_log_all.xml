@@ -6,7 +6,15 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="MagicWand" solutionName="solution1" date="2022-04-27T15:42:24.508+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="MagicWand" solutionName="solution1" date="2022-04-27T15:39:29.101+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="MagicWand" solutionName="solution1" date="2022-04-27T15:39:13.327+0100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="MagicWand" solutionName="solution1" date="2022-04-27T15:35:44.963+0100"/>
+        <logs message="ERROR: [APCC 202-1] APCC failed.&#xD;&#xA;   Generating csim.exe&#xD;&#xA;Makefile.rules:392: recipe for target 'csim.exe' failed&#xD;&#xA;g++.exe: error: obj/file.o: No such file or directory&#xD;&#xA;make: *** [csim.exe] Error 1" projectName="MagicWand" solutionName="solution1" date="2022-04-27T15:35:44.950+0100"/>
+        <logs message="ERROR: [APCC 202-1] ProcessSources failed" projectName="MagicWand" solutionName="solution1" date="2022-04-27T15:35:44.900+0100"/>
+        <logs message="ERROR: [APCC 202-10] clang compile failed: child process exited abnormally" projectName="MagicWand" solutionName="solution1" date="2022-04-27T15:35:44.889+0100"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>

@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "model_functions.h"
-#include "utils.h"
 #include <math.h>
 
 void convolution1(int mRow, int mCol, float m[mRow][mCol], int kRow, int kCol, int kNum, float k[kNum][kRow][kCol], float bias[kNum], float out[mRow][mCol][kNum]){
@@ -82,7 +81,7 @@ void maxPool(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int oRow, 
                 out[i/kRow][0][d] = 0;
             }
             for (j = 0; j < mCol; j++) {
-                out[i/kRow][0][d] = max(out[i/kRow][0][d], m[i][j][d]);
+                out[i/kRow][0][d] = (float)fmax((double)out[i/kRow][0][d], (double)m[i][j][d]);
             }
         }
     }

@@ -3580,56 +3580,59 @@ void maxPool(signed int llvm_cbe_mRow, signed int llvm_cbe_mCol, signed int llvm
   static  unsigned long long aesl_llvm_cbe_937_count = 0;
   float llvm_cbe_tmp__265;
   static  unsigned long long aesl_llvm_cbe_938_count = 0;
+  double llvm_cbe_tmp__266;
   static  unsigned long long aesl_llvm_cbe_939_count = 0;
-  static  unsigned long long aesl_llvm_cbe_940_count = 0;
-  static  unsigned long long aesl_llvm_cbe_941_count = 0;
-  unsigned long long llvm_cbe_tmp__266;
+  unsigned long long llvm_cbe_tmp__267;
   static  unsigned long long aesl_llvm_cbe_tmp_2e_us_count = 0;
   unsigned long long llvm_cbe_tmp_2e_us;
   static  unsigned long long aesl_llvm_cbe_tmp7_2e_us_count = 0;
   unsigned long long llvm_cbe_tmp7_2e_us;
   static  unsigned long long aesl_llvm_cbe__2e_sum4_2e_us_count = 0;
   unsigned long long llvm_cbe__2e_sum4_2e_us;
+  static  unsigned long long aesl_llvm_cbe_940_count = 0;
+  float *llvm_cbe_tmp__268;
+  static  unsigned long long aesl_llvm_cbe_941_count = 0;
+  float llvm_cbe_tmp__269;
   static  unsigned long long aesl_llvm_cbe_942_count = 0;
-  float *llvm_cbe_tmp__267;
+  double llvm_cbe_tmp__270;
   static  unsigned long long aesl_llvm_cbe_943_count = 0;
-  float llvm_cbe_tmp__268;
+  double llvm_cbe_tmp__271;
   static  unsigned long long aesl_llvm_cbe_944_count = 0;
+  float llvm_cbe_tmp__272;
   static  unsigned long long aesl_llvm_cbe_945_count = 0;
   static  unsigned long long aesl_llvm_cbe_946_count = 0;
+  unsigned int llvm_cbe_tmp__273;
   static  unsigned long long aesl_llvm_cbe_947_count = 0;
   static  unsigned long long aesl_llvm_cbe_948_count = 0;
-  float llvm_cbe_tmp__269;
   static  unsigned long long aesl_llvm_cbe_949_count = 0;
   static  unsigned long long aesl_llvm_cbe_950_count = 0;
-  unsigned int llvm_cbe_tmp__270;
+  static  unsigned long long aesl_llvm_cbe_exitcond_count = 0;
   static  unsigned long long aesl_llvm_cbe_951_count = 0;
   static  unsigned long long aesl_llvm_cbe_952_count = 0;
   static  unsigned long long aesl_llvm_cbe_953_count = 0;
   static  unsigned long long aesl_llvm_cbe_954_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond_count = 0;
   static  unsigned long long aesl_llvm_cbe_955_count = 0;
   static  unsigned long long aesl_llvm_cbe_956_count = 0;
+  unsigned long long llvm_cbe_tmp__274;
   static  unsigned long long aesl_llvm_cbe_957_count = 0;
-  static  unsigned long long aesl_llvm_cbe_958_count = 0;
-  static  unsigned long long aesl_llvm_cbe_959_count = 0;
-  static  unsigned long long aesl_llvm_cbe_960_count = 0;
-  unsigned long long llvm_cbe_tmp__271;
-  static  unsigned long long aesl_llvm_cbe_961_count = 0;
-  unsigned long long llvm_cbe_tmp__272;
+  unsigned long long llvm_cbe_tmp__275;
   static  unsigned long long aesl_llvm_cbe__2e_sum_2e_us_count = 0;
   unsigned long long llvm_cbe__2e_sum_2e_us;
+  static  unsigned long long aesl_llvm_cbe_958_count = 0;
+  float *llvm_cbe_tmp__276;
+  static  unsigned long long aesl_llvm_cbe_959_count = 0;
+  unsigned long long llvm_cbe_tmp__277;
+  static  unsigned long long aesl_llvm_cbe_960_count = 0;
+  unsigned long long llvm_cbe_tmp__278;
+  static  unsigned long long aesl_llvm_cbe_961_count = 0;
   static  unsigned long long aesl_llvm_cbe_962_count = 0;
-  float *llvm_cbe_tmp__273;
-  static  unsigned long long aesl_llvm_cbe_963_count = 0;
-  unsigned long long llvm_cbe_tmp__274;
-  static  unsigned long long aesl_llvm_cbe_964_count = 0;
-  unsigned long long llvm_cbe_tmp__275;
-  static  unsigned long long aesl_llvm_cbe_965_count = 0;
-  static  unsigned long long aesl_llvm_cbe_966_count = 0;
   static  unsigned long long aesl_llvm_cbe_storemerge1_count = 0;
   unsigned int llvm_cbe_storemerge1;
   unsigned int llvm_cbe_storemerge1__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_963_count = 0;
+  static  unsigned long long aesl_llvm_cbe_964_count = 0;
+  static  unsigned long long aesl_llvm_cbe_965_count = 0;
+  static  unsigned long long aesl_llvm_cbe_966_count = 0;
   static  unsigned long long aesl_llvm_cbe_967_count = 0;
   static  unsigned long long aesl_llvm_cbe_968_count = 0;
   static  unsigned long long aesl_llvm_cbe_969_count = 0;
@@ -3637,48 +3640,44 @@ void maxPool(signed int llvm_cbe_mRow, signed int llvm_cbe_mCol, signed int llvm
   static  unsigned long long aesl_llvm_cbe_971_count = 0;
   static  unsigned long long aesl_llvm_cbe_972_count = 0;
   static  unsigned long long aesl_llvm_cbe_973_count = 0;
+  unsigned int llvm_cbe_tmp__279;
   static  unsigned long long aesl_llvm_cbe_974_count = 0;
   static  unsigned long long aesl_llvm_cbe_975_count = 0;
   static  unsigned long long aesl_llvm_cbe_976_count = 0;
+  unsigned int llvm_cbe_tmp__280;
   static  unsigned long long aesl_llvm_cbe_977_count = 0;
-  unsigned int llvm_cbe_tmp__276;
   static  unsigned long long aesl_llvm_cbe_978_count = 0;
   static  unsigned long long aesl_llvm_cbe_979_count = 0;
+  unsigned long long llvm_cbe_tmp__281;
   static  unsigned long long aesl_llvm_cbe_980_count = 0;
-  unsigned int llvm_cbe_tmp__277;
-  static  unsigned long long aesl_llvm_cbe_981_count = 0;
-  static  unsigned long long aesl_llvm_cbe_982_count = 0;
-  static  unsigned long long aesl_llvm_cbe_983_count = 0;
-  unsigned long long llvm_cbe_tmp__278;
-  static  unsigned long long aesl_llvm_cbe_984_count = 0;
-  unsigned long long llvm_cbe_tmp__279;
+  unsigned long long llvm_cbe_tmp__282;
   static  unsigned long long aesl_llvm_cbe__2e_sum6_count = 0;
   unsigned long long llvm_cbe__2e_sum6;
+  static  unsigned long long aesl_llvm_cbe_981_count = 0;
+  float *llvm_cbe_tmp__283;
+  static  unsigned long long aesl_llvm_cbe_982_count = 0;
+  static  unsigned long long aesl_llvm_cbe_983_count = 0;
+  static  unsigned long long aesl_llvm_cbe_984_count = 0;
   static  unsigned long long aesl_llvm_cbe_985_count = 0;
-  float *llvm_cbe_tmp__280;
   static  unsigned long long aesl_llvm_cbe_986_count = 0;
   static  unsigned long long aesl_llvm_cbe_987_count = 0;
   static  unsigned long long aesl_llvm_cbe_988_count = 0;
+  unsigned int llvm_cbe_tmp__284;
   static  unsigned long long aesl_llvm_cbe_989_count = 0;
   static  unsigned long long aesl_llvm_cbe_990_count = 0;
   static  unsigned long long aesl_llvm_cbe_991_count = 0;
   static  unsigned long long aesl_llvm_cbe_992_count = 0;
-  unsigned int llvm_cbe_tmp__281;
+  unsigned int llvm_cbe_tmp__285;
   static  unsigned long long aesl_llvm_cbe_993_count = 0;
   static  unsigned long long aesl_llvm_cbe_994_count = 0;
   static  unsigned long long aesl_llvm_cbe_995_count = 0;
   static  unsigned long long aesl_llvm_cbe_996_count = 0;
-  unsigned int llvm_cbe_tmp__282;
   static  unsigned long long aesl_llvm_cbe_997_count = 0;
   static  unsigned long long aesl_llvm_cbe_998_count = 0;
   static  unsigned long long aesl_llvm_cbe_999_count = 0;
+  static  unsigned long long aesl_llvm_cbe_exitcond11_count = 0;
   static  unsigned long long aesl_llvm_cbe_1000_count = 0;
   static  unsigned long long aesl_llvm_cbe_1001_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1002_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1003_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond11_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1004_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1005_count = 0;
 
 const char* AESL_DEBUG_TRACE = getenv("DEBUG_TRACE");
 if (AESL_DEBUG_TRACE)
@@ -3706,7 +3705,7 @@ printf("\n = 0x%I64X\n", llvm_cbe_tmp__256);
 
 llvm_cbe__2e_preheader_2e_lr_2e_ph:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%5 = mul i64 %%3, %%2, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_908_count);
+printf("\n  %%5 = mul i64 %%3, %%2, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_908_count);
   llvm_cbe_tmp__257 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__256&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__255&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__257&18446744073709551615ull)));
@@ -3716,15 +3715,15 @@ printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__257&18446744073709
   do {     /* Syntactic loop '.preheader' to make GCC happy */
 llvm_cbe__2e_preheader:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%storemerge9 = phi i32 [ 0, %%.preheader.lr.ph ], [ %%47, %%46  for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_storemerge9_count);
+printf("\n  %%storemerge9 = phi i32 [ 0, %%.preheader.lr.ph ], [ %%49, %%48  for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_storemerge9_count);
   llvm_cbe_storemerge9 = (unsigned int )llvm_cbe_storemerge9__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge9 = 0x%X",llvm_cbe_storemerge9);
 printf("\n = 0x%X",0u);
-printf("\n = 0x%X",llvm_cbe_tmp__282);
+printf("\n = 0x%X",llvm_cbe_tmp__285);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%7 = sext i32 %%storemerge9 to i64, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_911_count);
+printf("\n  %%7 = sext i32 %%storemerge9 to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_911_count);
   llvm_cbe_tmp__258 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge9);
 if (AESL_DEBUG_TRACE)
 printf("\n = 0x%I64X\n", llvm_cbe_tmp__258);
@@ -3736,21 +3735,21 @@ printf("\n = 0x%I64X\n", llvm_cbe_tmp__258);
     goto llvm_cbe__2e_preheader_2e__2e_preheader_2e_split_crit_edge;
   }
 
-llvm_cbe_tmp__283:
+llvm_cbe_tmp__286:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%47 = add nsw i32 %%storemerge9, 1, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_996_count);
-  llvm_cbe_tmp__282 = (unsigned int )((unsigned int )(llvm_cbe_storemerge9&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%49 = add nsw i32 %%storemerge9, 1, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_992_count);
+  llvm_cbe_tmp__285 = (unsigned int )((unsigned int )(llvm_cbe_storemerge9&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__282&4294967295ull)));
-  if (((llvm_cbe_tmp__282&4294967295U) == (llvm_cbe_mDep&4294967295U))) {
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__285&4294967295ull)));
+  if (((llvm_cbe_tmp__285&4294967295U) == (llvm_cbe_mDep&4294967295U))) {
     goto llvm_cbe__2e__crit_edge10;
   } else {
-    llvm_cbe_storemerge9__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__282;   /* for PHI node */
+    llvm_cbe_storemerge9__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__285;   /* for PHI node */
     goto llvm_cbe__2e_preheader;
   }
 
 llvm_cbe__2e_us_2d_lcssa_2e_us:
-  goto llvm_cbe_tmp__283;
+  goto llvm_cbe_tmp__286;
 
   do {     /* Syntactic loop '.preheader.split.us' to make GCC happy */
 llvm_cbe__2e_preheader_2e_split_2e_us:
@@ -3763,14 +3762,14 @@ printf("\n = 0x%X",llvm_cbe_tmp__259);
 printf("\n = 0x%X",0u);
 }
   if ((((signed int )llvm_cbe_storemerge1_2e_us) < ((signed int )llvm_cbe_mRow))) {
-    goto llvm_cbe_tmp__284;
+    goto llvm_cbe_tmp__287;
   } else {
     goto llvm_cbe__2e_us_2d_lcssa_2e_us;
   }
 
 llvm_cbe__2e__crit_edge_2e_us:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%9 = add nsw i32 %%storemerge1.us, 1, !dbg !11 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_923_count);
+printf("\n  %%9 = add nsw i32 %%storemerge1.us, 1, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_923_count);
   llvm_cbe_tmp__259 = (unsigned int )((unsigned int )(llvm_cbe_storemerge1_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
 printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__259&4294967295ull)));
@@ -3778,28 +3777,33 @@ printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__259&4294967295ull)));
   goto llvm_cbe__2e_preheader_2e_split_2e_us;
 
   do {     /* Syntactic loop '' to make GCC happy */
-llvm_cbe_tmp__285:
+llvm_cbe_tmp__288:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%storemerge28.us = phi i32 [ 0, %%.lr.ph.us ], [ %%27, %%20  for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_storemerge28_2e_us_count);
+printf("\n  %%storemerge28.us = phi i32 [ 0, %%.lr.ph.us ], [ %%29, %%20  for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_storemerge28_2e_us_count);
   llvm_cbe_storemerge28_2e_us = (unsigned int )llvm_cbe_storemerge28_2e_us__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge28.us = 0x%X",llvm_cbe_storemerge28_2e_us);
 printf("\n = 0x%X",0u);
-printf("\n = 0x%X",llvm_cbe_tmp__270);
+printf("\n = 0x%X",llvm_cbe_tmp__273);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%21 = load float* %%30, align 4, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_937_count);
-  llvm_cbe_tmp__265 = (float )*llvm_cbe_tmp__273;
+printf("\n  %%21 = load float* %%32, align 4, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_937_count);
+  llvm_cbe_tmp__265 = (float )*llvm_cbe_tmp__276;
 if (AESL_DEBUG_TRACE)
 printf("\n = %f,  0x%x\n", llvm_cbe_tmp__265, *(int*)(&llvm_cbe_tmp__265));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%22 = sext i32 %%storemerge28.us to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_941_count);
-  llvm_cbe_tmp__266 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge28_2e_us);
+printf("\n  %%22 = fpext float %%21 to double, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_938_count);
+  llvm_cbe_tmp__266 = (double )((double )llvm_cbe_tmp__265);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__266);
+printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__266, *(long long*)(&llvm_cbe_tmp__266));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%tmp.us = add i64 %%22, %%3 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_tmp_2e_us_count);
-  llvm_cbe_tmp_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__266&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__275&18446744073709551615ull));
+printf("\n  %%23 = sext i32 %%storemerge28.us to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_939_count);
+  llvm_cbe_tmp__267 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge28_2e_us);
+if (AESL_DEBUG_TRACE)
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__267);
+if (AESL_DEBUG_TRACE)
+printf("\n  %%tmp.us = add i64 %%23, %%3 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_tmp_2e_us_count);
+  llvm_cbe_tmp_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__267&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__278&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\ntmp.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp_2e_us&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
@@ -3813,87 +3817,100 @@ printf("\n  %%.sum4.us = add i64 %%tmp7.us, %%7, !dbg !9 for 0x%I64xth hint with
 if (AESL_DEBUG_TRACE)
 printf("\n.sum4.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe__2e_sum4_2e_us&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%23 = getelementptr inbounds float* %%m, i64 %%.sum4.us, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_942_count);
-  llvm_cbe_tmp__267 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe__2e_sum4_2e_us))]);
+printf("\n  %%24 = getelementptr inbounds float* %%m, i64 %%.sum4.us, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_940_count);
+  llvm_cbe_tmp__268 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe__2e_sum4_2e_us))]);
 if (AESL_DEBUG_TRACE) {
 printf("\n.sum4.us = 0x%I64X",((signed long long )llvm_cbe__2e_sum4_2e_us));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%24 = load float* %%23, align 4, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_943_count);
-  llvm_cbe_tmp__268 = (float )*llvm_cbe_tmp__267;
-if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__268, *(int*)(&llvm_cbe_tmp__268));
-if (AESL_DEBUG_TRACE)
-printf("\n  %%26 = select i1 %%25, float %%21, float %%24, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_948_count);
-  llvm_cbe_tmp__269 = (float )(((llvm_fcmp_ogt(llvm_cbe_tmp__265, llvm_cbe_tmp__268))) ? ((float )llvm_cbe_tmp__265) : ((float )llvm_cbe_tmp__268));
+printf("\n  %%25 = load float* %%24, align 4, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_941_count);
+  llvm_cbe_tmp__269 = (float )*llvm_cbe_tmp__268;
 if (AESL_DEBUG_TRACE)
 printf("\n = %f,  0x%x\n", llvm_cbe_tmp__269, *(int*)(&llvm_cbe_tmp__269));
 if (AESL_DEBUG_TRACE)
-printf("\n  store float %%26, float* %%30, align 4, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_949_count);
-  *llvm_cbe_tmp__273 = llvm_cbe_tmp__269;
+printf("\n  %%26 = fpext float %%25 to double, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_942_count);
+  llvm_cbe_tmp__270 = (double )((double )llvm_cbe_tmp__269);
 if (AESL_DEBUG_TRACE)
-printf("\n = %f\n", llvm_cbe_tmp__269);
+printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__270, *(long long*)(&llvm_cbe_tmp__270));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%27 = add nsw i32 %%storemerge28.us, 1, !dbg !11 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_950_count);
-  llvm_cbe_tmp__270 = (unsigned int )((unsigned int )(llvm_cbe_storemerge28_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%27 = tail call double @fmax(double %%22, double %%26) nounwind, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_943_count);
+  llvm_cbe_tmp__271 = (double ) /*tail*/ fmax(llvm_cbe_tmp__266, llvm_cbe_tmp__270);
+if (AESL_DEBUG_TRACE) {
+printf("\nArgument  = %lf,  0x%llx",llvm_cbe_tmp__266, *(long long*)(&llvm_cbe_tmp__266));
+printf("\nArgument  = %lf,  0x%llx",llvm_cbe_tmp__270, *(long long*)(&llvm_cbe_tmp__270));
+printf("\nReturn  = %lf",llvm_cbe_tmp__271);
+}
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__270&4294967295ull)));
-  if (((llvm_cbe_tmp__270&4294967295U) == (llvm_cbe_mCol&4294967295U))) {
+printf("\n  %%28 = fptrunc double %%27 to float, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_944_count);
+  llvm_cbe_tmp__272 = (float )((float )llvm_cbe_tmp__271);
+if (AESL_DEBUG_TRACE)
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__272, *(int*)(&llvm_cbe_tmp__272));
+if (AESL_DEBUG_TRACE)
+printf("\n  store float %%28, float* %%32, align 4, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_945_count);
+  *llvm_cbe_tmp__276 = llvm_cbe_tmp__272;
+if (AESL_DEBUG_TRACE)
+printf("\n = %f\n", llvm_cbe_tmp__272);
+if (AESL_DEBUG_TRACE)
+printf("\n  %%29 = add nsw i32 %%storemerge28.us, 1, !dbg !11 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_946_count);
+  llvm_cbe_tmp__273 = (unsigned int )((unsigned int )(llvm_cbe_storemerge28_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+if (AESL_DEBUG_TRACE)
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__273&4294967295ull)));
+  if (((llvm_cbe_tmp__273&4294967295U) == (llvm_cbe_mCol&4294967295U))) {
     goto llvm_cbe__2e__crit_edge_2e_us;
   } else {
-    llvm_cbe_storemerge28_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__270;   /* for PHI node */
-    goto llvm_cbe_tmp__285;
+    llvm_cbe_storemerge28_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__273;   /* for PHI node */
+    goto llvm_cbe_tmp__288;
   }
 
   } while (1); /* end of syntactic loop '' */
 llvm_cbe__2e_lr_2e_ph_2e_us:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%28 = sext i32 %%14 to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_960_count);
-  llvm_cbe_tmp__271 = (unsigned long long )((signed long long )(signed int )llvm_cbe_tmp__261);
+printf("\n  %%30 = sext i32 %%14 to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_956_count);
+  llvm_cbe_tmp__274 = (unsigned long long )((signed long long )(signed int )llvm_cbe_tmp__261);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__271);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__274);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%29 = mul i64 %%5, %%28, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_961_count);
-  llvm_cbe_tmp__272 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__257&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__271&18446744073709551615ull));
+printf("\n  %%31 = mul i64 %%5, %%30, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_957_count);
+  llvm_cbe_tmp__275 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__257&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__274&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__272&18446744073709551615ull)));
+printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__275&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%.sum.us = add i64 %%29, %%7, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe__2e_sum_2e_us_count);
-  llvm_cbe__2e_sum_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__272&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__258&18446744073709551615ull));
+printf("\n  %%.sum.us = add i64 %%31, %%7, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe__2e_sum_2e_us_count);
+  llvm_cbe__2e_sum_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__275&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__258&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\n.sum.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe__2e_sum_2e_us&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%30 = getelementptr inbounds float* %%out, i64 %%.sum.us, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_962_count);
-  llvm_cbe_tmp__273 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe__2e_sum_2e_us))]);
+printf("\n  %%32 = getelementptr inbounds float* %%out, i64 %%.sum.us, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_958_count);
+  llvm_cbe_tmp__276 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe__2e_sum_2e_us))]);
 if (AESL_DEBUG_TRACE) {
 printf("\n.sum.us = 0x%I64X",((signed long long )llvm_cbe__2e_sum_2e_us));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%31 = sext i32 %%storemerge1.us to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_963_count);
-  llvm_cbe_tmp__274 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge1_2e_us);
+printf("\n  %%33 = sext i32 %%storemerge1.us to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_959_count);
+  llvm_cbe_tmp__277 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge1_2e_us);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__274);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__277);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%32 = mul i64 %%1, %%31, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_964_count);
-  llvm_cbe_tmp__275 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__254&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__274&18446744073709551615ull));
+printf("\n  %%34 = mul i64 %%1, %%33, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_960_count);
+  llvm_cbe_tmp__278 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__254&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__277&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__275&18446744073709551615ull)));
+printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__278&18446744073709551615ull)));
   llvm_cbe_storemerge28_2e_us__PHI_TEMPORARY = (unsigned int )0u;   /* for PHI node */
-  goto llvm_cbe_tmp__285;
+  goto llvm_cbe_tmp__288;
 
-llvm_cbe_tmp__286:
+llvm_cbe_tmp__289:
 if (AESL_DEBUG_TRACE)
 printf("\n  %%11 = srem i32 %%storemerge1.us, %%kRow, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_926_count);
   llvm_cbe_tmp__260 = (unsigned int )((signed int )(((signed int )llvm_cbe_storemerge1_2e_us) % ((signed int )llvm_cbe_kRow)));
 if (AESL_DEBUG_TRACE)
 printf("\n = 0x%X\n", ((signed int )llvm_cbe_tmp__260));
   if (((llvm_cbe_tmp__260&4294967295U) == (0u&4294967295U))) {
-    goto llvm_cbe_tmp__287;
+    goto llvm_cbe_tmp__290;
   } else {
     goto llvm_cbe__2e_lr_2e_ph_2e_us;
   }
 
-llvm_cbe_tmp__284:
+llvm_cbe_tmp__287:
 if (AESL_DEBUG_TRACE)
 printf("\n  %%14 = sdiv i32 %%storemerge1.us, %%kRow, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_929_count);
   llvm_cbe_tmp__261 = (unsigned int )((signed int )(((signed int )llvm_cbe_storemerge1_2e_us) / ((signed int )llvm_cbe_kRow)));
@@ -3902,33 +3919,33 @@ printf("\n = 0x%X\n", ((signed int )llvm_cbe_tmp__261));
   if (((llvm_cbe_tmp__261&4294967295U) == (llvm_cbe_oRow&4294967295U))) {
     goto llvm_cbe__2e_us_2d_lcssa_2e_us;
   } else {
-    goto llvm_cbe_tmp__286;
+    goto llvm_cbe_tmp__289;
   }
 
-llvm_cbe_tmp__287:
+llvm_cbe_tmp__290:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%17 = sext i32 %%14 to i64, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_932_count);
+printf("\n  %%17 = sext i32 %%14 to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_932_count);
   llvm_cbe_tmp__262 = (unsigned long long )((signed long long )(signed int )llvm_cbe_tmp__261);
 if (AESL_DEBUG_TRACE)
 printf("\n = 0x%I64X\n", llvm_cbe_tmp__262);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%18 = mul i64 %%5, %%17, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_933_count);
+printf("\n  %%18 = mul i64 %%5, %%17, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_933_count);
   llvm_cbe_tmp__263 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__257&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__262&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__263&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%.sum6.us = add i64 %%18, %%7, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe__2e_sum6_2e_us_count);
+printf("\n  %%.sum6.us = add i64 %%18, %%7, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe__2e_sum6_2e_us_count);
   llvm_cbe__2e_sum6_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__263&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__258&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\n.sum6.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe__2e_sum6_2e_us&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%19 = getelementptr inbounds float* %%out, i64 %%.sum6.us, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_934_count);
+printf("\n  %%19 = getelementptr inbounds float* %%out, i64 %%.sum6.us, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_934_count);
   llvm_cbe_tmp__264 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe__2e_sum6_2e_us))]);
 if (AESL_DEBUG_TRACE) {
 printf("\n.sum6.us = 0x%I64X",((signed long long )llvm_cbe__2e_sum6_2e_us));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  store float 0.000000e+00, float* %%19, align 4, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_935_count);
+printf("\n  store float 0.000000e+00, float* %%19, align 4, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_935_count);
   *llvm_cbe_tmp__264 = 0x0p0;
 if (AESL_DEBUG_TRACE)
 printf("\n = %f\n", 0x0p0);
@@ -3936,85 +3953,85 @@ printf("\n = %f\n", 0x0p0);
 
   } while (1); /* end of syntactic loop '.preheader.split.us' */
 llvm_cbe__2e_us_2d_lcssa:
-  goto llvm_cbe_tmp__283;
+  goto llvm_cbe_tmp__286;
 
   do {     /* Syntactic loop '.preheader..preheader.split_crit_edge' to make GCC happy */
 llvm_cbe__2e_preheader_2e__2e_preheader_2e_split_crit_edge:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%storemerge1 = phi i32 [ %%45, %%44 ], [ 0, %%.preheader  for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_storemerge1_count);
+printf("\n  %%storemerge1 = phi i32 [ %%47, %%46 ], [ 0, %%.preheader  for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_storemerge1_count);
   llvm_cbe_storemerge1 = (unsigned int )llvm_cbe_storemerge1__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge1 = 0x%X",llvm_cbe_storemerge1);
-printf("\n = 0x%X",llvm_cbe_tmp__281);
+printf("\n = 0x%X",llvm_cbe_tmp__284);
 printf("\n = 0x%X",0u);
 }
   if ((((signed int )llvm_cbe_storemerge1) < ((signed int )llvm_cbe_mRow))) {
-    goto llvm_cbe_tmp__288;
-  } else {
-    goto llvm_cbe__2e_us_2d_lcssa;
-  }
-
-llvm_cbe_tmp__289:
-if (AESL_DEBUG_TRACE)
-printf("\n  %%45 = add nsw i32 %%storemerge1, 1, !dbg !11 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_992_count);
-  llvm_cbe_tmp__281 = (unsigned int )((unsigned int )(llvm_cbe_storemerge1&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
-if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__281&4294967295ull)));
-  llvm_cbe_storemerge1__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__281;   /* for PHI node */
-  goto llvm_cbe__2e_preheader_2e__2e_preheader_2e_split_crit_edge;
-
-llvm_cbe_tmp__290:
-if (AESL_DEBUG_TRACE)
-printf("\n  %%38 = srem i32 %%storemerge1, %%kRow, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_980_count);
-  llvm_cbe_tmp__277 = (unsigned int )((signed int )(((signed int )llvm_cbe_storemerge1) % ((signed int )llvm_cbe_kRow)));
-if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((signed int )llvm_cbe_tmp__277));
-  if (((llvm_cbe_tmp__277&4294967295U) == (0u&4294967295U))) {
     goto llvm_cbe_tmp__291;
   } else {
-    goto llvm_cbe_tmp__289;
+    goto llvm_cbe__2e_us_2d_lcssa;
   }
 
-llvm_cbe_tmp__288:
+llvm_cbe_tmp__292:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%35 = sdiv i32 %%storemerge1, %%kRow, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_977_count);
-  llvm_cbe_tmp__276 = (unsigned int )((signed int )(((signed int )llvm_cbe_storemerge1) / ((signed int )llvm_cbe_kRow)));
+printf("\n  %%47 = add nsw i32 %%storemerge1, 1, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_988_count);
+  llvm_cbe_tmp__284 = (unsigned int )((unsigned int )(llvm_cbe_storemerge1&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((signed int )llvm_cbe_tmp__276));
-  if (((llvm_cbe_tmp__276&4294967295U) == (llvm_cbe_oRow&4294967295U))) {
-    goto llvm_cbe__2e_us_2d_lcssa;
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__284&4294967295ull)));
+  llvm_cbe_storemerge1__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__284;   /* for PHI node */
+  goto llvm_cbe__2e_preheader_2e__2e_preheader_2e_split_crit_edge;
+
+llvm_cbe_tmp__293:
+if (AESL_DEBUG_TRACE)
+printf("\n  %%40 = srem i32 %%storemerge1, %%kRow, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_976_count);
+  llvm_cbe_tmp__280 = (unsigned int )((signed int )(((signed int )llvm_cbe_storemerge1) % ((signed int )llvm_cbe_kRow)));
+if (AESL_DEBUG_TRACE)
+printf("\n = 0x%X\n", ((signed int )llvm_cbe_tmp__280));
+  if (((llvm_cbe_tmp__280&4294967295U) == (0u&4294967295U))) {
+    goto llvm_cbe_tmp__294;
   } else {
-    goto llvm_cbe_tmp__290;
+    goto llvm_cbe_tmp__292;
   }
 
 llvm_cbe_tmp__291:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%41 = sext i32 %%35 to i64, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_983_count);
-  llvm_cbe_tmp__278 = (unsigned long long )((signed long long )(signed int )llvm_cbe_tmp__276);
+printf("\n  %%37 = sdiv i32 %%storemerge1, %%kRow, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_973_count);
+  llvm_cbe_tmp__279 = (unsigned int )((signed int )(((signed int )llvm_cbe_storemerge1) / ((signed int )llvm_cbe_kRow)));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__278);
+printf("\n = 0x%X\n", ((signed int )llvm_cbe_tmp__279));
+  if (((llvm_cbe_tmp__279&4294967295U) == (llvm_cbe_oRow&4294967295U))) {
+    goto llvm_cbe__2e_us_2d_lcssa;
+  } else {
+    goto llvm_cbe_tmp__293;
+  }
+
+llvm_cbe_tmp__294:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%42 = mul i64 %%5, %%41, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_984_count);
-  llvm_cbe_tmp__279 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__257&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__278&18446744073709551615ull));
+printf("\n  %%43 = sext i32 %%37 to i64, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_979_count);
+  llvm_cbe_tmp__281 = (unsigned long long )((signed long long )(signed int )llvm_cbe_tmp__279);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__279&18446744073709551615ull)));
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__281);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%.sum6 = add i64 %%42, %%7, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe__2e_sum6_count);
-  llvm_cbe__2e_sum6 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__279&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__258&18446744073709551615ull));
+printf("\n  %%44 = mul i64 %%5, %%43, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_980_count);
+  llvm_cbe_tmp__282 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__257&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__281&18446744073709551615ull));
+if (AESL_DEBUG_TRACE)
+printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__282&18446744073709551615ull)));
+if (AESL_DEBUG_TRACE)
+printf("\n  %%.sum6 = add i64 %%44, %%7, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe__2e_sum6_count);
+  llvm_cbe__2e_sum6 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__282&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__258&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\n.sum6 = 0x%I64X\n", ((unsigned long long )(llvm_cbe__2e_sum6&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%43 = getelementptr inbounds float* %%out, i64 %%.sum6, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_985_count);
-  llvm_cbe_tmp__280 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe__2e_sum6))]);
+printf("\n  %%45 = getelementptr inbounds float* %%out, i64 %%.sum6, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_981_count);
+  llvm_cbe_tmp__283 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe__2e_sum6))]);
 if (AESL_DEBUG_TRACE) {
 printf("\n.sum6 = 0x%I64X",((signed long long )llvm_cbe__2e_sum6));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  store float 0.000000e+00, float* %%43, align 4, !dbg !10 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_986_count);
-  *llvm_cbe_tmp__280 = 0x0p0;
+printf("\n  store float 0.000000e+00, float* %%45, align 4, !dbg !9 for 0x%I64xth hint within @maxPool  --> \n", ++aesl_llvm_cbe_982_count);
+  *llvm_cbe_tmp__283 = 0x0p0;
 if (AESL_DEBUG_TRACE)
 printf("\n = %f\n", 0x0p0);
-  goto llvm_cbe_tmp__289;
+  goto llvm_cbe_tmp__292;
 
   } while (1); /* end of syntactic loop '.preheader..preheader.split_crit_edge' */
   } while (1); /* end of syntactic loop '.preheader' */
@@ -4026,6 +4043,10 @@ llvm_cbe__2e__crit_edge10:
 
 
 void dense1(signed int llvm_cbe_mRow, signed int llvm_cbe_mCol, signed int llvm_cbe_mDep, float *llvm_cbe_m, signed int llvm_cbe_kRow, signed int llvm_cbe_kCol, signed int llvm_cbe_kNum, float *llvm_cbe_k, float *llvm_cbe_bias, signed int llvm_cbe_oSize, float *llvm_cbe_out) {
+  static  unsigned long long aesl_llvm_cbe_1002_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1003_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1004_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1005_count = 0;
   static  unsigned long long aesl_llvm_cbe_1006_count = 0;
   static  unsigned long long aesl_llvm_cbe_1007_count = 0;
   static  unsigned long long aesl_llvm_cbe_1008_count = 0;
@@ -4049,17 +4070,17 @@ void dense1(signed int llvm_cbe_mRow, signed int llvm_cbe_mCol, signed int llvm_
   static  unsigned long long aesl_llvm_cbe_1026_count = 0;
   static  unsigned long long aesl_llvm_cbe_1027_count = 0;
   static  unsigned long long aesl_llvm_cbe_1028_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1029_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1030_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1031_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1032_count = 0;
-  unsigned long long llvm_cbe_tmp__292;
-  static  unsigned long long aesl_llvm_cbe_1033_count = 0;
-  unsigned long long llvm_cbe_tmp__293;
-  static  unsigned long long aesl_llvm_cbe_1034_count = 0;
-  unsigned long long llvm_cbe_tmp__294;
-  static  unsigned long long aesl_llvm_cbe_1035_count = 0;
   unsigned long long llvm_cbe_tmp__295;
+  static  unsigned long long aesl_llvm_cbe_1029_count = 0;
+  unsigned long long llvm_cbe_tmp__296;
+  static  unsigned long long aesl_llvm_cbe_1030_count = 0;
+  unsigned long long llvm_cbe_tmp__297;
+  static  unsigned long long aesl_llvm_cbe_1031_count = 0;
+  unsigned long long llvm_cbe_tmp__298;
+  static  unsigned long long aesl_llvm_cbe_1032_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1033_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1034_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1035_count = 0;
   static  unsigned long long aesl_llvm_cbe_1036_count = 0;
   static  unsigned long long aesl_llvm_cbe_1037_count = 0;
   static  unsigned long long aesl_llvm_cbe_1038_count = 0;
@@ -4071,166 +4092,162 @@ void dense1(signed int llvm_cbe_mRow, signed int llvm_cbe_mCol, signed int llvm_
   static  unsigned long long aesl_llvm_cbe_1044_count = 0;
   static  unsigned long long aesl_llvm_cbe_1045_count = 0;
   static  unsigned long long aesl_llvm_cbe_1046_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1047_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1048_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1049_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1050_count = 0;
   static  unsigned long long aesl_llvm_cbe_storemerge16_count = 0;
   unsigned int llvm_cbe_storemerge16;
   unsigned int llvm_cbe_storemerge16__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1047_count = 0;
+  unsigned long long llvm_cbe_tmp__299;
+  static  unsigned long long aesl_llvm_cbe_1048_count = 0;
+  float *llvm_cbe_tmp__300;
+  static  unsigned long long aesl_llvm_cbe_1049_count = 0;
+  float llvm_cbe_tmp__301;
+  static  unsigned long long aesl_llvm_cbe_1050_count = 0;
+  float *llvm_cbe_tmp__302;
   static  unsigned long long aesl_llvm_cbe_1051_count = 0;
-  unsigned long long llvm_cbe_tmp__296;
   static  unsigned long long aesl_llvm_cbe_1052_count = 0;
-  float *llvm_cbe_tmp__297;
   static  unsigned long long aesl_llvm_cbe_1053_count = 0;
-  float llvm_cbe_tmp__298;
   static  unsigned long long aesl_llvm_cbe_1054_count = 0;
-  float *llvm_cbe_tmp__299;
   static  unsigned long long aesl_llvm_cbe_1055_count = 0;
   static  unsigned long long aesl_llvm_cbe_1056_count = 0;
   static  unsigned long long aesl_llvm_cbe_1057_count = 0;
   static  unsigned long long aesl_llvm_cbe_1058_count = 0;
+  unsigned long long llvm_cbe_tmp__303;
   static  unsigned long long aesl_llvm_cbe_1059_count = 0;
   static  unsigned long long aesl_llvm_cbe_1060_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1061_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1062_count = 0;
-  unsigned long long llvm_cbe_tmp__300;
-  static  unsigned long long aesl_llvm_cbe_1063_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1064_count = 0;
-  float llvm_cbe_tmp__301;
-  float llvm_cbe_tmp__301__PHI_TEMPORARY;
+  float llvm_cbe_tmp__304;
+  float llvm_cbe_tmp__304__PHI_TEMPORARY;
   static  unsigned long long aesl_llvm_cbe_storemerge114_count = 0;
   unsigned int llvm_cbe_storemerge114;
   unsigned int llvm_cbe_storemerge114__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1061_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1062_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1063_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1064_count = 0;
   static  unsigned long long aesl_llvm_cbe_1065_count = 0;
+  unsigned long long llvm_cbe_tmp__305;
   static  unsigned long long aesl_llvm_cbe_1066_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1067_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1068_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1069_count = 0;
-  unsigned long long llvm_cbe_tmp__302;
-  static  unsigned long long aesl_llvm_cbe_1070_count = 0;
-  unsigned long long llvm_cbe_tmp__303;
+  unsigned long long llvm_cbe_tmp__306;
   static  unsigned long long aesl_llvm_cbe_tmp8_count = 0;
   unsigned long long llvm_cbe_tmp8;
   static  unsigned long long aesl_llvm_cbe_tmp9_count = 0;
   unsigned long long llvm_cbe_tmp9;
+  static  unsigned long long aesl_llvm_cbe_1067_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1068_count = 0;
+  unsigned int llvm_cbe_tmp__307;
+  static  unsigned long long aesl_llvm_cbe_1069_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1070_count = 0;
   static  unsigned long long aesl_llvm_cbe_1071_count = 0;
   static  unsigned long long aesl_llvm_cbe_1072_count = 0;
-  unsigned int llvm_cbe_tmp__304;
+  static  unsigned long long aesl_llvm_cbe_exitcond20_count = 0;
   static  unsigned long long aesl_llvm_cbe_1073_count = 0;
   static  unsigned long long aesl_llvm_cbe_1074_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1075_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1076_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond20_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1077_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1078_count = 0;
-  float llvm_cbe_tmp__305;
-  float llvm_cbe_tmp__305__PHI_TEMPORARY;
+  float llvm_cbe_tmp__308;
+  float llvm_cbe_tmp__308__PHI_TEMPORARY;
   static  unsigned long long aesl_llvm_cbe_storemerge310_2e_us_count = 0;
   unsigned int llvm_cbe_storemerge310_2e_us;
   unsigned int llvm_cbe_storemerge310_2e_us__PHI_TEMPORARY;
-  static  unsigned long long aesl_llvm_cbe_1079_count = 0;
-  unsigned long long llvm_cbe_tmp__306;
+  static  unsigned long long aesl_llvm_cbe_1075_count = 0;
+  unsigned long long llvm_cbe_tmp__309;
   static  unsigned long long aesl_llvm_cbe__2e_sum4_2e_us_count = 0;
   unsigned long long llvm_cbe__2e_sum4_2e_us;
-  static  unsigned long long aesl_llvm_cbe_1080_count = 0;
-  float *llvm_cbe_tmp__307;
-  static  unsigned long long aesl_llvm_cbe_1081_count = 0;
-  float llvm_cbe_tmp__308;
+  static  unsigned long long aesl_llvm_cbe_1076_count = 0;
+  float *llvm_cbe_tmp__310;
+  static  unsigned long long aesl_llvm_cbe_1077_count = 0;
+  float llvm_cbe_tmp__311;
   static  unsigned long long aesl_llvm_cbe__2e_sum6_2e_us_count = 0;
   unsigned long long llvm_cbe__2e_sum6_2e_us;
+  static  unsigned long long aesl_llvm_cbe_1078_count = 0;
+  float *llvm_cbe_tmp__312;
+  static  unsigned long long aesl_llvm_cbe_1079_count = 0;
+  float llvm_cbe_tmp__313;
+  static  unsigned long long aesl_llvm_cbe_1080_count = 0;
+  float llvm_cbe_tmp__314;
+  static  unsigned long long aesl_llvm_cbe_1081_count = 0;
+  float llvm_cbe_tmp__315;
   static  unsigned long long aesl_llvm_cbe_1082_count = 0;
-  float *llvm_cbe_tmp__309;
   static  unsigned long long aesl_llvm_cbe_1083_count = 0;
-  float llvm_cbe_tmp__310;
+  unsigned int llvm_cbe_tmp__316;
   static  unsigned long long aesl_llvm_cbe_1084_count = 0;
-  float llvm_cbe_tmp__311;
   static  unsigned long long aesl_llvm_cbe_1085_count = 0;
-  float llvm_cbe_tmp__312;
   static  unsigned long long aesl_llvm_cbe_1086_count = 0;
   static  unsigned long long aesl_llvm_cbe_1087_count = 0;
-  unsigned int llvm_cbe_tmp__313;
   static  unsigned long long aesl_llvm_cbe_1088_count = 0;
+  static  unsigned long long aesl_llvm_cbe_exitcond_count = 0;
   static  unsigned long long aesl_llvm_cbe_1089_count = 0;
   static  unsigned long long aesl_llvm_cbe_1090_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1091_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1092_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1093_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1094_count = 0;
-  float llvm_cbe_tmp__314;
-  float llvm_cbe_tmp__314__PHI_TEMPORARY;
+  float llvm_cbe_tmp__317;
+  float llvm_cbe_tmp__317__PHI_TEMPORARY;
   static  unsigned long long aesl_llvm_cbe_storemerge212_2e_us_count = 0;
   unsigned int llvm_cbe_storemerge212_2e_us;
   unsigned int llvm_cbe_storemerge212_2e_us__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1091_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1092_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1093_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1094_count = 0;
   static  unsigned long long aesl_llvm_cbe_1095_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1096_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1097_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1098_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1099_count = 0;
-  unsigned long long llvm_cbe_tmp__315;
+  unsigned long long llvm_cbe_tmp__318;
   static  unsigned long long aesl_llvm_cbe_tmp_2e_us_count = 0;
   unsigned long long llvm_cbe_tmp_2e_us;
   static  unsigned long long aesl_llvm_cbe_tmp7_2e_us_count = 0;
   unsigned long long llvm_cbe_tmp7_2e_us;
+  static  unsigned long long aesl_llvm_cbe_1096_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1097_count = 0;
+  float llvm_cbe_tmp__319;
+  float llvm_cbe_tmp__319__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1098_count = 0;
+  unsigned int llvm_cbe_tmp__320;
+  static  unsigned long long aesl_llvm_cbe_1099_count = 0;
   static  unsigned long long aesl_llvm_cbe_1100_count = 0;
   static  unsigned long long aesl_llvm_cbe_1101_count = 0;
-  float llvm_cbe_tmp__316;
-  float llvm_cbe_tmp__316__PHI_TEMPORARY;
   static  unsigned long long aesl_llvm_cbe_1102_count = 0;
-  unsigned int llvm_cbe_tmp__317;
   static  unsigned long long aesl_llvm_cbe_1103_count = 0;
+  static  unsigned long long aesl_llvm_cbe_exitcond22_count = 0;
   static  unsigned long long aesl_llvm_cbe_1104_count = 0;
   static  unsigned long long aesl_llvm_cbe_1105_count = 0;
+  float llvm_cbe_tmp__321;
+  float llvm_cbe_tmp__321__PHI_TEMPORARY;
   static  unsigned long long aesl_llvm_cbe_1106_count = 0;
   static  unsigned long long aesl_llvm_cbe_1107_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond22_count = 0;
   static  unsigned long long aesl_llvm_cbe_1108_count = 0;
   static  unsigned long long aesl_llvm_cbe_1109_count = 0;
-  float llvm_cbe_tmp__318;
-  float llvm_cbe_tmp__318__PHI_TEMPORARY;
   static  unsigned long long aesl_llvm_cbe_1110_count = 0;
+  unsigned int llvm_cbe_tmp__322;
   static  unsigned long long aesl_llvm_cbe_1111_count = 0;
   static  unsigned long long aesl_llvm_cbe_1112_count = 0;
   static  unsigned long long aesl_llvm_cbe_1113_count = 0;
   static  unsigned long long aesl_llvm_cbe_1114_count = 0;
-  unsigned int llvm_cbe_tmp__319;
   static  unsigned long long aesl_llvm_cbe_1115_count = 0;
   static  unsigned long long aesl_llvm_cbe_1116_count = 0;
   static  unsigned long long aesl_llvm_cbe_1117_count = 0;
   static  unsigned long long aesl_llvm_cbe_1118_count = 0;
   static  unsigned long long aesl_llvm_cbe_1119_count = 0;
+  static  unsigned long long aesl_llvm_cbe_exitcond23_count = 0;
   static  unsigned long long aesl_llvm_cbe_1120_count = 0;
   static  unsigned long long aesl_llvm_cbe_1121_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1122_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1123_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond23_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1124_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1125_count = 0;
 
 const char* AESL_DEBUG_TRACE = getenv("DEBUG_TRACE");
 if (AESL_DEBUG_TRACE)
 printf("\n\{ BEGIN @dense1\n");
 if (AESL_DEBUG_TRACE)
-printf("\n  %%1 = zext i32 %%mCol to i6 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1032_count);
-  llvm_cbe_tmp__292 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_mCol&4294967295U);
-if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__292);
-if (AESL_DEBUG_TRACE)
-printf("\n  %%2 = zext i32 %%mDep to i6 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1033_count);
-  llvm_cbe_tmp__293 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_mDep&4294967295U);
-if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__293);
-if (AESL_DEBUG_TRACE)
-printf("\n  %%3 = zext i32 %%kRow to i6 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1034_count);
-  llvm_cbe_tmp__294 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_kRow&4294967295U);
-if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__294);
-if (AESL_DEBUG_TRACE)
-printf("\n  %%4 = zext i32 %%kCol to i6 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1035_count);
-  llvm_cbe_tmp__295 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_kCol&4294967295U);
+printf("\n  %%1 = zext i32 %%mCol to i6 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1028_count);
+  llvm_cbe_tmp__295 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_mCol&4294967295U);
 if (AESL_DEBUG_TRACE)
 printf("\n = 0x%I64X\n", llvm_cbe_tmp__295);
+if (AESL_DEBUG_TRACE)
+printf("\n  %%2 = zext i32 %%mDep to i6 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1029_count);
+  llvm_cbe_tmp__296 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_mDep&4294967295U);
+if (AESL_DEBUG_TRACE)
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__296);
+if (AESL_DEBUG_TRACE)
+printf("\n  %%3 = zext i32 %%kRow to i6 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1030_count);
+  llvm_cbe_tmp__297 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_kRow&4294967295U);
+if (AESL_DEBUG_TRACE)
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__297);
+if (AESL_DEBUG_TRACE)
+printf("\n  %%4 = zext i32 %%kCol to i6 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1031_count);
+  llvm_cbe_tmp__298 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_kCol&4294967295U);
+if (AESL_DEBUG_TRACE)
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__298);
   if ((((signed int )llvm_cbe_kNum) > ((signed int )0u))) {
     goto llvm_cbe__2e_lr_2e_ph18;
   } else {
@@ -4239,89 +4256,89 @@ printf("\n = 0x%I64X\n", llvm_cbe_tmp__295);
 
 llvm_cbe__2e_lr_2e_ph18:
   llvm_cbe_storemerge16__PHI_TEMPORARY = (unsigned int )0u;   /* for PHI node */
-  goto llvm_cbe_tmp__320;
+  goto llvm_cbe_tmp__323;
 
   do {     /* Syntactic loop '' to make GCC happy */
-llvm_cbe_tmp__320:
+llvm_cbe_tmp__323:
 if (AESL_DEBUG_TRACE)
 printf("\n  %%storemerge16 = phi i32 [ 0, %%.lr.ph18 ], [ %%38, %%37  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_storemerge16_count);
   llvm_cbe_storemerge16 = (unsigned int )llvm_cbe_storemerge16__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge16 = 0x%X",llvm_cbe_storemerge16);
 printf("\n = 0x%X",0u);
-printf("\n = 0x%X",llvm_cbe_tmp__319);
+printf("\n = 0x%X",llvm_cbe_tmp__322);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%10 = sext i32 %%storemerge16 to i64, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1051_count);
-  llvm_cbe_tmp__296 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge16);
+printf("\n  %%10 = sext i32 %%storemerge16 to i64, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1047_count);
+  llvm_cbe_tmp__299 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge16);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__296);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__299);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%11 = getelementptr inbounds float* %%bias, i64 %%10, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1052_count);
-  llvm_cbe_tmp__297 = (float *)(&llvm_cbe_bias[(((signed long long )llvm_cbe_tmp__296))]);
+printf("\n  %%11 = getelementptr inbounds float* %%bias, i64 %%10, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1048_count);
+  llvm_cbe_tmp__300 = (float *)(&llvm_cbe_bias[(((signed long long )llvm_cbe_tmp__299))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__296));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__299));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%12 = load float* %%11, align 4, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1053_count);
-  llvm_cbe_tmp__298 = (float )*llvm_cbe_tmp__297;
+printf("\n  %%12 = load float* %%11, align 4, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1049_count);
+  llvm_cbe_tmp__301 = (float )*llvm_cbe_tmp__300;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__298, *(int*)(&llvm_cbe_tmp__298));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__301, *(int*)(&llvm_cbe_tmp__301));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%13 = getelementptr inbounds float* %%out, i64 %%10, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1054_count);
-  llvm_cbe_tmp__299 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe_tmp__296))]);
+printf("\n  %%13 = getelementptr inbounds float* %%out, i64 %%10, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1050_count);
+  llvm_cbe_tmp__302 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe_tmp__299))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__296));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__299));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  store float %%12, float* %%13, align 4, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1055_count);
-  *llvm_cbe_tmp__299 = llvm_cbe_tmp__298;
+printf("\n  store float %%12, float* %%13, align 4, !dbg !10 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1051_count);
+  *llvm_cbe_tmp__302 = llvm_cbe_tmp__301;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f\n", llvm_cbe_tmp__298);
+printf("\n = %f\n", llvm_cbe_tmp__301);
   if ((((signed int )llvm_cbe_mRow) > ((signed int )0u))) {
     goto llvm_cbe__2e_preheader11_2e_lr_2e_ph;
   } else {
-    llvm_cbe_tmp__318__PHI_TEMPORARY = (float )llvm_cbe_tmp__298;   /* for PHI node */
+    llvm_cbe_tmp__321__PHI_TEMPORARY = (float )llvm_cbe_tmp__301;   /* for PHI node */
     goto llvm_cbe__2e__crit_edge15;
   }
 
-llvm_cbe_tmp__321:
+llvm_cbe_tmp__324:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%38 = add nsw i32 %%storemerge16, 1, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1114_count);
-  llvm_cbe_tmp__319 = (unsigned int )((unsigned int )(llvm_cbe_storemerge16&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%38 = add nsw i32 %%storemerge16, 1, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1110_count);
+  llvm_cbe_tmp__322 = (unsigned int )((unsigned int )(llvm_cbe_storemerge16&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__319&4294967295ull)));
-  if (((llvm_cbe_tmp__319&4294967295U) == (llvm_cbe_kNum&4294967295U))) {
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__322&4294967295ull)));
+  if (((llvm_cbe_tmp__322&4294967295U) == (llvm_cbe_kNum&4294967295U))) {
     goto llvm_cbe__2e__crit_edge19;
   } else {
-    llvm_cbe_storemerge16__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__319;   /* for PHI node */
-    goto llvm_cbe_tmp__320;
+    llvm_cbe_storemerge16__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__322;   /* for PHI node */
+    goto llvm_cbe_tmp__323;
   }
 
 llvm_cbe__2e__crit_edge15:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%34 = phi float [ %%12, %%9 ], [ %%32, %%._crit_edge13  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1109_count);
-  llvm_cbe_tmp__318 = (float )llvm_cbe_tmp__318__PHI_TEMPORARY;
+printf("\n  %%34 = phi float [ %%12, %%9 ], [ %%32, %%._crit_edge13  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1105_count);
+  llvm_cbe_tmp__321 = (float )llvm_cbe_tmp__321__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
-printf("\n = %f",llvm_cbe_tmp__318);
-printf("\n = %f",llvm_cbe_tmp__298);
-printf("\n = %f",llvm_cbe_tmp__316);
+printf("\n = %f",llvm_cbe_tmp__321);
+printf("\n = %f",llvm_cbe_tmp__301);
+printf("\n = %f",llvm_cbe_tmp__319);
 }
-  if ((llvm_fcmp_olt(llvm_cbe_tmp__318, 0x0p0))) {
-    goto llvm_cbe_tmp__322;
+  if ((llvm_fcmp_olt(llvm_cbe_tmp__321, 0x0p0))) {
+    goto llvm_cbe_tmp__325;
   } else {
-    goto llvm_cbe_tmp__321;
+    goto llvm_cbe_tmp__324;
   }
 
   do {     /* Syntactic loop '.preheader11' to make GCC happy */
 llvm_cbe__2e_preheader11:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%15 = phi float [ %%12, %%.preheader11.lr.ph ], [ %%32, %%._crit_edge13  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1064_count);
-  llvm_cbe_tmp__301 = (float )llvm_cbe_tmp__301__PHI_TEMPORARY;
+printf("\n  %%15 = phi float [ %%12, %%.preheader11.lr.ph ], [ %%32, %%._crit_edge13  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1060_count);
+  llvm_cbe_tmp__304 = (float )llvm_cbe_tmp__304__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
+printf("\n = %f",llvm_cbe_tmp__304);
 printf("\n = %f",llvm_cbe_tmp__301);
-printf("\n = %f",llvm_cbe_tmp__298);
-printf("\n = %f",llvm_cbe_tmp__316);
+printf("\n = %f",llvm_cbe_tmp__319);
 }
 if (AESL_DEBUG_TRACE)
 printf("\n  %%storemerge114 = phi i32 [ 0, %%.preheader11.lr.ph ], [ %%33, %%._crit_edge13  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_storemerge114_count);
@@ -4329,130 +4346,130 @@ printf("\n  %%storemerge114 = phi i32 [ 0, %%.preheader11.lr.ph ], [ %%33, %%._c
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge114 = 0x%X",llvm_cbe_storemerge114);
 printf("\n = 0x%X",0u);
-printf("\n = 0x%X",llvm_cbe_tmp__317);
+printf("\n = 0x%X",llvm_cbe_tmp__320);
 }
   if ((((signed int )llvm_cbe_mCol) > ((signed int )0u))) {
     goto llvm_cbe__2e_preheader_2e_lr_2e_ph;
   } else {
-    llvm_cbe_tmp__316__PHI_TEMPORARY = (float )llvm_cbe_tmp__301;   /* for PHI node */
+    llvm_cbe_tmp__319__PHI_TEMPORARY = (float )llvm_cbe_tmp__304;   /* for PHI node */
     goto llvm_cbe__2e__crit_edge13;
   }
 
 llvm_cbe__2e__crit_edge13:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%32 = phi float [ %%15, %%.preheader11 ], [ %%15, %%.preheader.lr.ph ], [ %%28, %%18  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1101_count);
-  llvm_cbe_tmp__316 = (float )llvm_cbe_tmp__316__PHI_TEMPORARY;
+printf("\n  %%32 = phi float [ %%15, %%.preheader11 ], [ %%15, %%.preheader.lr.ph ], [ %%28, %%18  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1097_count);
+  llvm_cbe_tmp__319 = (float )llvm_cbe_tmp__319__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
-printf("\n = %f",llvm_cbe_tmp__316);
-printf("\n = %f",llvm_cbe_tmp__301);
-printf("\n = %f",llvm_cbe_tmp__301);
-printf("\n = %f",llvm_cbe_tmp__312);
+printf("\n = %f",llvm_cbe_tmp__319);
+printf("\n = %f",llvm_cbe_tmp__304);
+printf("\n = %f",llvm_cbe_tmp__304);
+printf("\n = %f",llvm_cbe_tmp__315);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%33 = add nsw i32 %%storemerge114, 1, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1102_count);
-  llvm_cbe_tmp__317 = (unsigned int )((unsigned int )(llvm_cbe_storemerge114&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%33 = add nsw i32 %%storemerge114, 1, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1098_count);
+  llvm_cbe_tmp__320 = (unsigned int )((unsigned int )(llvm_cbe_storemerge114&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__317&4294967295ull)));
-  if (((llvm_cbe_tmp__317&4294967295U) == (llvm_cbe_mRow&4294967295U))) {
-    llvm_cbe_tmp__318__PHI_TEMPORARY = (float )llvm_cbe_tmp__316;   /* for PHI node */
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__320&4294967295ull)));
+  if (((llvm_cbe_tmp__320&4294967295U) == (llvm_cbe_mRow&4294967295U))) {
+    llvm_cbe_tmp__321__PHI_TEMPORARY = (float )llvm_cbe_tmp__319;   /* for PHI node */
     goto llvm_cbe__2e__crit_edge15;
   } else {
-    llvm_cbe_tmp__301__PHI_TEMPORARY = (float )llvm_cbe_tmp__316;   /* for PHI node */
-    llvm_cbe_storemerge114__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__317;   /* for PHI node */
+    llvm_cbe_tmp__304__PHI_TEMPORARY = (float )llvm_cbe_tmp__319;   /* for PHI node */
+    llvm_cbe_storemerge114__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__320;   /* for PHI node */
     goto llvm_cbe__2e_preheader11;
   }
 
 llvm_cbe__2e_preheader_2e_lr_2e_ph:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%16 = sext i32 %%storemerge114 to i64, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1069_count);
-  llvm_cbe_tmp__302 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge114);
+printf("\n  %%16 = sext i32 %%storemerge114 to i64, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1065_count);
+  llvm_cbe_tmp__305 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge114);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__302);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__305);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%17 = mul i64 %%1, %%16, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1070_count);
-  llvm_cbe_tmp__303 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__292&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__302&18446744073709551615ull));
+printf("\n  %%17 = mul i64 %%1, %%16, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1066_count);
+  llvm_cbe_tmp__306 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__295&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__305&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__303&18446744073709551615ull)));
+printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__306&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
 printf("\n  %%tmp8 = add i64 %%16, %%1 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_tmp8_count);
-  llvm_cbe_tmp8 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__302&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__300&18446744073709551615ull));
+  llvm_cbe_tmp8 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__305&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__303&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\ntmp8 = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp8&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
 printf("\n  %%tmp9 = mul i64 %%tmp8, %% for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_tmp9_count);
-  llvm_cbe_tmp9 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp8&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__295&18446744073709551615ull));
+  llvm_cbe_tmp9 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp8&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__298&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\ntmp9 = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp9&18446744073709551615ull)));
   if ((((signed int )llvm_cbe_mDep) > ((signed int )0u))) {
-    llvm_cbe_tmp__314__PHI_TEMPORARY = (float )llvm_cbe_tmp__301;   /* for PHI node */
+    llvm_cbe_tmp__317__PHI_TEMPORARY = (float )llvm_cbe_tmp__304;   /* for PHI node */
     llvm_cbe_storemerge212_2e_us__PHI_TEMPORARY = (unsigned int )0u;   /* for PHI node */
     goto llvm_cbe__2e_lr_2e_ph_2e_us;
   } else {
-    llvm_cbe_tmp__316__PHI_TEMPORARY = (float )llvm_cbe_tmp__301;   /* for PHI node */
+    llvm_cbe_tmp__319__PHI_TEMPORARY = (float )llvm_cbe_tmp__304;   /* for PHI node */
     goto llvm_cbe__2e__crit_edge13;
   }
 
   do {     /* Syntactic loop '.lr.ph.us' to make GCC happy */
 llvm_cbe__2e_lr_2e_ph_2e_us:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%30 = phi float [ %%28, %%18 ], [ %%15, %%.preheader.lr.ph  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1094_count);
-  llvm_cbe_tmp__314 = (float )llvm_cbe_tmp__314__PHI_TEMPORARY;
+printf("\n  %%30 = phi float [ %%28, %%18 ], [ %%15, %%.preheader.lr.ph  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1090_count);
+  llvm_cbe_tmp__317 = (float )llvm_cbe_tmp__317__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
-printf("\n = %f",llvm_cbe_tmp__314);
-printf("\n = %f",llvm_cbe_tmp__312);
-printf("\n = %f",llvm_cbe_tmp__301);
+printf("\n = %f",llvm_cbe_tmp__317);
+printf("\n = %f",llvm_cbe_tmp__315);
+printf("\n = %f",llvm_cbe_tmp__304);
 }
 if (AESL_DEBUG_TRACE)
 printf("\n  %%storemerge212.us = phi i32 [ %%19, %%18 ], [ 0, %%.preheader.lr.ph  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_storemerge212_2e_us_count);
   llvm_cbe_storemerge212_2e_us = (unsigned int )llvm_cbe_storemerge212_2e_us__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge212.us = 0x%X",llvm_cbe_storemerge212_2e_us);
-printf("\n = 0x%X",llvm_cbe_tmp__304);
+printf("\n = 0x%X",llvm_cbe_tmp__307);
 printf("\n = 0x%X",0u);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%31 = sext i32 %%storemerge212.us to i64, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1099_count);
-  llvm_cbe_tmp__315 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge212_2e_us);
+printf("\n  %%31 = sext i32 %%storemerge212.us to i64, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1095_count);
+  llvm_cbe_tmp__318 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge212_2e_us);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__315);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__318);
 if (AESL_DEBUG_TRACE)
 printf("\n  %%tmp.us = add i64 %%31, %%1 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_tmp_2e_us_count);
-  llvm_cbe_tmp_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__315&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__303&18446744073709551615ull));
+  llvm_cbe_tmp_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__318&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__306&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\ntmp.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp_2e_us&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
 printf("\n  %%tmp7.us = mul i64 %%tmp.us, %% for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_tmp7_2e_us_count);
-  llvm_cbe_tmp7_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp_2e_us&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__293&18446744073709551615ull));
+  llvm_cbe_tmp7_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp_2e_us&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__296&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\ntmp7.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp7_2e_us&18446744073709551615ull)));
-  llvm_cbe_tmp__305__PHI_TEMPORARY = (float )llvm_cbe_tmp__314;   /* for PHI node */
+  llvm_cbe_tmp__308__PHI_TEMPORARY = (float )llvm_cbe_tmp__317;   /* for PHI node */
   llvm_cbe_storemerge310_2e_us__PHI_TEMPORARY = (unsigned int )0u;   /* for PHI node */
-  goto llvm_cbe_tmp__323;
+  goto llvm_cbe_tmp__326;
 
-llvm_cbe_tmp__324:
+llvm_cbe_tmp__327:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%19 = add nsw i32 %%storemerge212.us, 1, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1072_count);
-  llvm_cbe_tmp__304 = (unsigned int )((unsigned int )(llvm_cbe_storemerge212_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%19 = add nsw i32 %%storemerge212.us, 1, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1068_count);
+  llvm_cbe_tmp__307 = (unsigned int )((unsigned int )(llvm_cbe_storemerge212_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__304&4294967295ull)));
-  if (((llvm_cbe_tmp__304&4294967295U) == (llvm_cbe_mCol&4294967295U))) {
-    llvm_cbe_tmp__316__PHI_TEMPORARY = (float )llvm_cbe_tmp__312;   /* for PHI node */
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__307&4294967295ull)));
+  if (((llvm_cbe_tmp__307&4294967295U) == (llvm_cbe_mCol&4294967295U))) {
+    llvm_cbe_tmp__319__PHI_TEMPORARY = (float )llvm_cbe_tmp__315;   /* for PHI node */
     goto llvm_cbe__2e__crit_edge13;
   } else {
-    llvm_cbe_tmp__314__PHI_TEMPORARY = (float )llvm_cbe_tmp__312;   /* for PHI node */
-    llvm_cbe_storemerge212_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__304;   /* for PHI node */
+    llvm_cbe_tmp__317__PHI_TEMPORARY = (float )llvm_cbe_tmp__315;   /* for PHI node */
+    llvm_cbe_storemerge212_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__307;   /* for PHI node */
     goto llvm_cbe__2e_lr_2e_ph_2e_us;
   }
 
   do {     /* Syntactic loop '' to make GCC happy */
-llvm_cbe_tmp__323:
+llvm_cbe_tmp__326:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%21 = phi float [ %%30, %%.lr.ph.us ], [ %%28, %%20 ], !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1078_count);
-  llvm_cbe_tmp__305 = (float )llvm_cbe_tmp__305__PHI_TEMPORARY;
+printf("\n  %%21 = phi float [ %%30, %%.lr.ph.us ], [ %%28, %%20 ], !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1074_count);
+  llvm_cbe_tmp__308 = (float )llvm_cbe_tmp__308__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
-printf("\n = %f",llvm_cbe_tmp__305);
-printf("\n = %f",llvm_cbe_tmp__314);
-printf("\n = %f",llvm_cbe_tmp__312);
+printf("\n = %f",llvm_cbe_tmp__308);
+printf("\n = %f",llvm_cbe_tmp__317);
+printf("\n = %f",llvm_cbe_tmp__315);
 }
 if (AESL_DEBUG_TRACE)
 printf("\n  %%storemerge310.us = phi i32 [ 0, %%.lr.ph.us ], [ %%29, %%20  for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_storemerge310_2e_us_count);
@@ -4460,71 +4477,71 @@ printf("\n  %%storemerge310.us = phi i32 [ 0, %%.lr.ph.us ], [ %%29, %%20  for 0
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge310.us = 0x%X",llvm_cbe_storemerge310_2e_us);
 printf("\n = 0x%X",0u);
-printf("\n = 0x%X",llvm_cbe_tmp__313);
+printf("\n = 0x%X",llvm_cbe_tmp__316);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%22 = sext i32 %%storemerge310.us to i64, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1079_count);
-  llvm_cbe_tmp__306 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge310_2e_us);
+printf("\n  %%22 = sext i32 %%storemerge310.us to i64, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1075_count);
+  llvm_cbe_tmp__309 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge310_2e_us);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__306);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__309);
 if (AESL_DEBUG_TRACE)
 printf("\n  %%.sum4.us = add i64 %%tmp7.us, %%22, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe__2e_sum4_2e_us_count);
-  llvm_cbe__2e_sum4_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp7_2e_us&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__306&18446744073709551615ull));
+  llvm_cbe__2e_sum4_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp7_2e_us&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__309&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\n.sum4.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe__2e_sum4_2e_us&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%23 = getelementptr inbounds float* %%m, i64 %%.sum4.us, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1080_count);
-  llvm_cbe_tmp__307 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe__2e_sum4_2e_us))]);
+printf("\n  %%23 = getelementptr inbounds float* %%m, i64 %%.sum4.us, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1076_count);
+  llvm_cbe_tmp__310 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe__2e_sum4_2e_us))]);
 if (AESL_DEBUG_TRACE) {
 printf("\n.sum4.us = 0x%I64X",((signed long long )llvm_cbe__2e_sum4_2e_us));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%24 = load float* %%23, align 4, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1081_count);
-  llvm_cbe_tmp__308 = (float )*llvm_cbe_tmp__307;
+printf("\n  %%24 = load float* %%23, align 4, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1077_count);
+  llvm_cbe_tmp__311 = (float )*llvm_cbe_tmp__310;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__308, *(int*)(&llvm_cbe_tmp__308));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__311, *(int*)(&llvm_cbe_tmp__311));
 if (AESL_DEBUG_TRACE)
 printf("\n  %%.sum6.us = add i64 %%tmp9, %%22, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe__2e_sum6_2e_us_count);
-  llvm_cbe__2e_sum6_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp9&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__306&18446744073709551615ull));
+  llvm_cbe__2e_sum6_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp9&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__309&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\n.sum6.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe__2e_sum6_2e_us&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%25 = getelementptr inbounds float* %%k, i64 %%.sum6.us, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1082_count);
-  llvm_cbe_tmp__309 = (float *)(&llvm_cbe_k[(((signed long long )llvm_cbe__2e_sum6_2e_us))]);
+printf("\n  %%25 = getelementptr inbounds float* %%k, i64 %%.sum6.us, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1078_count);
+  llvm_cbe_tmp__312 = (float *)(&llvm_cbe_k[(((signed long long )llvm_cbe__2e_sum6_2e_us))]);
 if (AESL_DEBUG_TRACE) {
 printf("\n.sum6.us = 0x%I64X",((signed long long )llvm_cbe__2e_sum6_2e_us));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%26 = load float* %%25, align 4, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1083_count);
-  llvm_cbe_tmp__310 = (float )*llvm_cbe_tmp__309;
+printf("\n  %%26 = load float* %%25, align 4, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1079_count);
+  llvm_cbe_tmp__313 = (float )*llvm_cbe_tmp__312;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__310, *(int*)(&llvm_cbe_tmp__310));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__313, *(int*)(&llvm_cbe_tmp__313));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%27 = fmul float %%24, %%26, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1084_count);
-  llvm_cbe_tmp__311 = (float )((float )(llvm_cbe_tmp__308 * llvm_cbe_tmp__310));
+printf("\n  %%27 = fmul float %%24, %%26, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1080_count);
+  llvm_cbe_tmp__314 = (float )((float )(llvm_cbe_tmp__311 * llvm_cbe_tmp__313));
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__311, *(int*)(&llvm_cbe_tmp__311));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__314, *(int*)(&llvm_cbe_tmp__314));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%28 = fadd float %%21, %%27, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1085_count);
-  llvm_cbe_tmp__312 = (float )((float )(llvm_cbe_tmp__305 + llvm_cbe_tmp__311));
+printf("\n  %%28 = fadd float %%21, %%27, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1081_count);
+  llvm_cbe_tmp__315 = (float )((float )(llvm_cbe_tmp__308 + llvm_cbe_tmp__314));
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__312, *(int*)(&llvm_cbe_tmp__312));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__315, *(int*)(&llvm_cbe_tmp__315));
 if (AESL_DEBUG_TRACE)
-printf("\n  store float %%28, float* %%13, align 4, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1086_count);
-  *llvm_cbe_tmp__299 = llvm_cbe_tmp__312;
+printf("\n  store float %%28, float* %%13, align 4, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1082_count);
+  *llvm_cbe_tmp__302 = llvm_cbe_tmp__315;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f\n", llvm_cbe_tmp__312);
+printf("\n = %f\n", llvm_cbe_tmp__315);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%29 = add nsw i32 %%storemerge310.us, 1, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1087_count);
-  llvm_cbe_tmp__313 = (unsigned int )((unsigned int )(llvm_cbe_storemerge310_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%29 = add nsw i32 %%storemerge310.us, 1, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1083_count);
+  llvm_cbe_tmp__316 = (unsigned int )((unsigned int )(llvm_cbe_storemerge310_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__313&4294967295ull)));
-  if (((llvm_cbe_tmp__313&4294967295U) == (llvm_cbe_mDep&4294967295U))) {
-    goto llvm_cbe_tmp__324;
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__316&4294967295ull)));
+  if (((llvm_cbe_tmp__316&4294967295U) == (llvm_cbe_mDep&4294967295U))) {
+    goto llvm_cbe_tmp__327;
   } else {
-    llvm_cbe_tmp__305__PHI_TEMPORARY = (float )llvm_cbe_tmp__312;   /* for PHI node */
-    llvm_cbe_storemerge310_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__313;   /* for PHI node */
-    goto llvm_cbe_tmp__323;
+    llvm_cbe_tmp__308__PHI_TEMPORARY = (float )llvm_cbe_tmp__315;   /* for PHI node */
+    llvm_cbe_storemerge310_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__316;   /* for PHI node */
+    goto llvm_cbe_tmp__326;
   }
 
   } while (1); /* end of syntactic loop '' */
@@ -4532,21 +4549,21 @@ printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__313&4294967295ull)));
   } while (1); /* end of syntactic loop '.preheader11' */
 llvm_cbe__2e_preheader11_2e_lr_2e_ph:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%14 = mul i64 %%3, %%10, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1062_count);
-  llvm_cbe_tmp__300 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__294&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__296&18446744073709551615ull));
+printf("\n  %%14 = mul i64 %%3, %%10, !dbg !9 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1058_count);
+  llvm_cbe_tmp__303 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__297&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__299&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__300&18446744073709551615ull)));
-  llvm_cbe_tmp__301__PHI_TEMPORARY = (float )llvm_cbe_tmp__298;   /* for PHI node */
+printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__303&18446744073709551615ull)));
+  llvm_cbe_tmp__304__PHI_TEMPORARY = (float )llvm_cbe_tmp__301;   /* for PHI node */
   llvm_cbe_storemerge114__PHI_TEMPORARY = (unsigned int )0u;   /* for PHI node */
   goto llvm_cbe__2e_preheader11;
 
-llvm_cbe_tmp__322:
+llvm_cbe_tmp__325:
 if (AESL_DEBUG_TRACE)
-printf("\n  store float 0.000000e+00, float* %%13, align 4, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1112_count);
-  *llvm_cbe_tmp__299 = 0x0p0;
+printf("\n  store float 0.000000e+00, float* %%13, align 4, !dbg !11 for 0x%I64xth hint within @dense1  --> \n", ++aesl_llvm_cbe_1108_count);
+  *llvm_cbe_tmp__302 = 0x0p0;
 if (AESL_DEBUG_TRACE)
 printf("\n = %f\n", 0x0p0);
-  goto llvm_cbe_tmp__321;
+  goto llvm_cbe_tmp__324;
 
   } while (1); /* end of syntactic loop '' */
 llvm_cbe__2e__crit_edge19:
@@ -4557,6 +4574,10 @@ llvm_cbe__2e__crit_edge19:
 
 
 void dense2(signed int llvm_cbe_mSize, float *llvm_cbe_m, signed int llvm_cbe_kSize, signed int llvm_cbe_kNum, float *llvm_cbe_k, float *llvm_cbe_bias, signed int llvm_cbe_oSize, float *llvm_cbe_out) {
+  static  unsigned long long aesl_llvm_cbe_1122_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1123_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1124_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1125_count = 0;
   static  unsigned long long aesl_llvm_cbe_1126_count = 0;
   static  unsigned long long aesl_llvm_cbe_1127_count = 0;
   static  unsigned long long aesl_llvm_cbe_1128_count = 0;
@@ -4570,11 +4591,11 @@ void dense2(signed int llvm_cbe_mSize, float *llvm_cbe_m, signed int llvm_cbe_kS
   static  unsigned long long aesl_llvm_cbe_1136_count = 0;
   static  unsigned long long aesl_llvm_cbe_1137_count = 0;
   static  unsigned long long aesl_llvm_cbe_1138_count = 0;
+  unsigned long long llvm_cbe_tmp__328;
   static  unsigned long long aesl_llvm_cbe_1139_count = 0;
   static  unsigned long long aesl_llvm_cbe_1140_count = 0;
   static  unsigned long long aesl_llvm_cbe_1141_count = 0;
   static  unsigned long long aesl_llvm_cbe_1142_count = 0;
-  unsigned long long llvm_cbe_tmp__325;
   static  unsigned long long aesl_llvm_cbe_1143_count = 0;
   static  unsigned long long aesl_llvm_cbe_1144_count = 0;
   static  unsigned long long aesl_llvm_cbe_1145_count = 0;
@@ -4583,115 +4604,111 @@ void dense2(signed int llvm_cbe_mSize, float *llvm_cbe_m, signed int llvm_cbe_kS
   static  unsigned long long aesl_llvm_cbe_1148_count = 0;
   static  unsigned long long aesl_llvm_cbe_1149_count = 0;
   static  unsigned long long aesl_llvm_cbe_1150_count = 0;
+  unsigned int llvm_cbe_tmp__329;
   static  unsigned long long aesl_llvm_cbe_1151_count = 0;
   static  unsigned long long aesl_llvm_cbe_1152_count = 0;
   static  unsigned long long aesl_llvm_cbe_1153_count = 0;
   static  unsigned long long aesl_llvm_cbe_1154_count = 0;
-  unsigned int llvm_cbe_tmp__326;
   static  unsigned long long aesl_llvm_cbe_1155_count = 0;
   static  unsigned long long aesl_llvm_cbe_1156_count = 0;
   static  unsigned long long aesl_llvm_cbe_1157_count = 0;
+  static  unsigned long long aesl_llvm_cbe_exitcond7_count = 0;
   static  unsigned long long aesl_llvm_cbe_1158_count = 0;
   static  unsigned long long aesl_llvm_cbe_1159_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1160_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1161_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond7_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1162_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1163_count = 0;
-  float llvm_cbe_tmp__327;
-  float llvm_cbe_tmp__327__PHI_TEMPORARY;
+  float llvm_cbe_tmp__330;
+  float llvm_cbe_tmp__330__PHI_TEMPORARY;
   static  unsigned long long aesl_llvm_cbe_storemerge12_2e_us_count = 0;
   unsigned int llvm_cbe_storemerge12_2e_us;
   unsigned int llvm_cbe_storemerge12_2e_us__PHI_TEMPORARY;
-  static  unsigned long long aesl_llvm_cbe_1164_count = 0;
-  unsigned long long llvm_cbe_tmp__328;
-  static  unsigned long long aesl_llvm_cbe_1165_count = 0;
-  float *llvm_cbe_tmp__329;
-  static  unsigned long long aesl_llvm_cbe_1166_count = 0;
-  float llvm_cbe_tmp__330;
+  static  unsigned long long aesl_llvm_cbe_1160_count = 0;
+  unsigned long long llvm_cbe_tmp__331;
+  static  unsigned long long aesl_llvm_cbe_1161_count = 0;
+  float *llvm_cbe_tmp__332;
+  static  unsigned long long aesl_llvm_cbe_1162_count = 0;
+  float llvm_cbe_tmp__333;
   static  unsigned long long aesl_llvm_cbe__2e_sum_2e_us_count = 0;
   unsigned long long llvm_cbe__2e_sum_2e_us;
+  static  unsigned long long aesl_llvm_cbe_1163_count = 0;
+  float *llvm_cbe_tmp__334;
+  static  unsigned long long aesl_llvm_cbe_1164_count = 0;
+  float llvm_cbe_tmp__335;
+  static  unsigned long long aesl_llvm_cbe_1165_count = 0;
+  float llvm_cbe_tmp__336;
+  static  unsigned long long aesl_llvm_cbe_1166_count = 0;
+  float llvm_cbe_tmp__337;
   static  unsigned long long aesl_llvm_cbe_1167_count = 0;
-  float *llvm_cbe_tmp__331;
   static  unsigned long long aesl_llvm_cbe_1168_count = 0;
-  float llvm_cbe_tmp__332;
+  unsigned int llvm_cbe_tmp__338;
   static  unsigned long long aesl_llvm_cbe_1169_count = 0;
-  float llvm_cbe_tmp__333;
   static  unsigned long long aesl_llvm_cbe_1170_count = 0;
-  float llvm_cbe_tmp__334;
   static  unsigned long long aesl_llvm_cbe_1171_count = 0;
   static  unsigned long long aesl_llvm_cbe_1172_count = 0;
-  unsigned int llvm_cbe_tmp__335;
   static  unsigned long long aesl_llvm_cbe_1173_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1174_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1175_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1176_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1177_count = 0;
   static  unsigned long long aesl_llvm_cbe_exitcond_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1178_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1174_count = 0;
   static  unsigned long long aesl_llvm_cbe_storemerge3_2e_us_count = 0;
   unsigned int llvm_cbe_storemerge3_2e_us;
   unsigned int llvm_cbe_storemerge3_2e_us__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1175_count = 0;
+  unsigned long long llvm_cbe_tmp__339;
+  static  unsigned long long aesl_llvm_cbe_1176_count = 0;
+  float *llvm_cbe_tmp__340;
+  static  unsigned long long aesl_llvm_cbe_1177_count = 0;
+  float llvm_cbe_tmp__341;
+  static  unsigned long long aesl_llvm_cbe_1178_count = 0;
+  float *llvm_cbe_tmp__342;
   static  unsigned long long aesl_llvm_cbe_1179_count = 0;
-  unsigned long long llvm_cbe_tmp__336;
   static  unsigned long long aesl_llvm_cbe_1180_count = 0;
-  float *llvm_cbe_tmp__337;
   static  unsigned long long aesl_llvm_cbe_1181_count = 0;
-  float llvm_cbe_tmp__338;
   static  unsigned long long aesl_llvm_cbe_1182_count = 0;
-  float *llvm_cbe_tmp__339;
   static  unsigned long long aesl_llvm_cbe_1183_count = 0;
   static  unsigned long long aesl_llvm_cbe_1184_count = 0;
   static  unsigned long long aesl_llvm_cbe_1185_count = 0;
+  unsigned long long llvm_cbe_tmp__343;
   static  unsigned long long aesl_llvm_cbe_1186_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1187_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1188_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1189_count = 0;
-  unsigned long long llvm_cbe_tmp__340;
-  static  unsigned long long aesl_llvm_cbe_1190_count = 0;
   static  unsigned long long aesl_llvm_cbe_storemerge3_count = 0;
   unsigned int llvm_cbe_storemerge3;
   unsigned int llvm_cbe_storemerge3__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1187_count = 0;
+  unsigned long long llvm_cbe_tmp__344;
+  static  unsigned long long aesl_llvm_cbe_1188_count = 0;
+  float *llvm_cbe_tmp__345;
+  static  unsigned long long aesl_llvm_cbe_1189_count = 0;
+  float llvm_cbe_tmp__346;
+  static  unsigned long long aesl_llvm_cbe_1190_count = 0;
+  float *llvm_cbe_tmp__347;
   static  unsigned long long aesl_llvm_cbe_1191_count = 0;
-  unsigned long long llvm_cbe_tmp__341;
   static  unsigned long long aesl_llvm_cbe_1192_count = 0;
-  float *llvm_cbe_tmp__342;
   static  unsigned long long aesl_llvm_cbe_1193_count = 0;
-  float llvm_cbe_tmp__343;
   static  unsigned long long aesl_llvm_cbe_1194_count = 0;
-  float *llvm_cbe_tmp__344;
   static  unsigned long long aesl_llvm_cbe_1195_count = 0;
   static  unsigned long long aesl_llvm_cbe_1196_count = 0;
   static  unsigned long long aesl_llvm_cbe_1197_count = 0;
+  unsigned int llvm_cbe_tmp__348;
   static  unsigned long long aesl_llvm_cbe_1198_count = 0;
   static  unsigned long long aesl_llvm_cbe_1199_count = 0;
   static  unsigned long long aesl_llvm_cbe_1200_count = 0;
   static  unsigned long long aesl_llvm_cbe_1201_count = 0;
-  unsigned int llvm_cbe_tmp__345;
   static  unsigned long long aesl_llvm_cbe_1202_count = 0;
   static  unsigned long long aesl_llvm_cbe_1203_count = 0;
   static  unsigned long long aesl_llvm_cbe_1204_count = 0;
+  static  unsigned long long aesl_llvm_cbe_exitcond8_count = 0;
   static  unsigned long long aesl_llvm_cbe_1205_count = 0;
   static  unsigned long long aesl_llvm_cbe_1206_count = 0;
   static  unsigned long long aesl_llvm_cbe_1207_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1208_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond8_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1209_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1210_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1211_count = 0;
 
 const char* AESL_DEBUG_TRACE = getenv("DEBUG_TRACE");
 if (AESL_DEBUG_TRACE)
 printf("\n\{ BEGIN @dense2\n");
 if (AESL_DEBUG_TRACE)
-printf("\n  %%1 = zext i32 %%kSize to i6 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1142_count);
-  llvm_cbe_tmp__325 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_kSize&4294967295U);
+printf("\n  %%1 = zext i32 %%kSize to i6 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1138_count);
+  llvm_cbe_tmp__328 = (unsigned long long )((unsigned long long )(unsigned int )llvm_cbe_kSize&4294967295U);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__325);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__328);
   if ((((signed int )llvm_cbe_kNum) > ((signed int )0u))) {
     goto llvm_cbe__2e_lr_2e_ph5;
   } else {
-    goto llvm_cbe_tmp__346;
+    goto llvm_cbe_tmp__349;
   }
 
 llvm_cbe__2e_lr_2e_ph5:
@@ -4700,7 +4717,7 @@ llvm_cbe__2e_lr_2e_ph5:
     goto llvm_cbe__2e_lr_2e_ph_2e_us;
   } else {
     llvm_cbe_storemerge3__PHI_TEMPORARY = (unsigned int )0u;   /* for PHI node */
-    goto llvm_cbe_tmp__347;
+    goto llvm_cbe_tmp__350;
   }
 
   do {     /* Syntactic loop '.lr.ph.us' to make GCC happy */
@@ -4710,67 +4727,67 @@ printf("\n  %%storemerge3.us = phi i32 [ %%5, %%4 ], [ 0, %%.lr.ph5  for 0x%I64x
   llvm_cbe_storemerge3_2e_us = (unsigned int )llvm_cbe_storemerge3_2e_us__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge3.us = 0x%X",llvm_cbe_storemerge3_2e_us);
-printf("\n = 0x%X",llvm_cbe_tmp__326);
+printf("\n = 0x%X",llvm_cbe_tmp__329);
 printf("\n = 0x%X",0u);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%16 = sext i32 %%storemerge3.us to i64, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1179_count);
-  llvm_cbe_tmp__336 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge3_2e_us);
+printf("\n  %%16 = sext i32 %%storemerge3.us to i64, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1175_count);
+  llvm_cbe_tmp__339 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge3_2e_us);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__336);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__339);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%17 = getelementptr inbounds float* %%bias, i64 %%16, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1180_count);
-  llvm_cbe_tmp__337 = (float *)(&llvm_cbe_bias[(((signed long long )llvm_cbe_tmp__336))]);
+printf("\n  %%17 = getelementptr inbounds float* %%bias, i64 %%16, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1176_count);
+  llvm_cbe_tmp__340 = (float *)(&llvm_cbe_bias[(((signed long long )llvm_cbe_tmp__339))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__336));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__339));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%18 = load float* %%17, align 4, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1181_count);
-  llvm_cbe_tmp__338 = (float )*llvm_cbe_tmp__337;
+printf("\n  %%18 = load float* %%17, align 4, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1177_count);
+  llvm_cbe_tmp__341 = (float )*llvm_cbe_tmp__340;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__338, *(int*)(&llvm_cbe_tmp__338));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__341, *(int*)(&llvm_cbe_tmp__341));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%19 = getelementptr inbounds float* %%out, i64 %%16, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1182_count);
-  llvm_cbe_tmp__339 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe_tmp__336))]);
+printf("\n  %%19 = getelementptr inbounds float* %%out, i64 %%16, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1178_count);
+  llvm_cbe_tmp__342 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe_tmp__339))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__336));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__339));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  store float %%18, float* %%19, align 4, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1183_count);
-  *llvm_cbe_tmp__339 = llvm_cbe_tmp__338;
+printf("\n  store float %%18, float* %%19, align 4, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1179_count);
+  *llvm_cbe_tmp__342 = llvm_cbe_tmp__341;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f\n", llvm_cbe_tmp__338);
+printf("\n = %f\n", llvm_cbe_tmp__341);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%20 = mul nsw i64 %%16, %%1, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1189_count);
-  llvm_cbe_tmp__340 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__336&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__325&18446744073709551615ull));
+printf("\n  %%20 = mul nsw i64 %%16, %%1, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1185_count);
+  llvm_cbe_tmp__343 = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__339&18446744073709551615ull)) * ((unsigned long long )(llvm_cbe_tmp__328&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__340&18446744073709551615ull)));
-  llvm_cbe_tmp__327__PHI_TEMPORARY = (float )llvm_cbe_tmp__338;   /* for PHI node */
+printf("\n = 0x%I64X\n", ((unsigned long long )(llvm_cbe_tmp__343&18446744073709551615ull)));
+  llvm_cbe_tmp__330__PHI_TEMPORARY = (float )llvm_cbe_tmp__341;   /* for PHI node */
   llvm_cbe_storemerge12_2e_us__PHI_TEMPORARY = (unsigned int )0u;   /* for PHI node */
-  goto llvm_cbe_tmp__348;
+  goto llvm_cbe_tmp__351;
 
-llvm_cbe_tmp__349:
+llvm_cbe_tmp__352:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%5 = add nsw i32 %%storemerge3.us, 1, !dbg !10 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1154_count);
-  llvm_cbe_tmp__326 = (unsigned int )((unsigned int )(llvm_cbe_storemerge3_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%5 = add nsw i32 %%storemerge3.us, 1, !dbg !10 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1150_count);
+  llvm_cbe_tmp__329 = (unsigned int )((unsigned int )(llvm_cbe_storemerge3_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__326&4294967295ull)));
-  if (((llvm_cbe_tmp__326&4294967295U) == (llvm_cbe_kNum&4294967295U))) {
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__329&4294967295ull)));
+  if (((llvm_cbe_tmp__329&4294967295U) == (llvm_cbe_kNum&4294967295U))) {
     goto llvm_cbe__2e__crit_edge6;
   } else {
-    llvm_cbe_storemerge3_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__326;   /* for PHI node */
+    llvm_cbe_storemerge3_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__329;   /* for PHI node */
     goto llvm_cbe__2e_lr_2e_ph_2e_us;
   }
 
   do {     /* Syntactic loop '' to make GCC happy */
-llvm_cbe_tmp__348:
+llvm_cbe_tmp__351:
 if (AESL_DEBUG_TRACE)
-printf("\n  %%7 = phi float [ %%18, %%.lr.ph.us ], [ %%14, %%6 ], !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1163_count);
-  llvm_cbe_tmp__327 = (float )llvm_cbe_tmp__327__PHI_TEMPORARY;
+printf("\n  %%7 = phi float [ %%18, %%.lr.ph.us ], [ %%14, %%6 ], !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1159_count);
+  llvm_cbe_tmp__330 = (float )llvm_cbe_tmp__330__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
-printf("\n = %f",llvm_cbe_tmp__327);
-printf("\n = %f",llvm_cbe_tmp__338);
-printf("\n = %f",llvm_cbe_tmp__334);
+printf("\n = %f",llvm_cbe_tmp__330);
+printf("\n = %f",llvm_cbe_tmp__341);
+printf("\n = %f",llvm_cbe_tmp__337);
 }
 if (AESL_DEBUG_TRACE)
 printf("\n  %%storemerge12.us = phi i32 [ 0, %%.lr.ph.us ], [ %%15, %%6  for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_storemerge12_2e_us_count);
@@ -4778,124 +4795,124 @@ printf("\n  %%storemerge12.us = phi i32 [ 0, %%.lr.ph.us ], [ %%15, %%6  for 0x%
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge12.us = 0x%X",llvm_cbe_storemerge12_2e_us);
 printf("\n = 0x%X",0u);
-printf("\n = 0x%X",llvm_cbe_tmp__335);
+printf("\n = 0x%X",llvm_cbe_tmp__338);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%8 = sext i32 %%storemerge12.us to i64, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1164_count);
-  llvm_cbe_tmp__328 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge12_2e_us);
+printf("\n  %%8 = sext i32 %%storemerge12.us to i64, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1160_count);
+  llvm_cbe_tmp__331 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge12_2e_us);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__328);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__331);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%9 = getelementptr inbounds float* %%m, i64 %%8, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1165_count);
-  llvm_cbe_tmp__329 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe_tmp__328))]);
+printf("\n  %%9 = getelementptr inbounds float* %%m, i64 %%8, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1161_count);
+  llvm_cbe_tmp__332 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe_tmp__331))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__328));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__331));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%10 = load float* %%9, align 4, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1166_count);
-  llvm_cbe_tmp__330 = (float )*llvm_cbe_tmp__329;
+printf("\n  %%10 = load float* %%9, align 4, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1162_count);
+  llvm_cbe_tmp__333 = (float )*llvm_cbe_tmp__332;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__330, *(int*)(&llvm_cbe_tmp__330));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__333, *(int*)(&llvm_cbe_tmp__333));
 if (AESL_DEBUG_TRACE)
 printf("\n  %%.sum.us = add i64 %%8, %%20, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe__2e_sum_2e_us_count);
-  llvm_cbe__2e_sum_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__328&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__340&18446744073709551615ull));
+  llvm_cbe__2e_sum_2e_us = (unsigned long long )((unsigned long long )(llvm_cbe_tmp__331&18446744073709551615ull)) + ((unsigned long long )(llvm_cbe_tmp__343&18446744073709551615ull));
 if (AESL_DEBUG_TRACE)
 printf("\n.sum.us = 0x%I64X\n", ((unsigned long long )(llvm_cbe__2e_sum_2e_us&18446744073709551615ull)));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%11 = getelementptr inbounds float* %%k, i64 %%.sum.us, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1167_count);
-  llvm_cbe_tmp__331 = (float *)(&llvm_cbe_k[(((signed long long )llvm_cbe__2e_sum_2e_us))]);
+printf("\n  %%11 = getelementptr inbounds float* %%k, i64 %%.sum.us, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1163_count);
+  llvm_cbe_tmp__334 = (float *)(&llvm_cbe_k[(((signed long long )llvm_cbe__2e_sum_2e_us))]);
 if (AESL_DEBUG_TRACE) {
 printf("\n.sum.us = 0x%I64X",((signed long long )llvm_cbe__2e_sum_2e_us));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%12 = load float* %%11, align 4, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1168_count);
-  llvm_cbe_tmp__332 = (float )*llvm_cbe_tmp__331;
+printf("\n  %%12 = load float* %%11, align 4, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1164_count);
+  llvm_cbe_tmp__335 = (float )*llvm_cbe_tmp__334;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__332, *(int*)(&llvm_cbe_tmp__332));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__335, *(int*)(&llvm_cbe_tmp__335));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%13 = fmul float %%10, %%12, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1169_count);
-  llvm_cbe_tmp__333 = (float )((float )(llvm_cbe_tmp__330 * llvm_cbe_tmp__332));
+printf("\n  %%13 = fmul float %%10, %%12, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1165_count);
+  llvm_cbe_tmp__336 = (float )((float )(llvm_cbe_tmp__333 * llvm_cbe_tmp__335));
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__333, *(int*)(&llvm_cbe_tmp__333));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__336, *(int*)(&llvm_cbe_tmp__336));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%14 = fadd float %%7, %%13, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1170_count);
-  llvm_cbe_tmp__334 = (float )((float )(llvm_cbe_tmp__327 + llvm_cbe_tmp__333));
+printf("\n  %%14 = fadd float %%7, %%13, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1166_count);
+  llvm_cbe_tmp__337 = (float )((float )(llvm_cbe_tmp__330 + llvm_cbe_tmp__336));
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__334, *(int*)(&llvm_cbe_tmp__334));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__337, *(int*)(&llvm_cbe_tmp__337));
 if (AESL_DEBUG_TRACE)
-printf("\n  store float %%14, float* %%19, align 4, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1171_count);
-  *llvm_cbe_tmp__339 = llvm_cbe_tmp__334;
+printf("\n  store float %%14, float* %%19, align 4, !dbg !8 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1167_count);
+  *llvm_cbe_tmp__342 = llvm_cbe_tmp__337;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f\n", llvm_cbe_tmp__334);
+printf("\n = %f\n", llvm_cbe_tmp__337);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%15 = add nsw i32 %%storemerge12.us, 1, !dbg !10 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1172_count);
-  llvm_cbe_tmp__335 = (unsigned int )((unsigned int )(llvm_cbe_storemerge12_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%15 = add nsw i32 %%storemerge12.us, 1, !dbg !10 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1168_count);
+  llvm_cbe_tmp__338 = (unsigned int )((unsigned int )(llvm_cbe_storemerge12_2e_us&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__335&4294967295ull)));
-  if (((llvm_cbe_tmp__335&4294967295U) == (llvm_cbe_mSize&4294967295U))) {
-    goto llvm_cbe_tmp__349;
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__338&4294967295ull)));
+  if (((llvm_cbe_tmp__338&4294967295U) == (llvm_cbe_mSize&4294967295U))) {
+    goto llvm_cbe_tmp__352;
   } else {
-    llvm_cbe_tmp__327__PHI_TEMPORARY = (float )llvm_cbe_tmp__334;   /* for PHI node */
-    llvm_cbe_storemerge12_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__335;   /* for PHI node */
-    goto llvm_cbe_tmp__348;
+    llvm_cbe_tmp__330__PHI_TEMPORARY = (float )llvm_cbe_tmp__337;   /* for PHI node */
+    llvm_cbe_storemerge12_2e_us__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__338;   /* for PHI node */
+    goto llvm_cbe_tmp__351;
   }
 
   } while (1); /* end of syntactic loop '' */
   } while (1); /* end of syntactic loop '.lr.ph.us' */
   do {     /* Syntactic loop '' to make GCC happy */
-llvm_cbe_tmp__347:
+llvm_cbe_tmp__350:
 if (AESL_DEBUG_TRACE)
 printf("\n  %%storemerge3 = phi i32 [ %%26, %%21 ], [ 0, %%.lr.ph5  for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_storemerge3_count);
   llvm_cbe_storemerge3 = (unsigned int )llvm_cbe_storemerge3__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge3 = 0x%X",llvm_cbe_storemerge3);
-printf("\n = 0x%X",llvm_cbe_tmp__345);
+printf("\n = 0x%X",llvm_cbe_tmp__348);
 printf("\n = 0x%X",0u);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%22 = sext i32 %%storemerge3 to i64, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1191_count);
-  llvm_cbe_tmp__341 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge3);
+printf("\n  %%22 = sext i32 %%storemerge3 to i64, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1187_count);
+  llvm_cbe_tmp__344 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge3);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__341);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__344);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%23 = getelementptr inbounds float* %%bias, i64 %%22, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1192_count);
-  llvm_cbe_tmp__342 = (float *)(&llvm_cbe_bias[(((signed long long )llvm_cbe_tmp__341))]);
+printf("\n  %%23 = getelementptr inbounds float* %%bias, i64 %%22, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1188_count);
+  llvm_cbe_tmp__345 = (float *)(&llvm_cbe_bias[(((signed long long )llvm_cbe_tmp__344))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__341));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__344));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%24 = load float* %%23, align 4, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1193_count);
-  llvm_cbe_tmp__343 = (float )*llvm_cbe_tmp__342;
+printf("\n  %%24 = load float* %%23, align 4, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1189_count);
+  llvm_cbe_tmp__346 = (float )*llvm_cbe_tmp__345;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__343, *(int*)(&llvm_cbe_tmp__343));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__346, *(int*)(&llvm_cbe_tmp__346));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%25 = getelementptr inbounds float* %%out, i64 %%22, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1194_count);
-  llvm_cbe_tmp__344 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe_tmp__341))]);
+printf("\n  %%25 = getelementptr inbounds float* %%out, i64 %%22, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1190_count);
+  llvm_cbe_tmp__347 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe_tmp__344))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__341));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__344));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  store float %%24, float* %%25, align 4, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1195_count);
-  *llvm_cbe_tmp__344 = llvm_cbe_tmp__343;
+printf("\n  store float %%24, float* %%25, align 4, !dbg !9 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1191_count);
+  *llvm_cbe_tmp__347 = llvm_cbe_tmp__346;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f\n", llvm_cbe_tmp__343);
+printf("\n = %f\n", llvm_cbe_tmp__346);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%26 = add nsw i32 %%storemerge3, 1, !dbg !10 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1201_count);
-  llvm_cbe_tmp__345 = (unsigned int )((unsigned int )(llvm_cbe_storemerge3&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%26 = add nsw i32 %%storemerge3, 1, !dbg !10 for 0x%I64xth hint within @dense2  --> \n", ++aesl_llvm_cbe_1197_count);
+  llvm_cbe_tmp__348 = (unsigned int )((unsigned int )(llvm_cbe_storemerge3&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__345&4294967295ull)));
-  if (((llvm_cbe_tmp__345&4294967295U) == (llvm_cbe_kNum&4294967295U))) {
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__348&4294967295ull)));
+  if (((llvm_cbe_tmp__348&4294967295U) == (llvm_cbe_kNum&4294967295U))) {
     goto llvm_cbe__2e__crit_edge6;
   } else {
-    llvm_cbe_storemerge3__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__345;   /* for PHI node */
-    goto llvm_cbe_tmp__347;
+    llvm_cbe_storemerge3__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__348;   /* for PHI node */
+    goto llvm_cbe_tmp__350;
   }
 
   } while (1); /* end of syntactic loop '' */
 llvm_cbe__2e__crit_edge6:
-  goto llvm_cbe_tmp__346;
+  goto llvm_cbe_tmp__349;
 
-llvm_cbe_tmp__346:
+llvm_cbe_tmp__349:
   if (AESL_DEBUG_TRACE)
       printf("\nEND @dense2}\n");
   return;
@@ -4903,6 +4920,10 @@ llvm_cbe_tmp__346:
 
 
 void softmax(signed int llvm_cbe_mSize, float *llvm_cbe_m, float *llvm_cbe_out) {
+  static  unsigned long long aesl_llvm_cbe_1208_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1209_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1210_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1211_count = 0;
   static  unsigned long long aesl_llvm_cbe_1212_count = 0;
   static  unsigned long long aesl_llvm_cbe_1213_count = 0;
   static  unsigned long long aesl_llvm_cbe_1214_count = 0;
@@ -4928,83 +4949,79 @@ void softmax(signed int llvm_cbe_mSize, float *llvm_cbe_m, float *llvm_cbe_out) 
   static  unsigned long long aesl_llvm_cbe_1234_count = 0;
   static  unsigned long long aesl_llvm_cbe_1235_count = 0;
   static  unsigned long long aesl_llvm_cbe_1236_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1237_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1238_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1239_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1240_count = 0;
   static  unsigned long long aesl_llvm_cbe_storemerge3_count = 0;
   unsigned int llvm_cbe_storemerge3;
   unsigned int llvm_cbe_storemerge3__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1237_count = 0;
+  double llvm_cbe_tmp__353;
+  double llvm_cbe_tmp__353__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1238_count = 0;
+  unsigned long long llvm_cbe_tmp__354;
+  static  unsigned long long aesl_llvm_cbe_1239_count = 0;
+  float *llvm_cbe_tmp__355;
+  static  unsigned long long aesl_llvm_cbe_1240_count = 0;
+  float llvm_cbe_tmp__356;
   static  unsigned long long aesl_llvm_cbe_1241_count = 0;
-  double llvm_cbe_tmp__350;
-  double llvm_cbe_tmp__350__PHI_TEMPORARY;
+  double llvm_cbe_tmp__357;
   static  unsigned long long aesl_llvm_cbe_1242_count = 0;
-  unsigned long long llvm_cbe_tmp__351;
+  double llvm_cbe_tmp__358;
   static  unsigned long long aesl_llvm_cbe_1243_count = 0;
-  float *llvm_cbe_tmp__352;
+  double llvm_cbe_tmp__359;
   static  unsigned long long aesl_llvm_cbe_1244_count = 0;
-  float llvm_cbe_tmp__353;
   static  unsigned long long aesl_llvm_cbe_1245_count = 0;
-  double llvm_cbe_tmp__354;
   static  unsigned long long aesl_llvm_cbe_1246_count = 0;
-  double llvm_cbe_tmp__355;
   static  unsigned long long aesl_llvm_cbe_1247_count = 0;
-  double llvm_cbe_tmp__356;
+  unsigned int llvm_cbe_tmp__360;
   static  unsigned long long aesl_llvm_cbe_1248_count = 0;
   static  unsigned long long aesl_llvm_cbe_1249_count = 0;
   static  unsigned long long aesl_llvm_cbe_1250_count = 0;
   static  unsigned long long aesl_llvm_cbe_1251_count = 0;
-  unsigned int llvm_cbe_tmp__357;
   static  unsigned long long aesl_llvm_cbe_1252_count = 0;
   static  unsigned long long aesl_llvm_cbe_1253_count = 0;
   static  unsigned long long aesl_llvm_cbe_1254_count = 0;
   static  unsigned long long aesl_llvm_cbe_1255_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1256_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1257_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1258_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1259_count = 0;
   static  unsigned long long aesl_llvm_cbe_exitcond7_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1260_count = 0;
+  static  unsigned long long aesl_llvm_cbe_1256_count = 0;
   static  unsigned long long aesl_llvm_cbe_storemerge12_count = 0;
   unsigned int llvm_cbe_storemerge12;
   unsigned int llvm_cbe_storemerge12__PHI_TEMPORARY;
+  static  unsigned long long aesl_llvm_cbe_1257_count = 0;
+  unsigned long long llvm_cbe_tmp__361;
+  static  unsigned long long aesl_llvm_cbe_1258_count = 0;
+  float *llvm_cbe_tmp__362;
+  static  unsigned long long aesl_llvm_cbe_1259_count = 0;
+  float llvm_cbe_tmp__363;
+  static  unsigned long long aesl_llvm_cbe_1260_count = 0;
+  double llvm_cbe_tmp__364;
   static  unsigned long long aesl_llvm_cbe_1261_count = 0;
-  unsigned long long llvm_cbe_tmp__358;
+  double llvm_cbe_tmp__365;
   static  unsigned long long aesl_llvm_cbe_1262_count = 0;
-  float *llvm_cbe_tmp__359;
+  double llvm_cbe_tmp__366;
   static  unsigned long long aesl_llvm_cbe_1263_count = 0;
-  float llvm_cbe_tmp__360;
+  float llvm_cbe_tmp__367;
   static  unsigned long long aesl_llvm_cbe_1264_count = 0;
-  double llvm_cbe_tmp__361;
+  float *llvm_cbe_tmp__368;
   static  unsigned long long aesl_llvm_cbe_1265_count = 0;
-  double llvm_cbe_tmp__362;
   static  unsigned long long aesl_llvm_cbe_1266_count = 0;
-  double llvm_cbe_tmp__363;
+  unsigned int llvm_cbe_tmp__369;
   static  unsigned long long aesl_llvm_cbe_1267_count = 0;
-  float llvm_cbe_tmp__364;
   static  unsigned long long aesl_llvm_cbe_1268_count = 0;
-  float *llvm_cbe_tmp__365;
   static  unsigned long long aesl_llvm_cbe_1269_count = 0;
   static  unsigned long long aesl_llvm_cbe_1270_count = 0;
-  unsigned int llvm_cbe_tmp__366;
   static  unsigned long long aesl_llvm_cbe_1271_count = 0;
   static  unsigned long long aesl_llvm_cbe_1272_count = 0;
   static  unsigned long long aesl_llvm_cbe_1273_count = 0;
   static  unsigned long long aesl_llvm_cbe_1274_count = 0;
+  static  unsigned long long aesl_llvm_cbe_exitcond_count = 0;
   static  unsigned long long aesl_llvm_cbe_1275_count = 0;
   static  unsigned long long aesl_llvm_cbe_1276_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1277_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1278_count = 0;
-  static  unsigned long long aesl_llvm_cbe_exitcond_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1279_count = 0;
-  static  unsigned long long aesl_llvm_cbe_1280_count = 0;
 
 const char* AESL_DEBUG_TRACE = getenv("DEBUG_TRACE");
 if (AESL_DEBUG_TRACE)
 printf("\n\{ BEGIN @softmax\n");
   if ((((signed int )llvm_cbe_mSize) > ((signed int )0u))) {
     llvm_cbe_storemerge3__PHI_TEMPORARY = (unsigned int )0u;   /* for PHI node */
-    llvm_cbe_tmp__350__PHI_TEMPORARY = (double )0x0p0;   /* for PHI node */
+    llvm_cbe_tmp__353__PHI_TEMPORARY = (double )0x0p0;   /* for PHI node */
     goto llvm_cbe__2e_lr_2e_ph5;
   } else {
     goto llvm_cbe__2e__crit_edge;
@@ -5025,60 +5042,60 @@ printf("\n  %%storemerge3 = phi i32 [ %%9, %%.lr.ph5 ], [ 0, %%0  for 0x%I64xth 
   llvm_cbe_storemerge3 = (unsigned int )llvm_cbe_storemerge3__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge3 = 0x%X",llvm_cbe_storemerge3);
-printf("\n = 0x%X",llvm_cbe_tmp__357);
+printf("\n = 0x%X",llvm_cbe_tmp__360);
 printf("\n = 0x%X",0u);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%2 = phi double [ %%8, %%.lr.ph5 ], [ 0.000000e+00, %%0  for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1241_count);
-  llvm_cbe_tmp__350 = (double )llvm_cbe_tmp__350__PHI_TEMPORARY;
+printf("\n  %%2 = phi double [ %%8, %%.lr.ph5 ], [ 0.000000e+00, %%0  for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1237_count);
+  llvm_cbe_tmp__353 = (double )llvm_cbe_tmp__353__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
-printf("\n = %lf",llvm_cbe_tmp__350);
-printf("\n = %lf",llvm_cbe_tmp__356);
+printf("\n = %lf",llvm_cbe_tmp__353);
+printf("\n = %lf",llvm_cbe_tmp__359);
 printf("\n = %lf",0x0p0);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%3 = sext i32 %%storemerge3 to i64, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1242_count);
-  llvm_cbe_tmp__351 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge3);
+printf("\n  %%3 = sext i32 %%storemerge3 to i64, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1238_count);
+  llvm_cbe_tmp__354 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge3);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__351);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__354);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%4 = getelementptr inbounds float* %%m, i64 %%3, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1243_count);
-  llvm_cbe_tmp__352 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe_tmp__351))]);
+printf("\n  %%4 = getelementptr inbounds float* %%m, i64 %%3, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1239_count);
+  llvm_cbe_tmp__355 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe_tmp__354))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__351));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__354));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%5 = load float* %%4, align 4, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1244_count);
-  llvm_cbe_tmp__353 = (float )*llvm_cbe_tmp__352;
+printf("\n  %%5 = load float* %%4, align 4, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1240_count);
+  llvm_cbe_tmp__356 = (float )*llvm_cbe_tmp__355;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__353, *(int*)(&llvm_cbe_tmp__353));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__356, *(int*)(&llvm_cbe_tmp__356));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%6 = fpext float %%5 to double, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1245_count);
-  llvm_cbe_tmp__354 = (double )((double )llvm_cbe_tmp__353);
+printf("\n  %%6 = fpext float %%5 to double, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1241_count);
+  llvm_cbe_tmp__357 = (double )((double )llvm_cbe_tmp__356);
 if (AESL_DEBUG_TRACE)
-printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__354, *(long long*)(&llvm_cbe_tmp__354));
+printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__357, *(long long*)(&llvm_cbe_tmp__357));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%7 = tail call double @exp(double %%6) nounwind, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1246_count);
-  llvm_cbe_tmp__355 = (double ) /*tail*/ exp(llvm_cbe_tmp__354);
+printf("\n  %%7 = tail call double @exp(double %%6) nounwind, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1242_count);
+  llvm_cbe_tmp__358 = (double ) /*tail*/ exp(llvm_cbe_tmp__357);
 if (AESL_DEBUG_TRACE) {
-printf("\nArgument  = %lf,  0x%llx",llvm_cbe_tmp__354, *(long long*)(&llvm_cbe_tmp__354));
-printf("\nReturn  = %lf",llvm_cbe_tmp__355);
+printf("\nArgument  = %lf,  0x%llx",llvm_cbe_tmp__357, *(long long*)(&llvm_cbe_tmp__357));
+printf("\nReturn  = %lf",llvm_cbe_tmp__358);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%8 = fadd double %%2, %%7, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1247_count);
-  llvm_cbe_tmp__356 = (double )llvm_cbe_tmp__350 + llvm_cbe_tmp__355;
+printf("\n  %%8 = fadd double %%2, %%7, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1243_count);
+  llvm_cbe_tmp__359 = (double )llvm_cbe_tmp__353 + llvm_cbe_tmp__358;
 if (AESL_DEBUG_TRACE)
-printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__356, *(long long*)(&llvm_cbe_tmp__356));
+printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__359, *(long long*)(&llvm_cbe_tmp__359));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%9 = add nsw i32 %%storemerge3, 1, !dbg !9 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1251_count);
-  llvm_cbe_tmp__357 = (unsigned int )((unsigned int )(llvm_cbe_storemerge3&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%9 = add nsw i32 %%storemerge3, 1, !dbg !9 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1247_count);
+  llvm_cbe_tmp__360 = (unsigned int )((unsigned int )(llvm_cbe_storemerge3&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__357&4294967295ull)));
-  if (((llvm_cbe_tmp__357&4294967295U) == (llvm_cbe_mSize&4294967295U))) {
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__360&4294967295ull)));
+  if (((llvm_cbe_tmp__360&4294967295U) == (llvm_cbe_mSize&4294967295U))) {
     goto llvm_cbe__2e_preheader;
   } else {
-    llvm_cbe_storemerge3__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__357;   /* for PHI node */
-    llvm_cbe_tmp__350__PHI_TEMPORARY = (double )llvm_cbe_tmp__356;   /* for PHI node */
+    llvm_cbe_storemerge3__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__360;   /* for PHI node */
+    llvm_cbe_tmp__353__PHI_TEMPORARY = (double )llvm_cbe_tmp__359;   /* for PHI node */
     goto llvm_cbe__2e_lr_2e_ph5;
   }
 
@@ -5090,67 +5107,67 @@ printf("\n  %%storemerge12 = phi i32 [ %%18, %%.lr.ph ], [ 0, %%.preheader  for 
   llvm_cbe_storemerge12 = (unsigned int )llvm_cbe_storemerge12__PHI_TEMPORARY;
 if (AESL_DEBUG_TRACE) {
 printf("\nstoremerge12 = 0x%X",llvm_cbe_storemerge12);
-printf("\n = 0x%X",llvm_cbe_tmp__366);
+printf("\n = 0x%X",llvm_cbe_tmp__369);
 printf("\n = 0x%X",0u);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%10 = sext i32 %%storemerge12 to i64, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1261_count);
-  llvm_cbe_tmp__358 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge12);
+printf("\n  %%10 = sext i32 %%storemerge12 to i64, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1257_count);
+  llvm_cbe_tmp__361 = (unsigned long long )((signed long long )(signed int )llvm_cbe_storemerge12);
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%I64X\n", llvm_cbe_tmp__358);
+printf("\n = 0x%I64X\n", llvm_cbe_tmp__361);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%11 = getelementptr inbounds float* %%m, i64 %%10, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1262_count);
-  llvm_cbe_tmp__359 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe_tmp__358))]);
+printf("\n  %%11 = getelementptr inbounds float* %%m, i64 %%10, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1258_count);
+  llvm_cbe_tmp__362 = (float *)(&llvm_cbe_m[(((signed long long )llvm_cbe_tmp__361))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__358));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__361));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%12 = load float* %%11, align 4, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1263_count);
-  llvm_cbe_tmp__360 = (float )*llvm_cbe_tmp__359;
+printf("\n  %%12 = load float* %%11, align 4, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1259_count);
+  llvm_cbe_tmp__363 = (float )*llvm_cbe_tmp__362;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__360, *(int*)(&llvm_cbe_tmp__360));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__363, *(int*)(&llvm_cbe_tmp__363));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%13 = fpext float %%12 to double, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1264_count);
-  llvm_cbe_tmp__361 = (double )((double )llvm_cbe_tmp__360);
+printf("\n  %%13 = fpext float %%12 to double, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1260_count);
+  llvm_cbe_tmp__364 = (double )((double )llvm_cbe_tmp__363);
 if (AESL_DEBUG_TRACE)
-printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__361, *(long long*)(&llvm_cbe_tmp__361));
+printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__364, *(long long*)(&llvm_cbe_tmp__364));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%14 = tail call double @exp(double %%13) nounwind, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1265_count);
-  llvm_cbe_tmp__362 = (double ) /*tail*/ exp(llvm_cbe_tmp__361);
+printf("\n  %%14 = tail call double @exp(double %%13) nounwind, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1261_count);
+  llvm_cbe_tmp__365 = (double ) /*tail*/ exp(llvm_cbe_tmp__364);
 if (AESL_DEBUG_TRACE) {
-printf("\nArgument  = %lf,  0x%llx",llvm_cbe_tmp__361, *(long long*)(&llvm_cbe_tmp__361));
-printf("\nReturn  = %lf",llvm_cbe_tmp__362);
+printf("\nArgument  = %lf,  0x%llx",llvm_cbe_tmp__364, *(long long*)(&llvm_cbe_tmp__364));
+printf("\nReturn  = %lf",llvm_cbe_tmp__365);
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  %%15 = fdiv double %%14, %%8, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1266_count);
-  llvm_cbe_tmp__363 = (double )llvm_cbe_tmp__362 / llvm_cbe_tmp__356;
+printf("\n  %%15 = fdiv double %%14, %%8, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1262_count);
+  llvm_cbe_tmp__366 = (double )llvm_cbe_tmp__365 / llvm_cbe_tmp__359;
 if (AESL_DEBUG_TRACE)
-printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__363, *(long long*)(&llvm_cbe_tmp__363));
+printf("\n = %lf,  0x%llx\n", llvm_cbe_tmp__366, *(long long*)(&llvm_cbe_tmp__366));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%16 = fptrunc double %%15 to float, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1267_count);
-  llvm_cbe_tmp__364 = (float )((float )llvm_cbe_tmp__363);
+printf("\n  %%16 = fptrunc double %%15 to float, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1263_count);
+  llvm_cbe_tmp__367 = (float )((float )llvm_cbe_tmp__366);
 if (AESL_DEBUG_TRACE)
-printf("\n = %f,  0x%x\n", llvm_cbe_tmp__364, *(int*)(&llvm_cbe_tmp__364));
+printf("\n = %f,  0x%x\n", llvm_cbe_tmp__367, *(int*)(&llvm_cbe_tmp__367));
 if (AESL_DEBUG_TRACE)
-printf("\n  %%17 = getelementptr inbounds float* %%out, i64 %%10, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1268_count);
-  llvm_cbe_tmp__365 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe_tmp__358))]);
+printf("\n  %%17 = getelementptr inbounds float* %%out, i64 %%10, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1264_count);
+  llvm_cbe_tmp__368 = (float *)(&llvm_cbe_out[(((signed long long )llvm_cbe_tmp__361))]);
 if (AESL_DEBUG_TRACE) {
-printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__358));
+printf("\n = 0x%I64X",((signed long long )llvm_cbe_tmp__361));
 }
 if (AESL_DEBUG_TRACE)
-printf("\n  store float %%16, float* %%17, align 4, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1269_count);
-  *llvm_cbe_tmp__365 = llvm_cbe_tmp__364;
+printf("\n  store float %%16, float* %%17, align 4, !dbg !8 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1265_count);
+  *llvm_cbe_tmp__368 = llvm_cbe_tmp__367;
 if (AESL_DEBUG_TRACE)
-printf("\n = %f\n", llvm_cbe_tmp__364);
+printf("\n = %f\n", llvm_cbe_tmp__367);
 if (AESL_DEBUG_TRACE)
-printf("\n  %%18 = add nsw i32 %%storemerge12, 1, !dbg !9 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1270_count);
-  llvm_cbe_tmp__366 = (unsigned int )((unsigned int )(llvm_cbe_storemerge12&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
+printf("\n  %%18 = add nsw i32 %%storemerge12, 1, !dbg !9 for 0x%I64xth hint within @softmax  --> \n", ++aesl_llvm_cbe_1266_count);
+  llvm_cbe_tmp__369 = (unsigned int )((unsigned int )(llvm_cbe_storemerge12&4294967295ull)) + ((unsigned int )(1u&4294967295ull));
 if (AESL_DEBUG_TRACE)
-printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__366&4294967295ull)));
-  if (((llvm_cbe_tmp__366&4294967295U) == (llvm_cbe_mSize&4294967295U))) {
+printf("\n = 0x%X\n", ((unsigned int )(llvm_cbe_tmp__369&4294967295ull)));
+  if (((llvm_cbe_tmp__369&4294967295U) == (llvm_cbe_mSize&4294967295U))) {
     goto llvm_cbe__2e__crit_edge;
   } else {
-    llvm_cbe_storemerge12__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__366;   /* for PHI node */
+    llvm_cbe_storemerge12__PHI_TEMPORARY = (unsigned int )llvm_cbe_tmp__369;   /* for PHI node */
     goto llvm_cbe__2e_lr_2e_ph;
   }
 
