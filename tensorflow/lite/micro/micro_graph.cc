@@ -159,7 +159,7 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
   }
   uint32_t operators_size = NumSubgraphOperators(model_, subgraph_idx);
   
-  std::cout << "Operators Size: " << operators_size << std::endl;
+  //std::cout << "Operators Size: " << operators_size << std::endl;
   
   for (size_t i = 0; i < operators_size; ++i) {
     auto start = std::chrono::high_resolution_clock::now();
@@ -201,11 +201,9 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
 
-    std::cout << "Operator number " << i << std::endl;
-    //std::cout << "\tData: " << (context_->GetTensor(context_, i)->type)context_->GetTensor(context_, i)->data.data << std::endl;
-    //std::cout << "\tData: " << input(0) << std::endl;
-    std::cout << "\tRegistration: " << OpNameFromRegistration(registration) << std::endl;
-    std::cout << "\tTime Duration: " << duration.count() << "μs" << std::endl;
+    //std::cout << "Operator number " << i << std::endl;
+    //std::cout << "\tRegistration: " << OpNameFromRegistration(registration) << std::endl;
+    //std::cout << "\tTime Duration: " << duration.count() << "μs" << std::endl;
 
   }
   current_subgraph_index_ = previous_subgraph_idx;

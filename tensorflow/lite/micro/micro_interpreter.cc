@@ -295,7 +295,7 @@ TfLiteStatus MicroInterpreter::Invoke() {
   
   TfLiteStatus status = graph_.InvokeSubgraph(0);
   
-  for (int id = 0; id < 16; ++id) {
+  /*for (int id = 0; id < 16; ++id) {
 
     TfLiteTensor* tensor = GetTensor(&context_, id);
     int sz = 1;
@@ -310,15 +310,64 @@ TfLiteStatus MicroInterpreter::Invoke() {
     float max = tensor->data.f[0];
 
     if (id == 2 || id == 4) {
+      int step = 7;
       for (int i = 0; i < sz; i+=(3*8)) {
         std::cout << "\t";
         std::cout << id << "º Data Check "<< i/(3*8) << std::left << std::setw(27) << std::setfill(' ') << ": ";
-        std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i];
-        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+8];
-        std::cout << tensor->data.f[i+16] << std::left << std::setw(15) << std::setfill(' ') << ")";
+        std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+step];
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+8+step];
+        std::cout << tensor->data.f[i+16+step] << std::left << std::setw(15) << std::setfill(' ') << ")";
         std::cout << std::endl;
-        min = std::min(min, std::min(tensor->data.f[i], std::min(tensor->data.f[i+1], tensor->data.f[i+2])));
-        max = std::max(max, std::max(tensor->data.f[i], std::max(tensor->data.f[i+1], tensor->data.f[i+2])));
+        min = std::min(min, std::min(tensor->data.f[i+step], std::min(tensor->data.f[i+8+step], tensor->data.f[i+16+step])));
+        max = std::max(max, std::max(tensor->data.f[i+step], std::max(tensor->data.f[i+8+step], tensor->data.f[i+16+step])));
+      }
+    } else if (id == 7) {
+      int step = 15;
+      for (int i = 0; i < sz; i+=(3*16)) {
+        std::cout << "\t";
+        std::cout << id << "º Data Check "<< i/(3*16) << std::left << std::setw(27) << std::setfill(' ') << ": ";
+        std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+step];
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+16+step];
+        std::cout << tensor->data.f[i+32+step] << std::left << std::setw(15) << std::setfill(' ') << ")";
+        std::cout << std::endl;
+        min = std::min(min, std::min(tensor->data.f[i+step], std::min(tensor->data.f[i+16+step], tensor->data.f[i+32+step])));
+        max = std::max(max, std::max(tensor->data.f[i+step], std::max(tensor->data.f[i+16+step], tensor->data.f[i+32+step])));
+      }	       
+    } else if (id == 5) {
+      int step = 15;
+      int s = 4*8;
+      for (int i = step*s; i < (step+1)*s; i+=4) {
+        std::cout << "\t";
+        std::cout << id << "º Data Check "<< i/(4) << std::left << std::setw(27) << std::setfill(' ') << ": ";
+        std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i];
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+1];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+2];
+        std::cout << tensor->data.f[i+3] << std::left << std::setw(15) << std::setfill(' ') << ")";
+        std::cout << std::endl;
+        min = std::min(min, std::min(tensor->data.f[i], std::min(tensor->data.f[i+1], std::min(tensor->data.f[i+2], tensor->data.f[i+3]))));
+        max = std::max(max, std::max(tensor->data.f[i], std::max(tensor->data.f[i+1], std::max(tensor->data.f[i+2], tensor->data.f[i+3]))));
+      }
+    } else if (id == 8) {
+      int step = 15;
+      int s = 224;
+      for (int i = step*s; i < (step+1)*s; i+=14) {
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i];
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+1];
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+2];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+3];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+4];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+5];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+6];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+7];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+8];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+9];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+10];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+11];
+	std::cout << std::left << std::setw(15) << std::setfill(' ') << tensor->data.f[i+12];
+	std::cout << tensor->data.f[i+13];
+        std::cout << std::endl;
+        min = std::min(min, std::min(tensor->data.f[i], std::min(tensor->data.f[i+1], std::min(tensor->data.f[i+2], tensor->data.f[i+3]))));
+        max = std::max(max, std::max(tensor->data.f[i], std::max(tensor->data.f[i+1], std::max(tensor->data.f[i+2], tensor->data.f[i+3]))));
       }
     } else {
       for (int i = 0; i < sz; i+=(3)) {
@@ -338,7 +387,7 @@ TfLiteStatus MicroInterpreter::Invoke() {
  
     std::cout << std::endl << std::endl;
 
-  }
+  }*/
   return status;
 }
 

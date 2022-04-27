@@ -27,6 +27,10 @@ limitations under the License.
 #include "tensorflow/lite/schema/schema_generated.h"
 using namespace std;
 
+#define BATCH 128
+#define DATA_SIZE 3
+#define BUFFER_SIZE 500
+
 TF_LITE_MICRO_TESTS_BEGIN
 
 TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
@@ -81,44 +85,6 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   }
 
 
-  /*
-  string data;
-  ifstream dataFile("tensorflow/lite/micro/examples/magic_wand/data/wing/output_wing_dengyl.txt");
-  if (!dataFile) cerr << "Could not open the file!\t" << endl;
-
-  while (getline (dataFile, data)) {
-    // Output the text from the file
-    cout << data << '\n';
-  }
-
-  // Close the file
-  dataFile.close();
-
-  cout << '\n';
-
-  // Attempt to read new data from the accelerometer.
-  bool got_data =
-      ReadAccelerometer(micro_error_reporter, model_input->data.f, input_length);
-  // If there was no new data, wait until next time.
-  if (!got_data) return;
-
-  // Run inference, and report any error.
-  TfLiteStatus invoke_status = interpreter->Invoke();
-  if (invoke_status != kTfLiteOk) {
-    TF_LITE_REPORT_ERROR(micro_error_reporter, "Invoke failed on index: %d\n",
-                         begin_index);
-    return;
-  }
-  // Analyze the results to obtain a prediction
-  int gesture_index = PredictGesture(interpreter->output(0)->data.f);
-
-  // Produce an output
-  HandleOutput(micro_error_reporter, gesture_index);
-  */
-
-
-
-
   // Obtain a pointer to the model's input tensor
   TfLiteTensor* input = interpreter.input(0);
 
@@ -133,7 +99,8 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   // The input is a 32 bit floating point value
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32, input->type);
 
-  /*// Provide an input value
+  /*
+  // Provide an input value
   const float* ring_features_data = g_ring_micro_f9643d42_nohash_4_data;
   TF_LITE_REPORT_ERROR(&micro_error_reporter, "%d", input->bytes);
   for (size_t i = 0; i < (input->bytes / sizeof(float)); ++i) {
@@ -156,15 +123,6 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   }
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteOk, invoke_status);
 
-  for (size_t i = 0; i < (input->bytes / sizeof(float)); i+=3) {
-    std::cout << "\t";
-    std::cout << "New input Data " << i/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
-    std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i];
-    std::cout << std::left << std::setw(15) << std::setfill(' ') << input->data.f[i+1];
-    std::cout << input->data.f[i+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
-    std::cout << std::endl;
-  }
-
   // Obtain a pointer to the output tensor and make sure it has the
   // properties we expect.
   TfLiteTensor* output = interpreter.output(0);
@@ -173,11 +131,22 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TF_LITE_MICRO_EXPECT_EQ(4, output->dims->data[1]);
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32, output->type);
 
+  std::cout << "Ring Output Data" << std::endl;
   for(size_t i = 0; i < (output->bytes / sizeof(float)); ++i) {
     std::cout << "Output Data "<< i << ": " << output->data.f[i] << std::endl;
   }
   std::cout << std::endl;
-  */
+  
+  FILE *file = fopen("output.txt", "w");
+  if (file == NULL)
+  {
+    printf("Error opening file!\n");
+    exit(1);
+  }
+
+  for(size_t i = 0; i < 4; i++) {
+    fprintf(file, "%.20f\n", (double)output->data.f[i]);
+  }
 
   // There are four possible classes in the output, each with a score.
   const int kWingIndex = 0;
@@ -185,7 +154,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   const int kSlopeIndex = 2;
   const int kNegativeIndex = 3;
 
-  /*
+ 
   // Make sure that the expected "Ring" score is higher than the other
   // classes.
   float wing_score = output->data.f[kWingIndex];
@@ -195,7 +164,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TF_LITE_MICRO_EXPECT_GT(ring_score, wing_score);
   TF_LITE_MICRO_EXPECT_GT(ring_score, slope_score);
   TF_LITE_MICRO_EXPECT_GT(ring_score, negative_score);
-  */
+ 
   
   // Now test with a different input, from a recording of "Slope".
   const float* slope_features_data = g_slope_micro_f2e59fea_nohash_1_data;
@@ -213,7 +182,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   }
 
   // Run the model on this "Slope" input.
-  TfLiteStatus invoke_status = interpreter.Invoke();
+  invoke_status = interpreter.Invoke();
   if (invoke_status != kTfLiteOk) {
     TF_LITE_REPORT_ERROR(&micro_error_reporter, "Invoke failed\n");
   }
@@ -230,27 +199,199 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
 
   // Get the output from the model, and make sure it's the expected size and
   // type.
-  TfLiteTensor* output = interpreter.output(0);
+  output = interpreter.output(0);
   TF_LITE_MICRO_EXPECT_EQ(2, output->dims->size);
   TF_LITE_MICRO_EXPECT_EQ(1, output->dims->data[0]);
   TF_LITE_MICRO_EXPECT_EQ(4, output->dims->data[1]);
   TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32, output->type);
 
+  std::cout << "Slope Output Data" << std::endl;
   for(size_t i = 0; i < (output->bytes / sizeof(float)); ++i) {
     std::cout << "Output Data "<< i << ": " << output->data.f[i] << std::endl;
   }
   std::cout << std::endl;
 
+  for(size_t i = 0; i < 4; i++) {
+    fprintf(file, "%.20f\n", (double)output->data.f[i]);
+  }
+
+  fclose(file);
 
   // Make sure that the expected "Slope" score is higher than the other classes.
-  float wing_score = output->data.f[kWingIndex];
-  float ring_score = output->data.f[kRingIndex];
-  float slope_score = output->data.f[kSlopeIndex];
-  float negative_score = output->data.f[kNegativeIndex];
+  wing_score = output->data.f[kWingIndex];
+  ring_score = output->data.f[kRingIndex];
+  slope_score = output->data.f[kSlopeIndex];
+  negative_score = output->data.f[kNegativeIndex];
   TF_LITE_MICRO_EXPECT_GT(slope_score, wing_score);
   TF_LITE_MICRO_EXPECT_GT(slope_score, ring_score);
-  TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);
- 
+  TF_LITE_MICRO_EXPECT_GT(slope_score, negative_score);*/
+
+
+    FILE * file, *out;
+
+    file = fopen("tensorflow/lite/micro/examples/magic_wand/data/negative/output_teste.txt", "r");
+    if (NULL == file) {
+        printf("Error opening file!\n");
+        exit(1);
+    }
+
+    out = fopen("output.txt", "w");
+    if (out == NULL) {
+        printf("Error opening file!\n");
+        exit(1);
+    }
+
+    char buff[BUFFER_SIZE];
+    bool init = true, isReading = false, wasReading = false;
+    float dt[BATCH][DATA_SIZE];
+    int i, cnt = 0;
+
+    for (i = 0; i < BATCH; i++) {
+        dt[i][0] = 0;
+        dt[i][1] = 0;
+        dt[i][2] = 0;
+    }
+
+    while (fgets(buff, BUFFER_SIZE, file) != NULL) {
+        if (wasReading && !isReading) {
+
+            cnt *= 3;
+            for (i = 0; i < cnt; i+=3) {
+                input->data.f[BATCH*DATA_SIZE-cnt+i] = dt[i/3][0];
+                input->data.f[BATCH*DATA_SIZE-cnt+i+1] = dt[i/3][1];
+                input->data.f[BATCH*DATA_SIZE-cnt+i+2] = dt[i/3][2];
+            }
+            for (i = cnt; i < BATCH*DATA_SIZE; i+=3) {
+                input->data.f[i-cnt] = 0.0;
+                input->data.f[i-cnt+1] = 0.0;
+                input->data.f[i-cnt+2] = 0.0;
+            }
+
+            /*std::cout << std::endl;
+            for (size_t j = 0; j < (input->bytes / sizeof(float)); j+=3) {
+                std::cout << "\t";
+                std::cout << "Input Data " << j/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
+                std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << input->data.f[j];
+                std::cout << std::left << std::setw(15) << std::setfill(' ') << input->data.f[j+1];
+                std::cout << input->data.f[j+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
+                std::cout << std::endl;
+            }*/
+            std::cout << std::endl;
+
+            // Run the model on this input and check that it succeeds
+            TfLiteStatus invoke_status = interpreter.Invoke();
+            if (invoke_status != kTfLiteOk) {
+                TF_LITE_REPORT_ERROR(&micro_error_reporter, "Invoke failed\n");
+            }
+            TF_LITE_MICRO_EXPECT_EQ(kTfLiteOk, invoke_status);
+
+            // Obtain a pointer to the output tensor and make sure it has the
+            // properties we expect.
+            TfLiteTensor* output = interpreter.output(0);
+            TF_LITE_MICRO_EXPECT_EQ(2, output->dims->size);
+            TF_LITE_MICRO_EXPECT_EQ(1, output->dims->data[0]);
+            TF_LITE_MICRO_EXPECT_EQ(4, output->dims->data[1]);
+            TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32, output->type);
+
+            for(size_t j = 0; j < (output->bytes / sizeof(float)); ++j) {
+                std::cout << "Output Data "<< j << ": " << output->data.f[j] << std::endl;
+            }
+            std::cout << std::endl;
+
+            for(size_t j = 0; j < 4; j++) {
+                fprintf(out, "%.30f\n", (double)output->data.f[j]);
+            }
+            fprintf(out, "\n");
+
+            for (i = 0; i < DATA_SIZE; i++) {
+                dt[0][i] = 0;
+                dt[1][i] = 0;
+                dt[2][i] = 0;
+            }
+            cnt = 0;
+        }
+        wasReading = isReading;
+
+        if (strcmp(buff, " -,-,-\n") == 0 || strcmp(buff, "-,-,-\n") == 0) isReading = true;
+        else if (strcmp(buff, "\n") == 0) isReading = false;
+        else if (isReading){
+            float f1, f2, f3;
+            isReading = false;
+
+            char *pt = strtok(buff, ",");
+            if (pt != NULL) {
+                f1 = strtof(pt, NULL);
+            } else continue;
+            pt = strtok(NULL, ",");
+            if (pt != NULL) {
+                f2 = strtof(pt, NULL);
+            } else continue;
+            pt = strtok(NULL, ",");
+            if (pt != NULL) {
+                f3 = strtof(pt, NULL);
+            } else continue;
+
+            if (init) init = false;
+
+            dt[cnt][0] = f1;
+            dt[cnt][1] = f2;
+            dt[cnt][2] = f3;
+            cnt++;
+            if (cnt == 128) isReading = false;
+            else isReading = true;
+        }
+    }
+
+    cnt *= 3;
+    for (i = 0; i < cnt; i+=3) {
+        input->data.f[BATCH*DATA_SIZE-cnt+i] = dt[i/3][0];
+        input->data.f[BATCH*DATA_SIZE-cnt+i+1] = dt[i/3][1];
+        input->data.f[BATCH*DATA_SIZE-cnt+i+2] = dt[i/3][2];
+    }
+
+    for (i = cnt; i < BATCH*DATA_SIZE; i+=3) {
+        input->data.f[i-cnt] = 0.0;
+        input->data.f[i-cnt+1] = 0.0;
+        input->data.f[i-cnt+2] = 0.0;
+    }
+
+    /*std::cout << std::endl;
+    for (size_t j = 0; j < (input->bytes / sizeof(float)); j+=3) {
+        std::cout << "\t";
+        std::cout << "Input Data " << j/3 << std::left << std::setw(27) << std::setfill(' ') << ": ";
+        std::cout << "(" << std::left << std::setw(15) << std::setfill(' ') << input->data.f[j];
+        std::cout << std::left << std::setw(15) << std::setfill(' ') << input->data.f[j+1];
+        std::cout << input->data.f[j+2] << std::left << std::setw(15) << std::setfill(' ') << ")";
+        std::cout << std::endl;
+    }*/
+    std::cout << std::endl;
+
+    // Run the model on this input and check that it succeeds
+    TfLiteStatus invoke_status = interpreter.Invoke();
+    if (invoke_status != kTfLiteOk) {
+        TF_LITE_REPORT_ERROR(&micro_error_reporter, "Invoke failed\n");
+    }
+    TF_LITE_MICRO_EXPECT_EQ(kTfLiteOk, invoke_status);
+
+    // Obtain a pointer to the output tensor and make sure it has the
+    // properties we expect.
+    TfLiteTensor* output = interpreter.output(0);
+    TF_LITE_MICRO_EXPECT_EQ(2, output->dims->size);
+    TF_LITE_MICRO_EXPECT_EQ(1, output->dims->data[0]);
+    TF_LITE_MICRO_EXPECT_EQ(4, output->dims->data[1]);
+    TF_LITE_MICRO_EXPECT_EQ(kTfLiteFloat32, output->type);
+
+    for(size_t j = 0; j < (output->bytes / sizeof(float)); ++j) {
+        std::cout << "Output Data "<< j << ": " << output->data.f[j] << std::endl;
+    }
+    std::cout << std::endl;
+
+    for(size_t j = 0; j < 4; j++) {
+        fprintf(out, "%.30f\n", (double)output->data.f[j]);
+    }
+
+    fclose(file);
+    fclose(out);
 }
 
 TF_LITE_MICRO_TESTS_END
