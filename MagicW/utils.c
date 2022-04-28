@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <unistd.h>
 #include "utils.h"
 
 void printData2D(int row, int column, float matrix[row][column]) {
@@ -80,7 +81,7 @@ void compareFiles(char file1Name[], char file2Name[]) {
     {
         val1 = strtof(buffer, NULL);
         if(fscanf(file2, "%s", buffer) == 1) {
-            if (stricmp(buffer, "\n") != 0) {
+            if (strcmp(buffer, "\n") != 0) {
                 val2 = strtof(buffer, NULL);
                 error = fabsf(val1 - val2);
 
@@ -93,7 +94,7 @@ void compareFiles(char file1Name[], char file2Name[]) {
 
                 if (error > max_error) max_error = error;
                 avg_error += error;
-                quad_error += sqrtf(error);
+                quad_error += (float)sqrt((double)error);
 
                 counter++;
             }
@@ -117,24 +118,24 @@ void compareFiles(char file1Name[], char file2Name[]) {
 
 void twoComplement(float val, int out[64]) {
 
-    val = (val > (floorf(val)+0.5f)) ? ceilf(val) : floorf(val);
+    val = (val > (floor(val)+0.5f)) ? ceil(val) : floor(val);
 
-    int ex = (int)floorf(log2f(val));
+    int ex = (int)floor(log2(val));
     out[ex] = 1;
     printf("%d-", ex);
 
-    if((val - pow(2, ex)) > 0) twoComplement((val - powf(2, (float)ex)), out);
+    if((val - pow(2, ex)) > 0) twoComplement((val - pow(2, (float)ex)), out);
 
 }
 
 void twoComplement2File(FILE* file, float val, int out[64]) {
 
-    val = (val > (floorf(val)+0.5f)) ? ceilf(val) : floorf(val);
+    val = (val > (floor(val)+0.5f)) ? ceil(val) : floor(val);
 
-    int ex = (int)floorf(log2f(val));
+    int ex = (int)floor(log2(val));
     out[ex] = 1;
     fprintf(file, "%d-", ex);
 
-    if((val - pow(2, ex)) > 0) twoComplement2File(file, (val - powf(2, (float)ex)), out);
+    if((val - pow(2, ex)) > 0) twoComplement2File(file, (val - pow(2, (float)ex)), out);
 
 }

@@ -1,4 +1,3 @@
-# Lint as: python3
 # Copyright 2019 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -30,6 +29,7 @@ from train import reshape_function
 
 
 class TestTrain(unittest.TestCase):
+
   def setUp(self):  # pylint: disable=g-missing-super-call
     self.seq_length = 128
     self.train_len, self.train_data, self.valid_len, self.valid_data, \

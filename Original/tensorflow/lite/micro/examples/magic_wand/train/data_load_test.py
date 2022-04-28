@@ -1,4 +1,3 @@
-# Lint as: python3
 # Copyright 2019 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,6 +26,7 @@ import tensorflow as tf
 
 
 class TestLoad(unittest.TestCase):
+
   def setUp(self):  # pylint: disable=g-missing-super-call
     self.loader = DataLoader("./data/train",
                              "./data/valid",

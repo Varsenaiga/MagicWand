@@ -1,4 +1,3 @@
-# Lint as: python3
 # Copyright 2019 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,6 +28,7 @@ from data_prepare import write_data
 
 
 class TestPrepare(unittest.TestCase):
+
   def setUp(self):  # pylint: disable=g-missing-super-call
     self.file = "./%s/output_%s_%s.txt" % (folders[0], folders[0], names[0])  # pylint: disable=undefined-variable
     self.data = []

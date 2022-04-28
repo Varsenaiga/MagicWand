@@ -1,4 +1,3 @@
-# Lint as: python3
 # Copyright 2019 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,6 +24,7 @@ from data_split_person import read_data
 
 
 class TestSplitPerson(unittest.TestCase):
+
   def setUp(self):  # pylint: disable=g-missing-super-call
     self.data = read_data("./data/complete_data")
 

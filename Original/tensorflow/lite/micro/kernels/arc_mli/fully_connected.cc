@@ -123,10 +123,15 @@ TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
   const auto params =
       static_cast<const TfLiteFullyConnectedParams*>(node->builtin_data);
 
-  const TfLiteTensor* input = GetInput(context, node, kInputTensor);
-  const TfLiteTensor* filter = GetInput(context, node, kWeightsTensor);
-  const TfLiteTensor* bias = GetOptionalInputTensor(context, node, kBiasTensor);
-  TfLiteTensor* output = GetOutput(context, node, kOutputTensor);
+  MicroContext* micro_context = GetMicroContext(context);
+
+  TfLiteTensor* input =
+      micro_context->AllocateTempInputTensor(node, kInputTensor);
+  TfLiteTensor* filter =
+      micro_context->AllocateTempInputTensor(node, kWeightsTensor);
+  TfLiteTensor* bias =
+      micro_context->AllocateTempInputTensor(context, node, kBiasTensor);
+  TfLiteTensor* output = AllocateTempOutputTensor(node, kOutputTensor);
 
   TF_LITE_ENSURE_TYPES_EQ(context, input->type, output->type);
   TF_LITE_ENSURE_MSG(context, input->type == filter->type,
@@ -156,6 +161,10 @@ TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
     ops::micro::ConvertToMliTensor(input, &data->mli_in);
     ops::micro::ConvertToMliTensor(filter, &data->mli_weights);
     ops::micro::ConvertToMliTensor(bias, &data->mli_bias);
+#ifdef MLI_2_0
+    ops::micro::AdjustBiasTensor(&data->mli_bias, &data->mli_in,
+                                 &data->mli_weights);
+#endif
     ops::micro::ConvertToMliTensor(output, &data->mli_out);
 
 #ifdef MLI_2_0
@@ -185,9 +194,15 @@ TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
 #endif
     data->mli_in.Shape()[2] = 0;
     data->mli_in.Shape()[3] = 0;
+    data->mli_in.MemStride()[0] = data->mli_in.Shape()[1];
+    data->mli_in.MemStride()[1] = 0;
     *data->mli_in.Rank() = 2;
   }
 
+  micro_context->DeallocateTempTfLiteTensor(input);
+  micro_context->DeallocateTempTfLiteTensor(filter);
+  micro_context->DeallocateTempTfLiteTensor(bias);
+  micro_context->DeallocateTempTfLiteTensor(output);
   return status;
 }
 
@@ -323,6 +338,10 @@ TfLiteStatus EvalMliQuantizedInt8(TfLiteContext* context, TfLiteNode* node,
 #endif
 
     while (!out_slice.Done()) {
+      if (!out_is_local) {
+        ops::micro::PrepareLocalTensor(out_slice.Sub(), &out_local);
+        ops::micro::PrepareLocalTensor(in_slice.Sub(), &in_local);
+      }
       // if same input copy as previous iteration, skip the copy of input
 #ifdef MLI_2_0
       if (in_slice.Sub()->data.mem.pi8 != input_buffer_ptr) {

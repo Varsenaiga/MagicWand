@@ -24,6 +24,7 @@ limitations under the License.
 #include "tensorflow/lite/kernels/internal/tensor_ctypes.h"
 #include "tensorflow/lite/kernels/kernel_util.h"
 #include "tensorflow/lite/kernels/padding.h"
+#include "tensorflow/lite/micro/kernels/arc_mli/mli_function_specializations.h"
 #include "tensorflow/lite/micro/kernels/arc_mli/mli_slicers.h"
 #include "tensorflow/lite/micro/kernels/arc_mli/mli_tf_utils.h"
 #include "tensorflow/lite/micro/kernels/arc_mli/scratch_buf_mgr.h"
@@ -82,6 +83,9 @@ struct OpData {
   mutable ops::micro::MliTensorInterface mli_bias;
   mutable ops::micro::MliTensorInterface mli_out;
   mli_conv2d_cfg* cfg;
+
+  // Pointer to the mli convolution function.
+  conv_func_ptr p_mli_krn_conv2d_sa8_sa8_sa32;
 };
 
 #if !defined(TF_LITE_STRIP_REFERENCE_IMPL)
@@ -133,10 +137,15 @@ TfLiteStatus CalculateOpData(TfLiteContext* context, TfLiteNode* node,
   // Note that quantized inference requires that all tensors have their
   // parameters set. This is usually done during quantized training.
 #if !defined(TF_LITE_STRIP_REFERENCE_IMPL)
-  const TfLiteTensor* input = GetInput(context, node, kInputTensor);
-  const TfLiteTensor* filter = GetInput(context, node, kFilterTensor);
-  const TfLiteTensor* bias = GetOptionalInputTensor(context, node, kBiasTensor);
-  TfLiteTensor* output = GetOutput(context, node, kOutputTensor);
+  MicroContext* micro_context = GetMicroContext(context);
+  TfLiteTensor* input =
+      micro_context->AllocateTempInputTensor(node, kInputTensor);
+  TfLiteTensor* filter =
+      micro_context->AllocateTempInputTensor(node, kFilterTensor);
+  TfLiteTensor* bias =
+      micro_context->AllocateTempInputTensor(context, node, kBiasTensor);
+  TfLiteTensor* output =
+      micro_context->AllocateTempOutputTensor(node, kOutputTensor);
 
   if (data_type != kTfLiteFloat32 && !data->is_mli_applicable) {
     int output_channels = filter->dims->data[kConvQuantizedDimension];
@@ -149,6 +158,11 @@ TfLiteStatus CalculateOpData(TfLiteContext* context, TfLiteNode* node,
         reinterpret_cast<int*>(data->per_channel_output_shift),
         output_channels));
   }
+
+  micro_context->DeallocateTempTfLiteTensor(input);
+  micro_context->DeallocateTempTfLiteTensor(filter);
+  micro_context->DeallocateTempTfLiteTensor(bias);
+  micro_context->DeallocateTempTfLiteTensor(output);
 #endif
   return kTfLiteOk;
 }
@@ -164,10 +178,16 @@ TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
   OpData* data = static_cast<OpData*>(node->user_data);
   const auto params = static_cast<const TfLiteConvParams*>(node->builtin_data);
 
-  TfLiteTensor* output = GetOutput(context, node, kOutputTensor);
-  const TfLiteTensor* input = GetInput(context, node, kInputTensor);
-  const TfLiteTensor* filter = GetInput(context, node, kFilterTensor);
-  const TfLiteTensor* bias = GetOptionalInputTensor(context, node, kBiasTensor);
+  MicroContext* micro_context = GetMicroContext(context);
+
+  TfLiteTensor* output =
+      micro_context->AllocateTempOutputTensor(node, kOutputTensor);
+  TfLiteTensor* input =
+      micro_context->AllocateTempInputTensor(node, kInputTensor);
+  TfLiteTensor* filter =
+      micro_context->AllocateTempInputTensor(node, kFilterTensor);
+  TfLiteTensor* bias =
+      micro_context->AllocateTempInputTensor(context, node, kBiasTensor);
 
   int input_width = input->dims->data[2];
   int input_height = input->dims->data[1];
@@ -278,7 +298,25 @@ TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
                                              /* is_bias_tensor = */ false);
     ops::micro::ConvertToMliTensorPerChannel(bias, &data->mli_bias,
                                              /* is_bias_tensor = */ true);
+#ifdef MLI_2_0
+    ops::micro::AdjustBiasTensor(&data->mli_bias, &data->mli_in,
+                                 &data->mli_weights);
+#endif
     ops::micro::ConvertToMliTensor(output, &data->mli_out);
+
+#ifdef MLI_2_0
+    // Choose convolution mli specialized function.
+    data->p_mli_krn_conv2d_sa8_sa8_sa32 =
+        mli_krn_conv2d_hwcn(data->mli_weights.MliTensor());
+#else
+    data->p_mli_krn_conv2d_sa8_sa8_sa32 =
+        mli_krn_conv2d_hwcn(data->mli_weights.MliTensor(), data->cfg);
+#endif
+
+#ifdef MLI_2_0
+    data->cfg->dilation_width = 1;
+    data->cfg->dilation_height = 1;
+#endif
 
     if (data->output_activation_min == -128 &&
         data->output_activation_max == 127) {
@@ -308,6 +346,11 @@ TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
           data->padding.height + data->padding.height_offset;
     }
   }
+
+  micro_context->DeallocateTempTfLiteTensor(output);
+  micro_context->DeallocateTempTfLiteTensor(input);
+  micro_context->DeallocateTempTfLiteTensor(filter);
+  micro_context->DeallocateTempTfLiteTensor(bias);
   return kTfLiteOk;
 }
 
@@ -417,11 +460,6 @@ TfLiteStatus EvalMliQuantizedPerChannel(
     uint32_t input_buffer_size = 0;
 
     while (!w_slice.Done()) {
-#if defined(MLI_2_0) && !defined(MLI_2_0_KRNL_TEST)
-      w_ptr->el_params.sa.scale.mem.pi16 = NULL;
-      b_ptr->el_params.sa.scale.mem.pi16 = NULL;
-#endif
-
 #ifndef MLI_2_0_KRNL_TEST
       mli_mov_tensor_sync(w_slice.Sub(), &copy_config, w_ptr);
 #endif
@@ -467,6 +505,11 @@ TfLiteStatus EvalMliQuantizedPerChannel(
 #endif
 
       while (!out_slice.Done()) {
+        if (!out_is_local) {
+          ops::micro::PrepareLocalTensor(out_slice.Sub(), &out_local);
+          ops::micro::PrepareLocalTensor(in_slice.Sub(), &in_local);
+        }
+
         TF_LITE_ENSURE(context, !in_slice.Done());
         cfg_local.padding_top = in_slice.GetPaddingPre();
         cfg_local.padding_bottom = in_slice.GetPaddingPost();
@@ -479,8 +522,9 @@ TfLiteStatus EvalMliQuantizedPerChannel(
           input_buffer_ptr = in_slice.Sub()->data.mem.pi8;
           input_buffer_size = mli_hlp_count_elem_num(in_slice.Sub(), 0);
         }
-        mli_krn_conv2d_hwcn_sa8_sa8_sa32(in_ptr, w_ptr, b_ptr, &cfg_local,
-                                         out_ptr);
+
+        data.p_mli_krn_conv2d_sa8_sa8_sa32(in_ptr, w_ptr, b_ptr, &cfg_local,
+                                           out_ptr);
 #else
         if ((in_slice.Sub()->data != input_buffer_ptr) ||
             (mli_hlp_count_elem_num(in_slice.Sub(), 0) != input_buffer_size)) {
@@ -488,8 +532,8 @@ TfLiteStatus EvalMliQuantizedPerChannel(
           input_buffer_ptr = in_slice.Sub()->data;
           input_buffer_size = mli_hlp_count_elem_num(in_slice.Sub(), 0);
         }
-        mli_krn_conv2d_nhwc_sa8_sa8_sa32(in_ptr, w_ptr, b_ptr, &cfg_local,
-                                         out_ptr);
+        data.p_mli_krn_conv2d_sa8_sa8_sa32(in_ptr, w_ptr, b_ptr, &cfg_local,
+                                           out_ptr);
 #endif
         mli_mov_tensor_sync(out_ptr, &copy_config, out_slice.Sub());
 
@@ -535,6 +579,41 @@ void EvalQuantizedPerChannel(TfLiteContext* context, TfLiteNode* node,
       tflite::micro::GetTensorData<int32_t>(bias),
       tflite::micro::GetTensorShape(output),
       tflite::micro::GetTensorData<int8_t>(output));
+#else
+  TF_LITE_KERNEL_LOG(context,
+                     "Node configuration is not supported by ARC MLI Library.");
+#endif
+}
+
+void EvalQuantizedPerChannelInt16(TfLiteContext* context, TfLiteNode* node,
+                                  TfLiteConvParams* params, const OpData& data,
+                                  const TfLiteEvalTensor* input,
+                                  const TfLiteEvalTensor* filter,
+                                  const TfLiteEvalTensor* bias,
+                                  TfLiteEvalTensor* output) {
+#if !defined(TF_LITE_STRIP_REFERENCE_IMPL)
+  ConvParams op_params;
+  op_params.input_offset = -data.input_zero_point;
+  op_params.output_offset = data.output_zero_point;
+  op_params.stride_height = params->stride_height;
+  op_params.stride_width = params->stride_width;
+  op_params.dilation_height_factor = params->dilation_height_factor;
+  op_params.dilation_width_factor = params->dilation_width_factor;
+  op_params.padding_values.height = data.padding.height;
+  op_params.padding_values.width = data.padding.width;
+  op_params.quantized_activation_min = data.output_activation_min;
+  op_params.quantized_activation_max = data.output_activation_max;
+
+  reference_integer_ops::ConvPerChannel(
+      op_params, data.per_channel_output_multiplier,
+      data.per_channel_output_shift, tflite::micro::GetTensorShape(input),
+      tflite::micro::GetTensorData<int16_t>(input),
+      tflite::micro::GetTensorShape(filter),
+      tflite::micro::GetTensorData<int8_t>(filter),
+      tflite::micro::GetTensorShape(bias),
+      tflite::micro::GetTensorData<std::int64_t>(bias),
+      tflite::micro::GetTensorShape(output),
+      tflite::micro::GetTensorData<int16_t>(output));
 #else
   TF_LITE_KERNEL_LOG(context,
                      "Node configuration is not supported by ARC MLI Library.");
@@ -593,6 +672,13 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
   TFLITE_DCHECK(node->user_data != nullptr);
   const OpData& data = *(static_cast<const OpData*>(node->user_data));
 
+  TF_LITE_ENSURE_EQ(context, input->type, output->type);
+  TF_LITE_ENSURE_MSG(
+      context,
+      input->type == filter->type ||
+          (input->type == kTfLiteInt16 && filter->type == kTfLiteInt8),
+      "Hybrid models are not supported on TFLite Micro.");
+
   switch (input->type) {  // Already know in/out types are same.
     case kTfLiteFloat32:
       EvalFloat(context, node, params, data, input, filter, bias, nullptr,
@@ -606,6 +692,10 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
         EvalQuantizedPerChannel(context, node, params, data, input, filter,
                                 bias, output, nullptr);
       }
+      break;
+    case kTfLiteInt16:
+      EvalQuantizedPerChannelInt16(context, node, params, data, input, filter,
+                                   bias, output);
       break;
     default:
       TF_LITE_KERNEL_LOG(context, "Type %s (%d) not supported.",

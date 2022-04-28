@@ -75,17 +75,6 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   interpreter.AllocateTensors();
 
   // Obtain a pointer to the model's input tensor
-  TfLiteTensor* model_input = interpreter.input(0);
-  if ((model_input->dims->size != 4) || (model_input->dims->data[0] != 1) ||
-      (model_input->dims->data[1] != 128) ||
-      (model_input->dims->data[2] != 3) ||
-      (model_input->type != kTfLiteFloat32)) {
-    TF_LITE_REPORT_ERROR(&micro_error_reporter,
-                         "Bad input tensor parameters in model");;
-  }
-
-
-  // Obtain a pointer to the model's input tensor
   TfLiteTensor* input = interpreter.input(0);
 
   // Make sure the input has the properties we expect
@@ -143,7 +132,6 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
     printf("Error opening file!\n");
     exit(1);
   }
-
   for(size_t i = 0; i < 4; i++) {
     fprintf(file, "%.20f\n", (double)output->data.f[i]);
   }
@@ -154,7 +142,6 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   const int kSlopeIndex = 2;
   const int kNegativeIndex = 3;
 
- 
   // Make sure that the expected "Ring" score is higher than the other
   // classes.
   float wing_score = output->data.f[kWingIndex];
@@ -164,8 +151,7 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
   TF_LITE_MICRO_EXPECT_GT(ring_score, wing_score);
   TF_LITE_MICRO_EXPECT_GT(ring_score, slope_score);
   TF_LITE_MICRO_EXPECT_GT(ring_score, negative_score);
- 
-  
+
   // Now test with a different input, from a recording of "Slope".
   const float* slope_features_data = g_slope_micro_f2e59fea_nohash_1_data;
   for (size_t i = 0; i < (input->bytes / sizeof(float)); ++i) {
@@ -210,11 +196,9 @@ TF_LITE_MICRO_TEST(LoadModelAndPerformInference) {
     std::cout << "Output Data "<< i << ": " << output->data.f[i] << std::endl;
   }
   std::cout << std::endl;
-
   for(size_t i = 0; i < 4; i++) {
     fprintf(file, "%.20f\n", (double)output->data.f[i]);
   }
-
   fclose(file);
 
   // Make sure that the expected "Slope" score is higher than the other classes.

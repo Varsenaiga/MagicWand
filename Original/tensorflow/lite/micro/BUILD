@@ -37,6 +37,7 @@ cc_library(
     deps = [
         ":memory_helpers",
         ":micro_allocator",
+        ":micro_context",
         ":micro_error_reporter",
         ":micro_graph",
         ":micro_profiler",
@@ -49,6 +50,45 @@ cc_library(
         "//tensorflow/lite/schema:schema_fbs",
         "//tensorflow/lite/schema:schema_utils",
         "@flatbuffers//:runtime_cc",
+    ],
+)
+
+cc_library(
+    name = "micro_context",
+    srcs = [
+        "micro_context.cc",
+    ],
+    hdrs = [
+        "micro_context.h",
+    ],
+    copts = micro_copts(),
+    deps = [
+        ":memory_helpers",
+        ":micro_allocator",
+        ":micro_error_reporter",
+        ":micro_graph",
+        ":micro_profiler",
+        "//tensorflow/lite/c:common",
+    ],
+)
+
+cc_library(
+    name = "fake_micro_context",
+    srcs = [
+        "fake_micro_context.cc",
+    ],
+    hdrs = [
+        "fake_micro_context.h",
+    ],
+    copts = micro_copts(),
+    deps = [
+        ":memory_helpers",
+        ":micro_allocator",
+        ":micro_context",
+        ":micro_error_reporter",
+        ":micro_profiler",
+        ":mock_micro_graph",
+        "//tensorflow/lite/c:common",
     ],
 )
 
@@ -85,24 +125,28 @@ cc_library(
 cc_library(
     name = "micro_allocator",
     srcs = [
+        "micro_allocation_info.cc",
         "micro_allocator.cc",
-        "simple_memory_allocator.cc",
     ],
     hdrs = [
+        "micro_allocation_info.h",
         "micro_allocator.h",
-        "simple_memory_allocator.h",
     ],
     copts = micro_copts(),
     deps = [
         ":flatbuffer_utils",
         ":memory_helpers",
+        ":micro_arena_constants",
         ":micro_compatibility",
         ":micro_error_reporter",
         "//tensorflow/lite/c:common",
         "//tensorflow/lite/core/api",
         "//tensorflow/lite/core/api:error_reporter",
         "//tensorflow/lite/core/api:op_resolver",
+        "//tensorflow/lite/kernels:kernel_util",
         "//tensorflow/lite/kernels/internal:compatibility",
+        "//tensorflow/lite/micro/arena_allocator:ibuffer_allocator",
+        "//tensorflow/lite/micro/arena_allocator:simple_memory_allocator",
         "//tensorflow/lite/micro/memory_planner:greedy_memory_planner",
         "//tensorflow/lite/micro/memory_planner:micro_memory_planner",
         "//tensorflow/lite/schema:schema_fbs",
@@ -112,10 +156,20 @@ cc_library(
 )
 
 cc_library(
+    name = "micro_arena_constants",
+    hdrs = [
+        "micro_arena_constants.h",
+    ],
+    copts = micro_copts(),
+    deps = [],
+)
+
+cc_library(
     name = "flatbuffer_utils",
     srcs = ["flatbuffer_utils.cc"],
     hdrs = ["flatbuffer_utils.h"],
     deps = [
+        "//tensorflow/lite/c:common",
         "//tensorflow/lite/schema:schema_fbs",
         "@flatbuffers//:runtime_cc",
     ],
@@ -137,13 +191,16 @@ cc_library(
 cc_library(
     name = "test_helpers",
     srcs = [
+        "test_helper_custom_ops.cc",
         "test_helpers.cc",
     ],
     hdrs = [
+        "test_helper_custom_ops.h",
         "test_helpers.h",
     ],
     copts = micro_copts(),
     deps = [
+        ":memory_helpers",
         ":micro_utils",
         ":op_resolvers",
         "//tensorflow/lite:type_to_tflitetype",
@@ -285,12 +342,10 @@ cc_library(
     name = "recording_allocators",
     srcs = [
         "recording_micro_allocator.cc",
-        "recording_simple_memory_allocator.cc",
     ],
     hdrs = [
         "recording_micro_allocator.h",
         "recording_micro_interpreter.h",
-        "recording_simple_memory_allocator.h",
     ],
     copts = micro_copts(),
     deps = [
@@ -299,6 +354,7 @@ cc_library(
         ":micro_framework",
         "//tensorflow/lite/core/api",
         "//tensorflow/lite/kernels/internal:compatibility",
+        "//tensorflow/lite/micro/arena_allocator:recording_simple_memory_allocator",
     ],
 )
 
@@ -337,6 +393,36 @@ cc_test(
 )
 
 cc_test(
+    name = "micro_context_test",
+    srcs = [
+        "micro_context_test.cc",
+    ],
+    deps = [
+        ":micro_allocator",
+        ":micro_context",
+        ":micro_error_reporter",
+        ":test_helpers",
+        "//tensorflow/lite/core/api",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
+    name = "fake_micro_context_test",
+    srcs = [
+        "fake_micro_context_test.cc",
+    ],
+    deps = [
+        ":fake_micro_context",
+        ":micro_allocator",
+        ":micro_error_reporter",
+        ":test_helpers",
+        "//tensorflow/lite/core/api",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
     name = "micro_interpreter_test",
     srcs = [
         "micro_interpreter_test.cc",
@@ -356,31 +442,6 @@ cc_test(
 )
 
 cc_test(
-    name = "simple_memory_allocator_test",
-    srcs = [
-        "simple_memory_allocator_test.cc",
-    ],
-    deps = [
-        ":micro_framework",
-        ":test_helpers",
-        "//tensorflow/lite/micro/testing:micro_test",
-    ],
-)
-
-cc_test(
-    name = "recording_simple_memory_allocator_test",
-    srcs = [
-        "recording_simple_memory_allocator_test.cc",
-    ],
-    deps = [
-        ":micro_framework",
-        ":recording_allocators",
-        ":test_helpers",
-        "//tensorflow/lite/micro/testing:micro_test",
-    ],
-)
-
-cc_test(
     name = "micro_allocator_test",
     srcs = [
         "micro_allocator_test.cc",
@@ -388,11 +449,26 @@ cc_test(
     deps = [
         ":memory_helpers",
         ":micro_allocator",
+        ":micro_arena_constants",
         ":micro_error_reporter",
         ":test_helpers",
         "//tensorflow/lite/c:common",
+        "//tensorflow/lite/micro/memory_planner:memory_plan_struct",
+        "//tensorflow/lite/micro/memory_planner:non_persistent_buffer_planner_shim",
         "//tensorflow/lite/micro/testing:micro_test",
         "//tensorflow/lite/micro/testing:test_conv_model",
+    ],
+)
+
+cc_test(
+    name = "micro_allocation_info_test",
+    srcs = [
+        "micro_allocation_info_test.cc",
+    ],
+    deps = [
+        ":micro_allocator",
+        ":test_helpers",
+        "//tensorflow/lite/micro/testing:micro_test",
     ],
 )
 

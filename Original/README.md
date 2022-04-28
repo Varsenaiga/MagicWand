@@ -43,8 +43,9 @@ additional documentation.
 Platform      |    Status     |
 -----------     | --------------|
 Arduino         | [![Arduino](https://github.com/tensorflow/tflite-micro-arduino-examples/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/tensorflow/tflite-micro-arduino-examples/actions/workflows/ci.yml) [![Antmicro](https://github.com/antmicro/tensorflow-arduino-examples/actions/workflows/test_examples.yml/badge.svg)](https://github.com/antmicro/tensorflow-arduino-examples/actions/workflows/test_examples.yml) |
-ESP32           | [![ESP32](https://github.com/tensorflow/tflite-micro/actions/workflows/esp32.yml/badge.svg)](https://github.com/tensorflow/tflite-micro/actions/workflows/esp32.yml) |
+ESP32           | [![ESP32](https://github.com/espressif/tflite-micro-esp-examples/actions/workflows/build.yml/badge.svg)](https://github.com/espressif/tflite-micro-esp-examples/actions/workflows/build.yml) |
 Sparkfun Edge   | [![Sparkfun Edge](https://github.com/advaitjain/tflite-micro-sparkfun-edge-examples/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/advaitjain/tflite-micro-sparkfun-edge-examples/actions/workflows/ci.yml)
+Texas Instruments Dev Boards | [![Texas Instruments Dev Boards](https://github.com/TexasInstruments/tensorflow-lite-micro-examples/actions/workflows/ci.yml/badge.svg?event=status)](https://github.com/TexasInstruments/tensorflow-lite-micro-examples/actions/workflows/ci.yml)
 
 
 ## Community Supported Kernels and Unit Tests
@@ -93,6 +94,8 @@ The following resources may also be useful:
  * [Optimized Kernel Implementations](tensorflow/lite/micro/docs/optimized_kernel_implementations.md)
  * [New Platform Support](tensorflow/lite/micro/docs/new_platform_support.md)
  * [Software Emulation with Renode](tensorflow/lite/micro/docs/renode.md)
+ * [Python Dev Guide](docs/python.md)
+ * [Automatically Generated Files](docs/automatically_generated_files.md)
 
 # RFCs
 

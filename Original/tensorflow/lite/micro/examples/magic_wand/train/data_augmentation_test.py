@@ -1,4 +1,3 @@
-# Lint as: python3
 # Copyright 2019 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,6 +28,7 @@ from data_augmentation import time_wrapping
 
 
 class TestAugmentation(unittest.TestCase):
+
   def test_time_wrapping(self):
     original_data = np.random.rand(10, 3).tolist()
     wrapped_data = time_wrapping(4, 5, original_data)

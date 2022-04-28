@@ -1,4 +1,3 @@
-# Lint as: python3
 # Copyright 2019 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,6 +25,7 @@ from data_split import split_data
 
 
 class TestSplit(unittest.TestCase):
+
   def setUp(self):  # pylint: disable=g-missing-super-call
     self.data = read_data("./data/complete_data")
     self.num_dic = {"wing": 0, "ring": 0, "slope": 0, "negative": 0}

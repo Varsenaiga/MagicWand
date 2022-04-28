@@ -93,8 +93,8 @@ void readFile(FILE* file) {
         }
         wasReading = isReading;
 
-        if (stricmp(buff, " -,-,-\n") == 0 || stricmp(buff, "-,-,-\n") == 0) init = true, isReading = true;
-        else if (stricmp(buff, "\n") == 0) isReading = false;
+        if (strcmp(buff, " -,-,-\n") == 0 || strcmp(buff, "-,-,-\n") == 0) init = true, isReading = true;
+        else if (strcmp(buff, "\n") == 0) isReading = false;
         else if (isReading){
             float f1, f2, f3;
             isReading = false;

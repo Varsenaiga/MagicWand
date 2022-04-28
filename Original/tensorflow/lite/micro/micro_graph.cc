@@ -30,7 +30,6 @@ limitations under the License.
 namespace tflite {
 namespace {
 
-#ifndef TF_LITE_STRIP_ERROR_STRINGS
 const char* OpNameFromRegistration(const TfLiteRegistration* registration) {
   if (registration->builtin_code == BuiltinOperator_CUSTOM) {
     return registration->custom_name;
@@ -38,7 +37,6 @@ const char* OpNameFromRegistration(const TfLiteRegistration* registration) {
     return EnumNameBuiltinOperator(BuiltinOperator(registration->builtin_code));
   }
 }
-#endif  // !defined(TF_LITE_STRIP_ERROR_STRINGS)
 
 }  // namespace
 
@@ -148,7 +146,7 @@ TfLiteStatus MicroGraph::FreeSubgraphs() {
 }
 
 TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
-  std::cout << "\nStarting InvokeSubgraph:" << std::endl;
+  //std::cout << "\nStarting InvokeSubgraph:" << std::endl;
   int previous_subgraph_idx = current_subgraph_index_;
   current_subgraph_index_ = subgraph_idx;
 
@@ -158,9 +156,9 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
     return kTfLiteError;
   }
   uint32_t operators_size = NumSubgraphOperators(model_, subgraph_idx);
-  
+
   //std::cout << "Operators Size: " << operators_size << std::endl;
-  
+
   for (size_t i = 0; i < operators_size; ++i) {
     auto start = std::chrono::high_resolution_clock::now();
     TfLiteNode* node =
@@ -197,17 +195,15 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
     } else if (invoke_status != kTfLiteOk) {
       return invoke_status;
     }
-    
+
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
 
     //std::cout << "Operator number " << i << std::endl;
     //std::cout << "\tRegistration: " << OpNameFromRegistration(registration) << std::endl;
     //std::cout << "\tTime Duration: " << duration.count() << "μs" << std::endl;
-
   }
   current_subgraph_index_ = previous_subgraph_idx;
-  
   return kTfLiteOk;
 }
 
@@ -230,6 +226,9 @@ TfLiteStatus MicroGraph::ResetVariableTensors() {
                buffer_size);
       }
     }
+  }
+  if (resource_variables_ != nullptr) {
+    resource_variables_->ResetAll();
   }
 
   return kTfLiteOk;

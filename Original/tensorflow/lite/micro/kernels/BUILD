@@ -2,9 +2,10 @@ load("//tensorflow/lite/micro:build_def.bzl", "micro_copts", "tflm_kernel_cc_lib
 load(
     "//tensorflow:extra_rules.bzl",
     "tflm_kernel_friends",
-    "xtensa_fusion_f1_cpu",
-    "xtensa_hifi_3z_cpu",
-    "xtensa_hifi_5_cpu",
+    "xtensa_fusion_f1_config",
+    "xtensa_hifi_3z_config",
+    "xtensa_hifi_5_config",
+    "xtensa_vision_p6_config",
 )
 
 package(
@@ -90,7 +91,9 @@ cc_library(
     deps = [
         "//tensorflow/lite/c:common",
         "//tensorflow/lite/kernels/internal:compatibility",
+        "//tensorflow/lite/micro:fake_micro_context",
         "//tensorflow/lite/micro:micro_allocator",
+        "//tensorflow/lite/micro:micro_arena_constants",
         "//tensorflow/lite/micro:micro_error_reporter",
         "//tensorflow/lite/micro:mock_micro_graph",
         "//tensorflow/lite/micro:test_helpers",
@@ -112,17 +115,38 @@ cc_library(
         "//tensorflow/lite/kernels/internal:compatibility",
         "//tensorflow/lite/kernels/internal:types",
         "//tensorflow/lite/micro:debug_log",
+        "//tensorflow/lite/micro:micro_context",
+    ],
+)
+
+cc_library(
+    name = "micro_tensor_utils",
+    srcs = [
+        "micro_tensor_utils.cc",
+    ],
+    hdrs = ["micro_tensor_utils.h"],
+    deps = [
+        "//tensorflow/lite/c:common",
+        "//tensorflow/lite/kernels:op_macros",
+        "//tensorflow/lite/kernels/internal:common",
+        "//tensorflow/lite/kernels/internal:compatibility",
+        "//tensorflow/lite/kernels/internal:cppmath",
     ],
 )
 
 HIFI4_COPTS = [
     "-DXTENSA=1",
-    "-DHIFI4=1",
+    "-DHIFI4_INTERNAL=1",
 ]
 
 HIFI5_COPTS = [
     "-DXTENSA=1",
     "-DHIFI5=1",
+]
+
+VP6_COPTS = [
+    "-DXTENSA=1",
+    "-DVISION_P6=1",
 ]
 
 tflm_kernel_cc_library(
@@ -136,6 +160,8 @@ tflm_kernel_cc_library(
         "arg_min_max.cc",
         "assign_variable.cc",
         "batch_to_space_nd.cc",
+        "broadcast_args.cc",
+        "broadcast_to.cc",
         "call_once.cc",
         "cast.cc",
         "ceil.cc",
@@ -177,7 +203,9 @@ tflm_kernel_cc_library(
         "logical_common.cc",
         "logistic.cc",
         "logistic_common.cc",
+        "lstm_eval.cc",
         "maximum_minimum.cc",
+        "mirror_pad.cc",
         "mul.cc",
         "mul_common.cc",
         "neg.cc",
@@ -212,8 +240,10 @@ tflm_kernel_cc_library(
         "tanh.cc",
         "transpose.cc",
         "transpose_conv.cc",
+        "unidirectional_sequence_lstm.cc",
         "unpack.cc",
         "var_handle.cc",
+        "while.cc",
         "zeros_like.cc",
     ],
     hdrs = [
@@ -229,6 +259,8 @@ tflm_kernel_cc_library(
         "leaky_relu.h",
         "logical.h",
         "logistic.h",
+        "lstm_eval.h",
+        "lstm_shared.h",
         "micro_ops.h",
         "mul.h",
         "pooling.h",
@@ -238,20 +270,26 @@ tflm_kernel_cc_library(
         "sub.h",
         "svdf.h",
     ] + select({
-        ":xtensa_fusion_f1": glob(["xtensa/**/*.h"]),
-        ":xtensa_hifi_3z": glob(["xtensa/**/*.h"]),
-        ":xtensa_hifi_5": glob(["xtensa/**/*.h"]),
+        xtensa_fusion_f1_config(): glob(["xtensa/**/*.h"]),
+        xtensa_hifi_3z_config(): glob(["xtensa/**/*.h"]),
+        xtensa_hifi_5_config(): glob(["xtensa/**/*.h"]),
+        xtensa_vision_p6_config(): glob(["xtensa/**/*.h"]),
         "//conditions:default": [],
     }),
     accelerated_srcs = {
-        ":xtensa_fusion_f1": glob(["xtensa/**/*.cc"]),
-        ":xtensa_hifi_3z": glob(["xtensa/**/*.cc"]),
-        ":xtensa_hifi_5": glob(["xtensa/**/*.cc"]),
+        xtensa_fusion_f1_config(): glob(["xtensa/**/*.cc"]),
+        xtensa_hifi_3z_config(): glob(["xtensa/**/*.cc"]),
+        xtensa_hifi_5_config(): glob(["xtensa/**/*.cc"]),
+        xtensa_vision_p6_config(): glob(
+            ["xtensa/**/*.cc"],
+            exclude = ["xtensa/conv.cc"],
+        ),
     },
     copts = micro_copts() + select({
-        ":xtensa_fusion_f1": HIFI4_COPTS,
-        ":xtensa_hifi_3z": HIFI4_COPTS,
-        ":xtensa_hifi_5": HIFI5_COPTS,
+        xtensa_fusion_f1_config(): HIFI4_COPTS,
+        xtensa_hifi_3z_config(): HIFI4_COPTS,
+        xtensa_hifi_5_config(): HIFI5_COPTS,
+        xtensa_vision_p6_config(): VP6_COPTS,
         "//conditions:default": [],
     }),
     visibility = [
@@ -261,6 +299,7 @@ tflm_kernel_cc_library(
     deps = [
         ":activation_utils",
         ":kernel_util",
+        ":micro_tensor_utils",
         ":micro_utils",
         "//tensorflow/lite/c:common",
         "//tensorflow/lite/kernels:kernel_util",
@@ -280,11 +319,10 @@ tflm_kernel_cc_library(
         "//tensorflow/lite/schema:schema_fbs",
         "@flatbuffers//:runtime_cc",
     ] + select({
-        # Temporarily comment out these dependencies while sync is resolved.
-        # See http://cl/400799461 for additional context.
-        # ":xtensa_fusion_f1": ["//third_party/xtensa/nnlib_hifi4:nnlib_hifi4_lib"],
-        # ":xtensa_hifi_3z": ["//third_party/xtensa/nnlib_hifi4:nnlib_hifi4_lib"],
-        # ":xtensa_hifi_5": ["//third_party/xtensa/nnlib_hifi5:nnlib_hifi5_lib"],
+        xtensa_fusion_f1_config(): ["//third_party/xtensa/nnlib_hifi4:nnlib_hifi4_lib"],
+        xtensa_hifi_3z_config(): ["//third_party/xtensa/nnlib_hifi4:nnlib_hifi4_lib"],
+        xtensa_hifi_5_config(): ["//third_party/xtensa/nnlib_hifi5:nnlib_hifi5_lib"],
+        xtensa_vision_p6_config(): ["//third_party/xtensa/xi_annlib_vision_p6:xi_annlib_vision_p6_lib"],
         "//conditions:default": [],
     }),
 )
@@ -359,6 +397,34 @@ cc_test(
     name = "batch_to_space_nd_test",
     srcs = [
         "batch_to_space_nd_test.cc",
+    ],
+    deps = [
+        ":kernel_runner",
+        "//tensorflow/lite/c:common",
+        "//tensorflow/lite/micro:op_resolvers",
+        "//tensorflow/lite/micro:test_helpers",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
+    name = "broadcast_args_test",
+    srcs = [
+        "broadcast_args_test.cc",
+    ],
+    deps = [
+        ":kernel_runner",
+        "//tensorflow/lite/c:common",
+        "//tensorflow/lite/micro:op_resolvers",
+        "//tensorflow/lite/micro:test_helpers",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
+    name = "broadcast_to_test",
+    srcs = [
+        "broadcast_to_test.cc",
     ],
     deps = [
         ":kernel_runner",
@@ -457,11 +523,11 @@ cc_test(
     ],
     deps = [
         ":conv_test_common",
-        "//tensorflow/lite/micro/kernels/testdata:conv_test_data",
         ":kernel_runner",
         "//tensorflow/lite/c:common",
         "//tensorflow/lite/micro:micro_utils",
         "//tensorflow/lite/micro:test_helpers",
+        "//tensorflow/lite/micro/kernels/testdata:conv_test_data",
         "//tensorflow/lite/micro/testing:micro_test",
     ],
 )
@@ -806,9 +872,37 @@ cc_test(
 )
 
 cc_test(
+    name = "lstm_eval_test",
+    srcs = [
+        "lstm_eval_test.cc",
+    ],
+    deps = [
+        "//tensorflow/lite/c:common",
+        "//tensorflow/lite/micro:debug_log",
+        "//tensorflow/lite/micro:op_resolvers",
+        "//tensorflow/lite/micro:test_helpers",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
     name = "maximum_minimum_test",
     srcs = [
         "maximum_minimum_test.cc",
+    ],
+    deps = [
+        ":kernel_runner",
+        "//tensorflow/lite/c:common",
+        "//tensorflow/lite/micro:op_resolvers",
+        "//tensorflow/lite/micro:test_helpers",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
+    name = "mirror_pad_test",
+    srcs = [
+        "mirror_pad_test.cc",
     ],
     deps = [
         ":kernel_runner",
@@ -1188,9 +1282,39 @@ cc_test(
 )
 
 cc_test(
+    name = "unidirectional_sequence_lstm_test",
+    srcs = [
+        "unidirectional_sequence_lstm_test.cc",
+    ],
+    deps = [
+        ":kernel_runner",
+        "//tensorflow/lite/c:common",
+        "//tensorflow/lite/micro:debug_log",
+        "//tensorflow/lite/micro:micro_utils",
+        "//tensorflow/lite/micro:op_resolvers",
+        "//tensorflow/lite/micro:test_helpers",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
     name = "unpack_test",
     srcs = [
         "unpack_test.cc",
+    ],
+    deps = [
+        ":kernel_runner",
+        "//tensorflow/lite/c:common",
+        "//tensorflow/lite/micro:debug_log",
+        "//tensorflow/lite/micro:test_helpers",
+        "//tensorflow/lite/micro/testing:micro_test",
+    ],
+)
+
+cc_test(
+    name = "while_test",
+    srcs = [
+        "while_test.cc",
     ],
     deps = [
         ":kernel_runner",
@@ -1219,22 +1343,29 @@ cc_test(
 ####################################
 
 config_setting(
-    name = "xtensa_fusion_f1",
+    name = "xtensa_fusion_f1_default",
     values = {
-        "cpu": xtensa_fusion_f1_cpu(),
+        "cpu": "F1_190305_swupgrade",
     },
 )
 
 config_setting(
-    name = "xtensa_hifi_3z",
+    name = "xtensa_hifi_3z_default",
     values = {
-        "cpu": xtensa_hifi_3z_cpu(),
+        "cpu": "HIFI_190304_swupgrade",
     },
 )
 
 config_setting(
-    name = "xtensa_hifi_5",
+    name = "xtensa_hifi_5_default",
     values = {
-        "cpu": xtensa_hifi_5_cpu(),
+        "cpu": "AE_HiFi5_LE5_AO_FP_XC",
+    },
+)
+
+config_setting(
+    name = "xtensa_vision_p6_default",
+    values = {
+        "cpu": "P6_200528",
     },
 )
