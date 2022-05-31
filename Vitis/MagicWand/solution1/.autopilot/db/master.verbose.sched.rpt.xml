@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'master'" level="0">
+<item name = "Date">Tue May 31 15:50:18 2022
+</item>
+<item name = "Version">2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)</item>
+<item name = "Project">MagicWand</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvf1517-3-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.507 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">142339, 442811, 1.423 ms, 4.428 ms, 142340, 442812, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_103_1">29184, 29184, 1824, -, -, 16, no</column>
+<column name=" + VITIS_LOOP_106_2">1820, 1820, 130, -, -, 14, no</column>
+<column name="  ++ VITIS_LOOP_110_4">128, 128, 8, -, -, 16, no</column>
+<column name="- VITIS_LOOP_124_1">520, 520, 130, -, -, 4, no</column>
+<column name=" + VITIS_LOOP_127_2">128, 128, 8, -, -, 16, no</column>
+<column name="- VITIS_LOOP_138_1">72, 72, 18, -, -, 4, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

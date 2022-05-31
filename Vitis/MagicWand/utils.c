@@ -30,7 +30,7 @@ void printData3D(int row, int column, int depth, float matrix[row][column][depth
     for (d = 0; d < depth; d++) {
         printf("[");
         for (i = 0; i < row; i++) {
-            printf("[");
+            printf("%d/%d[", i, row-1);
 
             for (j = 0; j < column; j++) {
                 if (j < column - 1) printf("%.20f,\t", matrix[i][j][d]);
@@ -65,14 +65,16 @@ void write2File(float data[], int size, char fileName[]) {
     fclose(file);
 }
 
-void compareFiles(char file1Name[], char file2Name[]) {
+int compareFiles(char file1Name[], char file2Name[]) {
 
     FILE *file1 = fopen(file1Name, "r");
     FILE *file2 = fopen(file2Name, "r");
     FILE *file3 = fopen("ErrorsFile.txt", "w");
-    int counter = 0;
+    FILE *file4 = fopen("MistakeFile.txt", "w");
+    int counter = 0, misct = 0, rt = 0;
+    int ct = 0, kval1 = -1, kval2 = -1;
     int aux[64];
-    float val1, val2;
+    float val1, val2, mval1 = 0, mval2 = 0;
     float error, max_error = 0, avg_error = 0, quad_error = 0;
     char buffer[255];
 
@@ -81,28 +83,54 @@ void compareFiles(char file1Name[], char file2Name[]) {
         val1 = strtof(buffer, NULL);
         if(fscanf(file2, "%s", buffer) == 1) {
             if (strcmp(buffer, "\n") != 0) {
-                val2 = strtof(buffer, NULL);
-                error = fabsf(val1 - val2);
+            	val2 = strtof(buffer, NULL);
+				error = fabsf(val1 - val2);
 
-                //printf("Error: %.20f:\n\tBits-> ", error);
-                fprintf(file3, "%.30f\n", error);
-                if (error > 0) {
-                    //twoComplement(1 / error, aux);
-                }
-                //printf("\n\n");
+				printf("Er: %.20f\n\tBits-> ", error);
+				fprintf(file3, "%.30f\n", error);
+				if (error > 0) {
+					//twoComplement(1 / error, aux);
+				}
+				printf("\n\n");
 
-                if (error > max_error) max_error = error;
-                avg_error += error;
-                quad_error += sqrtf(error);
+				if (error > ERROR_THRESHOLD) rt = -1;
+				if (error > max_error) max_error = error;
+				avg_error += error;
+				quad_error += sqrtf(error);
 
-                counter++;
+				if (val1 > mval1) {
+					mval1 = val1;
+					kval1 = ct;
+				}
+
+				if (val2 > mval2) {
+					mval2 = val2;
+					kval2 = ct;
+				}
+
+				counter++;
+				ct++;
+
+				/*if (ct >= 4) {
+					if (kval1 != kval2) {
+						fprintf(file4, "There's a Mistake on test %d\n", counter/4);
+						misct++;
+					}
+
+					ct = 0;
+					mval1 = 0;
+					kval1 = -1;
+					mval2 = 0;
+					kval2 = -1;
+				}*/
+
             }
-
         } else {
             printf("Files with different sizes!\n");
-            return;
+            return -1;
         }
     }
+
     /*avg_error = avg_error/(float)counter;
     quad_error = quad_error/(float)counter;
 
@@ -110,9 +138,27 @@ void compareFiles(char file1Name[], char file2Name[]) {
     printf("\nAverage Error: %.20f", avg_error);
     printf("\nQuadratic Error: %.20f\n", quad_error);*/
 
+    /*if (misct == 0) {
+    	fprintf(file4, "There are no Mistakes");
+    	printf("There are no Mistakes\n");
+    }
+    else if (misct == 1) {
+    	fprintf(file4, "\nThere is %d Mistake", misct);
+    	printf("There is %d Mistake\n", misct);
+    	rt = -2;
+    }
+    else {
+    	fprintf(file4, "\nThere are %d Mistake", misct);
+    	printf("There are %d Mistake\n", misct);
+    	rt = -2;
+    }*/
+
     fclose(file1);
     fclose(file2);
     fclose(file3);
+    fclose(file4);
+
+    return rt;
 }
 
 void twoComplement(float val, int out[64]) {

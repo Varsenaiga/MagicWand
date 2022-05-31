@@ -30,7 +30,7 @@ void printData3D(int row, int column, int depth, float matrix[row][column][depth
     for (d = 0; d < depth; d++) {
         printf("[");
         for (i = 0; i < row; i++) {
-            printf("[");
+            printf("%d/%d[", i, row-1);
 
             for (j = 0; j < column; j++) {
                 if (j < column - 1) printf("%.20f,\t", matrix[i][j][d]);

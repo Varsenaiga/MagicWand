@@ -990,9 +990,7 @@ void __attribute__((__cdecl__)) __mingw_str_free(void *ptr);
 # 1010 "D:/Xilinx/Vitis_HLS/2021.1/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 2 3
 # 2 "MagicWand/model_functions.c" 2
 # 1 "MagicWand/model_functions.h" 1
-
-
-
+# 18 "MagicWand/model_functions.h"
 void convolution1(int mRow, int mCol, float m[mRow][mCol], int kRow, int kCol, int kNum, float k[kNum][kRow][kCol], float bias[kNum], float out[mRow][mCol][kNum]);
 void convolution2(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int kRow, int kCol, int kNum, float k[kNum][kRow][kCol], float bias[kNum], float out[mRow][mCol][kNum]);
 void maxPool(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int oRow, int oCol, float out[mRow][mCol][mDep], int kRow, int kCol);
@@ -1000,15 +998,6 @@ void dense1(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int kRow, i
 void dense2(int mSize, const float m[mSize], int kSize, int kNum, float k[kNum][kSize], const float bias[kNum], int oSize, float out[oSize]);
 void softmax(int mSize, float m[mSize], float out[mSize]);
 # 3 "MagicWand/model_functions.c" 2
-# 1 "MagicWand/utils.h" 1
-# 16 "MagicWand/utils.h"
-void printData2D(int row, int column, float matrix[row][column]);
-void printData3D(int row, int column, int depth, float matrix[row][column][depth]);
-void write2File(float data[], int size, char fileName[]);
-void compareFiles(char file1Name[], char file2Name[]);
-void twoComplement(float val, int out[64]);
-void twoComplement2File(FILE* file, float val, int out[64]);
-# 4 "MagicWand/model_functions.c" 2
 # 1 "D:/Xilinx/Vitis_HLS/2021.1/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 1 3
 # 11 "D:/Xilinx/Vitis_HLS/2021.1/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
 
@@ -1469,17 +1458,20 @@ __extension__ long long __attribute__((__cdecl__)) llrintl (long double);
    extern long double __attribute__((__cdecl__)) _chgsignl (long double);
 # 1581 "D:/Xilinx/Vitis_HLS/2021.1/tps/mingw/6.2.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
 #pragma pack(pop)
-# 5 "MagicWand/model_functions.c" 2
+# 4 "MagicWand/model_functions.c" 2
 
 void convolution1(int mRow, int mCol, float m[mRow][mCol], int kRow, int kCol, int kNum, float k[kNum][kRow][kCol], float bias[kNum], float out[mRow][mCol][kNum]){
 
     int d, i, j;
 
-    VITIS_LOOP_10_1: for (d = 0; d < kNum; d++){
-        VITIS_LOOP_11_2: for (i = 0; i < mRow; i++){
-            VITIS_LOOP_12_3: for (j = 0; j < mCol; j++) {
+    VITIS_LOOP_9_1: for (d = 0; d < kNum; d++){
+#pragma HLS pipeline off
+ VITIS_LOOP_11_2: for (i = 0; i < mRow; i++){
+#pragma HLS pipeline off
+ VITIS_LOOP_13_3: for (j = 0; j < mCol; j++) {
+#pragma HLS pipeline off
 
-                out[i][j][d] = m[i][j] * k[d][1][1] + bias[d];
+ out[i][j][d] = m[i][j] * k[d][1][1] + bias[d];
 
                 if (i - 1 >= 0) {
                     out[i][j][d] += m[i-1][j] * k[d][0][1];
@@ -1509,26 +1501,29 @@ void convolution2(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int k
 
     int d, h, i, j;
 
-    VITIS_LOOP_44_1: for (d = 0; d < kNum; d++){
-        VITIS_LOOP_45_2: for (i = 0; i < mRow; i++){
-            VITIS_LOOP_46_3: for (j = 0; j < mCol; j++) {
+    VITIS_LOOP_46_1: for (d = 0; d < kNum; d++){
+#pragma HLS pipeline off
+ VITIS_LOOP_48_2: for (i = 0; i < mRow; i++){
+#pragma HLS pipeline off
+ VITIS_LOOP_50_3: for (j = 0; j < mCol; j++) {
+#pragma HLS pipeline off
 
-                out[i][j][d] = bias[d];
-                VITIS_LOOP_49_4: for(h = 0; h < mDep; h++) {
+ out[i][j][d] = bias[d];
+                VITIS_LOOP_54_4: for(h = 0; h < mDep; h++) {
                     out[i][j][d] += m[i][j][h] * k[d][1][h];
                 }
 
                 if (i - 1 >= 0) {
-                    VITIS_LOOP_54_5: for(h = 0; h < mDep; h++) {
+                    VITIS_LOOP_59_5: for(h = 0; h < mDep; h++) {
                         out[i][j][d] += m[i-1][j][h] * k[d][0][h];
                     }
                 }
                 if (i + 2 < mRow) {
-                    VITIS_LOOP_59_6: for(h = 0; h < mDep; h++) {
+                    VITIS_LOOP_64_6: for(h = 0; h < mDep; h++) {
                         out[i][j][d] += m[i+1][j][h] * k[d][2][h] + m[i+2][j][h] * k[d][3][h];
                     }
                 } else if (i + 1 < mRow) {
-                    VITIS_LOOP_63_7: for(h = 0; h < mDep; h++) {
+                    VITIS_LOOP_68_7: for(h = 0; h < mDep; h++) {
                         out[i][j][d] += m[i+1][j][h] * k[d][2][h];
                     }
                 }
@@ -1543,14 +1538,17 @@ void maxPool(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int oRow, 
 
     int i, j, d;
 
-    VITIS_LOOP_78_1: for (d = 0; d < mDep; d++) {
-        VITIS_LOOP_79_2: for (i = 0; i < mRow; i++) {
-            if (i/kRow == oRow) break;
+    VITIS_LOOP_83_1: for (d = 0; d < mDep; d++) {
+#pragma HLS pipeline off
+ VITIS_LOOP_85_2: for (i = 0; i < mRow; i++) {
+#pragma HLS pipeline off
+ if (i/kRow == oRow) break;
             if (i%kRow == 0){
                 out[i/kRow][0][d] = 0;
             }
-            VITIS_LOOP_84_3: for (j = 0; j < mCol; j++) {
-                out[i/kRow][0][d] = ({ __typeof__ (out[i/kRow][0][d]) _a = (out[i/kRow][0][d]); __typeof__ (m[i][j][d]) _b = (m[i][j][d]); _a > _b ? _a : _b; });
+            VITIS_LOOP_91_3: for (j = 0; j < mCol; j++) {
+#pragma HLS pipeline off
+ out[i/kRow][0][d] = (float)fmax((double)out[i/kRow][0][d], (double)m[i][j][d]);
             }
         }
     }
@@ -1560,12 +1558,16 @@ void dense1(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int kRow, i
 
     int d, h, i, j;
 
-    VITIS_LOOP_95_1: for (d = 0; d < kNum; d++) {
-        out[d] = bias[d];
-        VITIS_LOOP_97_2: for (i = 0; i < mRow; i++) {
-            VITIS_LOOP_98_3: for (j = 0; j < mCol; j++) {
-                VITIS_LOOP_99_4: for (h = 0; h < mDep; h++) {
-                    out[d] += m[i][j][h] * k[d][i][h];
+    VITIS_LOOP_103_1: for (d = 0; d < kNum; d++) {
+#pragma HLS pipeline off
+ out[d] = bias[d];
+        VITIS_LOOP_106_2: for (i = 0; i < mRow; i++) {
+#pragma HLS pipeline off
+ VITIS_LOOP_108_3: for (j = 0; j < mCol; j++) {
+#pragma HLS pipeline off
+ VITIS_LOOP_110_4: for (h = 0; h < mDep; h++) {
+#pragma HLS pipeline off
+ out[d] += m[i][j][h] * k[d][i][h];
                 }
             }
         }
@@ -1577,9 +1579,10 @@ void dense2(int mSize, const float m[mSize], int kSize, int kNum, float k[kNum][
 
     int d, i;
 
-    VITIS_LOOP_112_1: for (d = 0; d < kNum; d++) {
-        out[d] = bias[d];
-        VITIS_LOOP_114_2: for (i = 0; i < mSize; i++) {
+    VITIS_LOOP_124_1: for (d = 0; d < kNum; d++) {
+#pragma HLS pipeline off
+ out[d] = bias[d];
+        VITIS_LOOP_127_2: for (i = 0; i < mSize; i++) {
             out[d] += m[i] * k[d][i];
         }
     }
@@ -1590,11 +1593,12 @@ void softmax(int mSize, float m[mSize], float out[mSize]) {
     int i;
     double sum = 0;
 
-    VITIS_LOOP_125_1: for (i = 0; i < mSize; i++){
-        sum += exp((double)m[i]);
+    VITIS_LOOP_138_1: for (i = 0; i < mSize; i++){
+#pragma HLS pipeline off
+ sum += exp((double)m[i]);
     }
 
-    VITIS_LOOP_129_2: for (i = 0; i < mSize; i++){
+    VITIS_LOOP_143_2: for (i = 0; i < mSize; i++){
         out[i] = (float)(exp((double)m[i])/sum);
     }
 }

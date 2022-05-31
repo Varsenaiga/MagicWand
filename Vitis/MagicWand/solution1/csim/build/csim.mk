@@ -16,7 +16,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../utils.c ../../../main.c ../../../file.c ../../../model_functions.c
+HLS_SOURCES = ../../../file.c ../../../main.c ../../../utils.c ../../../model_functions.c ../../../master.c
 
 override TARGET := csim.exe
 
@@ -71,11 +71,11 @@ all: $(TARGET)
 
 AUTOCC := cmd //c apcc.bat  
 
-$(ObjDir)/utils.o: ../../../utils.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../utils.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/file.o: ../../../file.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../file.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(AUTOCC) -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/utils.d
+-include $(ObjDir)/file.d
 
 $(ObjDir)/main.o: ../../../main.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../main.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
@@ -83,14 +83,20 @@ $(ObjDir)/main.o: ../../../main.c $(ObjDir)/.dir
 
 -include $(ObjDir)/main.d
 
-$(ObjDir)/file.o: ../../../file.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../file.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/utils.o: ../../../utils.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../utils.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(AUTOCC) -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/file.d
+-include $(ObjDir)/utils.d
 
 $(ObjDir)/model_functions.o: ../../../model_functions.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../model_functions.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/model_functions.d
+
+$(ObjDir)/master.o: ../../../master.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../master.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/master.d

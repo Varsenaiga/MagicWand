@@ -7,8 +7,11 @@ void convolution1(int mRow, int mCol, float m[mRow][mCol], int kRow, int kCol, i
     int d, i, j;
 
     for (d = 0; d < kNum; d++){
+	#pragma HLS pipeline off
         for (i = 0; i < mRow; i++){
+			#pragma HLS pipeline off
             for (j = 0; j < mCol; j++) {
+				#pragma HLS pipeline off
 
                 out[i][j][d] = m[i][j] * k[d][1][1] + bias[d];
 
@@ -41,8 +44,11 @@ void convolution2(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int k
     int d, h, i, j;
 
     for (d = 0; d < kNum; d++){
+		#pragma HLS pipeline off
         for (i = 0; i < mRow; i++){
+			#pragma HLS pipeline off
             for (j = 0; j < mCol; j++) {
+				#pragma HLS pipeline off
 
                 out[i][j][d] = bias[d];
                 for(h = 0; h < mDep; h++) {
@@ -75,12 +81,15 @@ void maxPool(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int oRow, 
     int i, j, d;
 
     for (d = 0; d < mDep; d++) {
+		#pragma HLS pipeline off
         for (i = 0; i < mRow; i++) {
+			#pragma HLS pipeline off
             if (i/kRow == oRow) break;
             if (i%kRow == 0){
                 out[i/kRow][0][d] = 0;
             }
             for (j = 0; j < mCol; j++) {
+				#pragma HLS pipeline off
                 out[i/kRow][0][d] = (float)fmax((double)out[i/kRow][0][d], (double)m[i][j][d]);
             }
         }
@@ -92,10 +101,14 @@ void dense1(int mRow, int mCol, int mDep, float m[mRow][mCol][mDep], int kRow, i
     int d, h, i, j;
 
     for (d = 0; d < kNum; d++) {
+		#pragma HLS pipeline off
         out[d] = bias[d];
         for (i = 0; i < mRow; i++) {
+			#pragma HLS pipeline off
             for (j = 0; j < mCol; j++) {
-                for (h = 0; h < mDep; h++) {
+				#pragma HLS pipeline off
+            	for (h = 0; h < mDep; h++) {
+					#pragma HLS pipeline off
                     out[d] += m[i][j][h] * k[d][i][h];
                 }
             }
@@ -109,6 +122,7 @@ void dense2(int mSize, const float m[mSize], int kSize, int kNum, float k[kNum][
     int d, i;
 
     for (d = 0; d < kNum; d++) {
+		#pragma HLS pipeline off
         out[d] = bias[d];
         for (i = 0; i < mSize; i++) {
             out[d] += m[i] * k[d][i];
@@ -122,6 +136,7 @@ void softmax(int mSize, float m[mSize], float out[mSize]) {
     double sum = 0;
 
     for (i = 0; i < mSize; i++){
+		#pragma HLS pipeline off
         sum += exp((double)m[i]);
     }
 

@@ -1,0 +1,7 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'tiago' on host 'desktop-g74gfk5' (Windows NT_amd64 version 6.2) on Tue May 31 15:51:02 +0100 2022
+INFO: [HLS 200-10] In directory 'C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.

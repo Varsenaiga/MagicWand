@@ -1,0 +1,2487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1654008622276">
+  <ports id="1" name="m_0" type="PortType" coreName="RAM" coreId="1953394531" bitwidth="32" iftype="IfTypeRegister" arraysize="336">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="out_0" type="PortType" coreName="RAM" coreId="1953394531" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="672">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="192" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="193" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="194" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="195" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="196" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="197" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="200" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="203" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@blocks.26" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="206" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="209" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="210" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="213" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="215" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="218" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="221" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="224" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="225" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="226" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="227" edge_type="CtrlEdge" source_obj="//@blocks.24" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="230" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="231" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="234" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="237" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="238" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="239" edge_type="CtrlEdge" source_obj="//@blocks.25" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="242" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="247" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="250" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="251" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="252" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="253" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@ports.1"/>
+  <edges id="255" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="256" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="257" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="258" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="260" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="261" source_obj="//@blocks.6/@node_objs.9" sink_obj="//@blocks.5/@node_objs.1" is_back_edge="1"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.1" is_back_edge="1"/>
+  <edges id="263" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="264" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="265" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="266" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="269" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="272" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="275" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="276" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="277" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="278" source_obj="//@ports.0" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="280" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="281" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="282" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="283" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="284" source_obj="//@blocks.6/@node_objs.4" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="285" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="287" source_obj="//@blocks.6/@node_objs.5" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="288" source_obj="//@blocks.6/@node_objs.6" sink_obj="//@blocks.6/@node_objs.7"/>
+  <edges id="289" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.8"/>
+  <edges id="290" source_obj="//@blocks.6/@node_objs.7" sink_obj="//@blocks.6/@node_objs.8"/>
+  <edges id="291" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.6/@node_objs.9"/>
+  <edges id="292" source_obj="//@blocks.6/@node_objs.8" sink_obj="//@blocks.6/@node_objs.9"/>
+  <edges id="293" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.10"/>
+  <edges id="294" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="297" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="299" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="301" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="304" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.7/@node_objs.4"/>
+  <edges id="307" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.5"/>
+  <edges id="309" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.7/@node_objs.6"/>
+  <edges id="310" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.7/@node_objs.6"/>
+  <edges id="311" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="312" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="315" source_obj="//@blocks.9/@node_objs.3" sink_obj="//@blocks.9/@node_objs.0" is_back_edge="1"/>
+  <edges id="316" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9/@node_objs.0" is_back_edge="1"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="319" source_obj="//@blocks.10/@node_objs.11" sink_obj="//@blocks.9/@node_objs.1" is_back_edge="1"/>
+  <edges id="320" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9/@node_objs.1" is_back_edge="1"/>
+  <edges id="321" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="322" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="323" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.9/@node_objs.2"/>
+  <edges id="325" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.9/@node_objs.3"/>
+  <edges id="327" source_obj="//@blocks.9/@node_objs.2" sink_obj="//@blocks.9/@node_objs.4"/>
+  <edges id="328" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9/@node_objs.4"/>
+  <edges id="329" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.9/@node_objs.4"/>
+  <edges id="330" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="332" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="333" source_obj="//@blocks.10/@node_objs.1" sink_obj="//@blocks.10/@node_objs.2"/>
+  <edges id="334" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.10/@node_objs.2"/>
+  <edges id="335" source_obj="//@blocks.10/@node_objs.2" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="336" source_obj="//@ports.0" sink_obj="//@blocks.10/@node_objs.4"/>
+  <edges id="338" source_obj="//@blocks.10/@node_objs.3" sink_obj="//@blocks.10/@node_objs.4"/>
+  <edges id="339" source_obj="//@blocks.10/@node_objs.4" sink_obj="//@blocks.10/@node_objs.5"/>
+  <edges id="342" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.10/@node_objs.6"/>
+  <edges id="345" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.10/@node_objs.6"/>
+  <edges id="346" source_obj="//@blocks.10/@node_objs.6" sink_obj="//@blocks.10/@node_objs.7"/>
+  <edges id="347" sink_obj="//@blocks.10/@node_objs.8"/>
+  <edges id="349" source_obj="//@blocks.10/@node_objs.7" sink_obj="//@blocks.10/@node_objs.8"/>
+  <edges id="350" source_obj="//@blocks.10/@node_objs.8" sink_obj="//@blocks.10/@node_objs.9"/>
+  <edges id="351" source_obj="//@blocks.10/@node_objs.5" sink_obj="//@blocks.10/@node_objs.10"/>
+  <edges id="352" source_obj="//@blocks.10/@node_objs.9" sink_obj="//@blocks.10/@node_objs.10"/>
+  <edges id="353" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.10/@node_objs.11"/>
+  <edges id="354" source_obj="//@blocks.10/@node_objs.10" sink_obj="//@blocks.10/@node_objs.11"/>
+  <edges id="355" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.10/@node_objs.12"/>
+  <edges id="356" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="357" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="359" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="361" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="362" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="363" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.12/@node_objs.1"/>
+  <edges id="364" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.12/@node_objs.1"/>
+  <edges id="365" edge_type="CtrlEdge" source_obj="//@blocks.18" sink_obj="//@blocks.12/@node_objs.1"/>
+  <edges id="366" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.18/@node_objs.0"/>
+  <edges id="367" source_obj="//@blocks.19/@node_objs.4" sink_obj="//@blocks.19/@node_objs.0" is_back_edge="1"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@blocks.20" sink_obj="//@blocks.19/@node_objs.0" is_back_edge="1"/>
+  <edges id="370" edge_type="CtrlEdge" source_obj="//@blocks.18" sink_obj="//@blocks.19/@node_objs.0"/>
+  <edges id="371" source_obj="//@blocks.20/@node_objs.20" sink_obj="//@blocks.19/@node_objs.1" is_back_edge="1"/>
+  <edges id="372" edge_type="CtrlEdge" source_obj="//@blocks.20" sink_obj="//@blocks.19/@node_objs.1" is_back_edge="1"/>
+  <edges id="373" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.19/@node_objs.1"/>
+  <edges id="374" edge_type="CtrlEdge" source_obj="//@blocks.18" sink_obj="//@blocks.19/@node_objs.1"/>
+  <edges id="375" source_obj="//@blocks.19/@node_objs.0" sink_obj="//@blocks.19/@node_objs.2"/>
+  <edges id="376" source_obj="//@blocks.19/@node_objs.0" sink_obj="//@blocks.19/@node_objs.3"/>
+  <edges id="378" source_obj="//@blocks.19/@node_objs.0" sink_obj="//@blocks.19/@node_objs.4"/>
+  <edges id="380" source_obj="//@blocks.19/@node_objs.3" sink_obj="//@blocks.19/@node_objs.5"/>
+  <edges id="381" edge_type="CtrlEdge" source_obj="//@blocks.20" sink_obj="//@blocks.19/@node_objs.5"/>
+  <edges id="382" edge_type="CtrlEdge" source_obj="//@blocks.21" sink_obj="//@blocks.19/@node_objs.5"/>
+  <edges id="383" source_obj="//@blocks.19/@node_objs.2" sink_obj="//@blocks.20/@node_objs.0"/>
+  <edges id="384" source_obj="//@blocks.7/@node_objs.4" sink_obj="//@blocks.20/@node_objs.0"/>
+  <edges id="385" source_obj="//@blocks.20/@node_objs.0" sink_obj="//@blocks.20/@node_objs.1"/>
+  <edges id="386" source_obj="//@ports.0" sink_obj="//@blocks.20/@node_objs.2"/>
+  <edges id="388" source_obj="//@blocks.20/@node_objs.1" sink_obj="//@blocks.20/@node_objs.2"/>
+  <edges id="389" source_obj="//@blocks.20/@node_objs.2" sink_obj="//@blocks.20/@node_objs.3"/>
+  <edges id="392" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.20/@node_objs.4"/>
+  <edges id="399" source_obj="//@blocks.20/@node_objs.4" sink_obj="//@blocks.20/@node_objs.5"/>
+  <edges id="400" source_obj="//@blocks.19/@node_objs.0" sink_obj="//@blocks.20/@node_objs.5"/>
+  <edges id="401" source_obj="//@blocks.20/@node_objs.5" sink_obj="//@blocks.20/@node_objs.6"/>
+  <edges id="402" sink_obj="//@blocks.20/@node_objs.7"/>
+  <edges id="404" source_obj="//@blocks.20/@node_objs.6" sink_obj="//@blocks.20/@node_objs.7"/>
+  <edges id="405" source_obj="//@blocks.20/@node_objs.7" sink_obj="//@blocks.20/@node_objs.8"/>
+  <edges id="406" source_obj="//@blocks.20/@node_objs.3" sink_obj="//@blocks.20/@node_objs.9"/>
+  <edges id="407" source_obj="//@blocks.20/@node_objs.8" sink_obj="//@blocks.20/@node_objs.9"/>
+  <edges id="408" source_obj="//@blocks.19/@node_objs.2" sink_obj="//@blocks.20/@node_objs.10"/>
+  <edges id="409" source_obj="//@blocks.7/@node_objs.5" sink_obj="//@blocks.20/@node_objs.10"/>
+  <edges id="410" source_obj="//@blocks.20/@node_objs.10" sink_obj="//@blocks.20/@node_objs.11"/>
+  <edges id="411" source_obj="//@ports.0" sink_obj="//@blocks.20/@node_objs.12"/>
+  <edges id="413" source_obj="//@blocks.20/@node_objs.11" sink_obj="//@blocks.20/@node_objs.12"/>
+  <edges id="414" source_obj="//@blocks.20/@node_objs.12" sink_obj="//@blocks.20/@node_objs.13"/>
+  <edges id="415" source_obj="//@blocks.19/@node_objs.2" sink_obj="//@blocks.20/@node_objs.14"/>
+  <edges id="416" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.20/@node_objs.14"/>
+  <edges id="417" source_obj="//@blocks.20/@node_objs.14" sink_obj="//@blocks.20/@node_objs.15"/>
+  <edges id="418" sink_obj="//@blocks.20/@node_objs.16"/>
+  <edges id="420" source_obj="//@blocks.20/@node_objs.15" sink_obj="//@blocks.20/@node_objs.16"/>
+  <edges id="421" source_obj="//@blocks.20/@node_objs.16" sink_obj="//@blocks.20/@node_objs.17"/>
+  <edges id="422" source_obj="//@blocks.20/@node_objs.13" sink_obj="//@blocks.20/@node_objs.18"/>
+  <edges id="423" source_obj="//@blocks.20/@node_objs.17" sink_obj="//@blocks.20/@node_objs.18"/>
+  <edges id="424" source_obj="//@blocks.20/@node_objs.9" sink_obj="//@blocks.20/@node_objs.19"/>
+  <edges id="425" source_obj="//@blocks.20/@node_objs.18" sink_obj="//@blocks.20/@node_objs.19"/>
+  <edges id="426" source_obj="//@blocks.19/@node_objs.1" sink_obj="//@blocks.20/@node_objs.20"/>
+  <edges id="427" source_obj="//@blocks.20/@node_objs.19" sink_obj="//@blocks.20/@node_objs.20"/>
+  <edges id="428" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.20/@node_objs.21"/>
+  <edges id="429" source_obj="//@blocks.7/@node_objs.3" sink_obj="//@blocks.13/@node_objs.0"/>
+  <edges id="430" edge_type="CtrlEdge" source_obj="//@blocks.22" sink_obj="//@blocks.13/@node_objs.0"/>
+  <edges id="431" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.13/@node_objs.0"/>
+  <edges id="432" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="433" source_obj="//@blocks.15/@node_objs.4" sink_obj="//@blocks.15/@node_objs.0" is_back_edge="1"/>
+  <edges id="434" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.15/@node_objs.0" is_back_edge="1"/>
+  <edges id="436" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.15/@node_objs.0"/>
+  <edges id="437" source_obj="//@blocks.16/@node_objs.10" sink_obj="//@blocks.15/@node_objs.1" is_back_edge="1"/>
+  <edges id="438" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.15/@node_objs.1" is_back_edge="1"/>
+  <edges id="439" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.15/@node_objs.1"/>
+  <edges id="440" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.15/@node_objs.1"/>
+  <edges id="441" source_obj="//@blocks.15/@node_objs.0" sink_obj="//@blocks.15/@node_objs.2"/>
+  <edges id="442" source_obj="//@blocks.15/@node_objs.0" sink_obj="//@blocks.15/@node_objs.3"/>
+  <edges id="444" source_obj="//@blocks.15/@node_objs.0" sink_obj="//@blocks.15/@node_objs.4"/>
+  <edges id="446" source_obj="//@blocks.15/@node_objs.3" sink_obj="//@blocks.15/@node_objs.5"/>
+  <edges id="447" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.15/@node_objs.5"/>
+  <edges id="448" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.15/@node_objs.5"/>
+  <edges id="449" source_obj="//@blocks.15/@node_objs.2" sink_obj="//@blocks.16/@node_objs.0"/>
+  <edges id="450" source_obj="//@blocks.7/@node_objs.4" sink_obj="//@blocks.16/@node_objs.0"/>
+  <edges id="451" source_obj="//@blocks.16/@node_objs.0" sink_obj="//@blocks.16/@node_objs.1"/>
+  <edges id="452" source_obj="//@ports.0" sink_obj="//@blocks.16/@node_objs.2"/>
+  <edges id="454" source_obj="//@blocks.16/@node_objs.1" sink_obj="//@blocks.16/@node_objs.2"/>
+  <edges id="455" source_obj="//@blocks.16/@node_objs.2" sink_obj="//@blocks.16/@node_objs.3"/>
+  <edges id="457" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.16/@node_objs.4"/>
+  <edges id="461" source_obj="//@blocks.16/@node_objs.4" sink_obj="//@blocks.16/@node_objs.5"/>
+  <edges id="462" source_obj="//@blocks.15/@node_objs.0" sink_obj="//@blocks.16/@node_objs.5"/>
+  <edges id="463" source_obj="//@blocks.16/@node_objs.5" sink_obj="//@blocks.16/@node_objs.6"/>
+  <edges id="464" sink_obj="//@blocks.16/@node_objs.7"/>
+  <edges id="466" source_obj="//@blocks.16/@node_objs.6" sink_obj="//@blocks.16/@node_objs.7"/>
+  <edges id="467" source_obj="//@blocks.16/@node_objs.7" sink_obj="//@blocks.16/@node_objs.8"/>
+  <edges id="468" source_obj="//@blocks.16/@node_objs.3" sink_obj="//@blocks.16/@node_objs.9"/>
+  <edges id="469" source_obj="//@blocks.16/@node_objs.8" sink_obj="//@blocks.16/@node_objs.9"/>
+  <edges id="470" source_obj="//@blocks.15/@node_objs.1" sink_obj="//@blocks.16/@node_objs.10"/>
+  <edges id="471" source_obj="//@blocks.16/@node_objs.9" sink_obj="//@blocks.16/@node_objs.10"/>
+  <edges id="472" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.16/@node_objs.11"/>
+  <edges id="473" source_obj="//@blocks.15/@node_objs.1" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="474" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="475" edge_type="CtrlEdge" source_obj="//@blocks.22" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="476" source_obj="//@blocks.19/@node_objs.1" sink_obj="//@blocks.21/@node_objs.0"/>
+  <edges id="477" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.21/@node_objs.0"/>
+  <edges id="478" edge_type="CtrlEdge" source_obj="//@blocks.22" sink_obj="//@blocks.21/@node_objs.1"/>
+  <edges id="479" source_obj="//@blocks.19/@node_objs.1" sink_obj="//@blocks.22/@node_objs.0"/>
+  <edges id="480" edge_type="CtrlEdge" source_obj="//@blocks.21" sink_obj="//@blocks.22/@node_objs.0"/>
+  <edges id="481" source_obj="//@blocks.15/@node_objs.1" sink_obj="//@blocks.22/@node_objs.0"/>
+  <edges id="482" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.22/@node_objs.0"/>
+  <edges id="483" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.22/@node_objs.0"/>
+  <edges id="484" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.22/@node_objs.0"/>
+  <edges id="485" source_obj="//@blocks.22/@node_objs.0" sink_obj="//@blocks.22/@node_objs.1"/>
+  <edges id="488" source_obj="//@blocks.22/@node_objs.1" sink_obj="//@blocks.22/@node_objs.2"/>
+  <edges id="493" source_obj="//@blocks.22/@node_objs.1" sink_obj="//@blocks.22/@node_objs.3"/>
+  <edges id="494" source_obj="//@blocks.22/@node_objs.2" sink_obj="//@blocks.22/@node_objs.4"/>
+  <edges id="497" source_obj="//@blocks.22/@node_objs.3" sink_obj="//@blocks.22/@node_objs.5"/>
+  <edges id="500" source_obj="//@blocks.22/@node_objs.5" sink_obj="//@blocks.22/@node_objs.6"/>
+  <edges id="501" source_obj="//@blocks.22/@node_objs.4" sink_obj="//@blocks.22/@node_objs.6"/>
+  <edges id="502" source_obj="//@blocks.22/@node_objs.0" sink_obj="//@blocks.22/@node_objs.7"/>
+  <edges id="505" source_obj="//@blocks.22/@node_objs.6" sink_obj="//@blocks.22/@node_objs.8"/>
+  <edges id="506" source_obj="//@blocks.22/@node_objs.7" sink_obj="//@blocks.22/@node_objs.8"/>
+  <edges id="507" source_obj="//@blocks.22/@node_objs.8" sink_obj="//@blocks.22/@node_objs.9"/>
+  <edges id="508" edge_type="CtrlEdge" source_obj="//@blocks.24" sink_obj="//@blocks.22/@node_objs.9"/>
+  <edges id="509" edge_type="CtrlEdge" source_obj="//@blocks.23" sink_obj="//@blocks.22/@node_objs.9"/>
+  <edges id="511" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.23/@node_objs.0"/>
+  <edges id="512" edge_type="CtrlEdge" source_obj="//@blocks.24" sink_obj="//@blocks.23/@node_objs.1"/>
+  <edges id="513" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.24/@node_objs.0"/>
+  <edges id="514" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.25/@node_objs.0"/>
+  <edges id="515" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.25/@node_objs.0"/>
+  <edges id="516" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.25/@node_objs.1"/>
+  <edges id="564" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="565" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.26"/>
+  <edges id="566" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="567" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="568" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.25"/>
+  <edges id="569" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="570" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="571" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="572" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="573" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5" is_back_edge="1"/>
+  <edges id="574" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.12"/>
+  <edges id="575" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="576" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="577" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.11"/>
+  <edges id="578" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.10"/>
+  <edges id="579" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9" is_back_edge="1"/>
+  <edges id="580" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12"/>
+  <edges id="581" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.18"/>
+  <edges id="582" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.13"/>
+  <edges id="583" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.14"/>
+  <edges id="584" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.22"/>
+  <edges id="585" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.15"/>
+  <edges id="586" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.17"/>
+  <edges id="587" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.16"/>
+  <edges id="588" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.15" is_back_edge="1"/>
+  <edges id="589" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.22"/>
+  <edges id="590" edge_type="CtrlEdge" source_obj="//@blocks.18" sink_obj="//@blocks.19"/>
+  <edges id="591" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.21"/>
+  <edges id="592" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.20"/>
+  <edges id="593" edge_type="CtrlEdge" source_obj="//@blocks.20" sink_obj="//@blocks.19" is_back_edge="1"/>
+  <edges id="594" edge_type="CtrlEdge" source_obj="//@blocks.21" sink_obj="//@blocks.22"/>
+  <edges id="595" edge_type="CtrlEdge" source_obj="//@blocks.22" sink_obj="//@blocks.23"/>
+  <edges id="596" edge_type="CtrlEdge" source_obj="//@blocks.22" sink_obj="//@blocks.24"/>
+  <edges id="597" edge_type="CtrlEdge" source_obj="//@blocks.23" sink_obj="//@blocks.24"/>
+  <edges id="598" edge_type="CtrlEdge" source_obj="//@blocks.24" sink_obj="//@blocks.3" is_back_edge="1"/>
+  <edges id="599" edge_type="CtrlEdge" source_obj="//@blocks.25" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="600" edge_type="VirtEdge" source_obj="//@blocks.7/@node_objs.6" sink_obj="//@blocks.23/@node_objs.0"/>
+  <edges id="601" edge_type="VirtEdge" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.23/@node_objs.0"/>
+  <edges id="602" edge_type="VirtEdge" source_obj="//@blocks.17/@node_objs.0" sink_obj="//@blocks.23/@node_objs.0"/>
+  <edges id="603" edge_type="VirtEdge" source_obj="//@blocks.21/@node_objs.0" sink_obj="//@blocks.23/@node_objs.0"/>
+  <edges id="604" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="605" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.25/@node_objs.0"/>
+  <edges id="606" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.25/@node_objs.0"/>
+  <blocks id="8" name="block_8" type="BlockType">
+    <controlOutputObjs>block_16</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="d" originalName="d" coreId="109633904" bitwidth="5" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="d_write_ln46" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="1885415483" contextFuncName="convolution2" opcode="store" m_display="0" m_delay="0.4" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln46" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="1819113472" contextFuncName="convolution2" opcode="br" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>block_16</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>46</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="16" name="block_16" type="BlockType">
+    <controlInputObjs>block_8</controlInputObjs>
+    <controlInputObjs>block_185</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_187</controlOutputObjs>
+    <controlOutputObjs>.split10</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="d_5" originalName="d" coreId="0" bitwidth="5" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="zext_ln46" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln46_fu_413_p1" coreId="107740768" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="zext_ln46_1" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln46_1_fu_418_p1" coreId="4294967295" contextFuncName="convolution2" bitwidth="10" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="icmp_ln46" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln46_fu_422_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="convolution2" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.69" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="add_ln46" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln46_fu_428_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="5" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.71" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln46" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="542329856" contextFuncName="convolution2" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split10</controlInputObjs>
+      <controlInputObjs>block_187</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>46</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="26" name=".split10" type="BlockType">
+    <controlInputObjs>block_16</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_32</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="secondBias_addr" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="1818767203" contextFuncName="convolution2" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="empty_47" rtlName="empty_47_fu_434_p1" coreId="109633648" bitwidth="4" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_10" rtlName="tmp_10_fu_438_p3" coreId="0" bitwidth="9" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="arrayidx17_sum1" rtlName="arrayidx17_sum1_fu_445_p2" coreId="1330007552" bitwidth="9" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="arrayidx61_sum2" rtlName="arrayidx61_sum2_fu_451_p2" coreId="1953244774" bitwidth="9" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="arrayidx74_sum3" rtlName="arrayidx74_sum3_fu_457_p2" coreId="109632216" bitwidth="9" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="secondBias_load" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.61" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln48" lineNumber="48" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.4" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="48" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>block_32</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>46</validLinenumbers>
+      <validLinenumbers>48</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="32" name="block_32" type="BlockType">
+    <controlInputObjs>.split10</controlInputObjs>
+    <controlInputObjs>._crit_edge19</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_185</controlOutputObjs>
+    <controlOutputObjs>.split8</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="i" originalName="i" coreId="542329856" bitwidth="6" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <controlInputObjs>._crit_edge19</controlInputObjs>
+      <controlInputObjs>.split10</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="exitcond669" rtlName="exitcond669_fu_463_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.72" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="indvars_iv_next63" rtlName="indvars_iv_next63_fu_469_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="6" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.71" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln48" lineNumber="48" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="1702257920" contextFuncName="convolution2" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="48" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split8</controlInputObjs>
+      <controlInputObjs>block_185</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>48</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="40" name=".split8" type="BlockType">
+    <controlInputObjs>block_32</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_48</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_11" rtlName="tmp_11_fu_475_p3" coreId="57857792" bitwidth="10" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="tmp_12" rtlName="tmp_12_fu_483_p3" coreId="109639280" bitwidth="9" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="add_ln53" lineNumber="53" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln53_fu_491_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="10" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.73" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="53" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="zext_ln53" lineNumber="53" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln53_fu_496_p1" coreId="1179535650" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="53" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="out_0_addr" lineNumber="53" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="10" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="53" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>out_0</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln54" lineNumber="54" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="109642864" contextFuncName="convolution2" opcode="br" nodeLabel="3.0" m_display="0" m_delay="0.4" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="54" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>block_48</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="48" name="block_48" type="BlockType">
+    <controlInputObjs>.split8</controlInputObjs>
+    <controlInputObjs>.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_70</controlOutputObjs>
+    <controlOutputObjs>.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="h" lineNumber="54" originalName="h" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="4" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="54" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlInputObjs>.split8</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="empty_49" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="32" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlInputObjs>.split8</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="zext_ln54" lineNumber="54" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln54_fu_505_p1" coreId="109620208" contextFuncName="convolution2" bitwidth="9" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="54" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="icmp_ln54" lineNumber="54" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln54_fu_509_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="convolution2" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="0.65" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="54" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="add_ln54" lineNumber="54" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln54_fu_515_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="4" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.72" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="54" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln54" lineNumber="54" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="54" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlInputObjs>block_70</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>54</validLinenumbers>
+      <validLinenumbers>55</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="61" name=".split" type="BlockType">
+    <controlInputObjs>block_48</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_48</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="add_ln55" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln55_fu_521_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="9" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.71" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln55" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln55_fu_526_p1" coreId="95321344" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="m_0_addr" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>m_0</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="m_0_load" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add_ln55_1" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln55_1_fu_531_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="9" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.71" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln55_1" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln55_1_fu_536_p1" coreId="4294967295" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="secondKernel_addr" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="1852793701" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="secondKernel_load" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="mul" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="convolution2" bitwidth="32" opcode="fmul" nodeLabel="5.0" nodeLatency="2" m_display="0" m_delay="6.08" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="add" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="convolution2" bitwidth="32" opcode="fadd" nodeLabel="8.0" nodeLatency="3" m_display="0" m_delay="5.71" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="br_ln0" coreId="111376080" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_48</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>55</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="70" name="block_70" type="BlockType">
+    <controlInputObjs>block_48</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <controlOutputObjs>.preheader9.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="empty_51" rtlName="empty_51_fu_541_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="6" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.71" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="cmp27" rtlName="cmp27_fu_547_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="0.72" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="cmp51" rtlName="cmp51_fu_553_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="0.72" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="cmp89" rtlName="cmp89_fu_559_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="0.72" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="tmp_13" rtlName="tmp_13_fu_564_p3" coreId="0" bitwidth="9" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="tmp_14" rtlName="tmp_14_fu_571_p3" coreId="0" bitwidth="9" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="out_0_addr_write_ln55" lineNumber="55" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" opcode="store" nodeLabel="4.0" m_display="0" m_delay="1.09" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="55" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="br_ln58" lineNumber="58" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="4.0" m_display="0" m_delay="0.4" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="58" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.preheader9.preheader</controlInputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>55</validLinenumbers>
+      <validLinenumbers>58</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="72" name=".preheader9.preheader" type="BlockType">
+    <controlInputObjs>block_70</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader9</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln59" lineNumber="59" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="4.0" m_display="0" m_delay="0.4" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="59" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>.preheader9</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>59</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="79" name=".preheader9" type="BlockType">
+    <controlInputObjs>.preheader9.preheader</controlInputObjs>
+    <controlInputObjs>.split2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit51</controlOutputObjs>
+    <controlOutputObjs>.split2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="h_1" lineNumber="59" originalName="h" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="111361336" contextFuncName="convolution2" bitwidth="4" opcode="phi" nodeLabel="12.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="59" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlInputObjs>.preheader9.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="empty_52" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="32" opcode="phi" nodeLabel="12.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlInputObjs>.preheader9.preheader</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="icmp_ln59" lineNumber="59" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln59_fu_579_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="convolution2" bitwidth="1" opcode="icmp" nodeLabel="12.0" m_display="0" m_delay="0.65" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="59" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="add_ln59" lineNumber="59" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln59_fu_585_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="4" opcode="add" nodeLabel="12.0" m_display="0" m_delay="0.72" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="59" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="br_ln59" lineNumber="59" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="59" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlInputObjs>.loopexit51</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>60</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="94" name=".split2" type="BlockType">
+    <controlInputObjs>.preheader9</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader9</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="xor_ln60" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="xor_ln60_fu_591_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="convolution2" bitwidth="4" opcode="xor" nodeLabel="12.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="sext_ln60" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="sext_ln60_fu_597_p1" coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="sext" nodeLabel="12.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="add_ln60" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln60_fu_601_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="9" opcode="add" nodeLabel="12.0" m_display="0" m_delay="0.71" m_topoIndex="64" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="zext_ln60" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln60_fu_606_p1" coreId="0" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="12.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="m_0_addr_1" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>m_0</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="m_0_load_1" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="12.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="add_ln60_1" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln60_1_fu_611_p4" coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="bitconcatenate" nodeLabel="12.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="zext_ln60_1" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln60_1_fu_620_p1" coreId="108334256" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="12.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="secondKernel_addr_1" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="12.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="secondKernel_load_1" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="12.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="mul1" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="convolution2" bitwidth="32" opcode="fmul" nodeLabel="13.0" nodeLatency="2" m_display="0" m_delay="6.08" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="add1" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="convolution2" bitwidth="32" opcode="fadd" nodeLabel="16.0" nodeLatency="3" m_display="0" m_delay="5.71" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="br_ln0" coreId="111385016" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader9</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>60</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="97" name=".loopexit51" type="BlockType">
+    <controlInputObjs>.preheader9</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="out_0_addr_write_ln60" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" opcode="store" nodeLabel="12.0" m_display="0" m_delay="1.09" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="br_ln63" lineNumber="63" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="12.0" m_display="0" m_delay="0.4" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="63" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>63</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="100" name="._crit_edge" type="BlockType">
+    <controlInputObjs>block_70</controlInputObjs>
+    <controlInputObjs>.loopexit51</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader7.preheader</controlOutputObjs>
+    <controlOutputObjs>block_102</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="arrayidx8524_promoted" lineNumber="60" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="32" opcode="phi" nodeLabel="12.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="60" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <controlInputObjs>.loopexit51</controlInputObjs>
+      <controlInputObjs>block_70</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="br_ln63" lineNumber="63" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="1717924352" contextFuncName="convolution2" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="63" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_102</controlInputObjs>
+      <controlInputObjs>.preheader7.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>63</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="102" name="block_102" type="BlockType">
+    <controlInputObjs>._crit_edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+    <controlOutputObjs>._crit_edge18</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="br_ln67" lineNumber="67" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="1397508096" contextFuncName="convolution2" opcode="br" nodeLabel="12.0" m_display="0" m_delay="0.44" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="67" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>._crit_edge18</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>67</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="104" name=".preheader.preheader" type="BlockType">
+    <controlInputObjs>block_102</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="br_ln68" lineNumber="68" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="12.0" m_display="0" m_delay="0.4" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="68" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>68</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="112" name=".preheader" type="BlockType">
+    <controlInputObjs>.preheader.preheader</controlInputObjs>
+    <controlInputObjs>.split4</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit50</controlOutputObjs>
+    <controlOutputObjs>.split4</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="h_3" lineNumber="68" originalName="h" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="4" opcode="phi" nodeLabel="20.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="68" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="empty_56" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="32" opcode="phi" nodeLabel="20.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="zext_ln68" lineNumber="68" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln68_fu_625_p1" coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="zext" nodeLabel="20.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="68" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="icmp_ln68" lineNumber="68" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln68_fu_629_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="convolution2" bitwidth="1" opcode="icmp" nodeLabel="20.0" m_display="0" m_delay="0.65" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="68" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="add_ln68" lineNumber="68" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln68_fu_635_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="4" opcode="add" nodeLabel="20.0" m_display="0" m_delay="0.72" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="68" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="br_ln68" lineNumber="68" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="1717924352" contextFuncName="convolution2" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="68" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlInputObjs>.loopexit50</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>68</validLinenumbers>
+      <validLinenumbers>69</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="126" name=".split4" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="add_ln69" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln69_fu_641_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="9" opcode="add" nodeLabel="20.0" m_display="0" m_delay="0.71" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="zext_ln69" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln69_fu_646_p1" coreId="0" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="20.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="m_0_addr_4" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="111380536" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>m_0</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="m_0_load_4" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="20.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="tmp_7" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="grp_fu_378_p4" coreId="0" contextFuncName="convolution2" bitwidth="5" opcode="partselect" nodeLabel="20.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="add_ln69_1" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln69_1_fu_651_p3" coreId="111373264" contextFuncName="convolution2" bitwidth="9" opcode="bitconcatenate" nodeLabel="20.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="zext_ln69_1" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln69_1_fu_659_p1" coreId="0" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="20.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="secondKernel_addr_4" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="108330704" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="20.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="122" name="secondKernel_load_4" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="20.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="mul4" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="convolution2" bitwidth="32" opcode="fmul" nodeLabel="21.0" nodeLatency="2" m_display="0" m_delay="6.08" m_topoIndex="99" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="add4" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="convolution2" bitwidth="32" opcode="fadd" nodeLabel="24.0" nodeLatency="3" m_display="0" m_delay="5.71" m_topoIndex="100" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="br_ln0" coreId="6775040" opcode="br" nodeLabel="27.0" m_display="0" m_topoIndex="101" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>69</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="129" name=".loopexit50" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>._crit_edge18</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="out_0_addr_write_ln69" lineNumber="69" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" opcode="store" nodeLabel="20.0" m_display="0" m_delay="1.09" m_topoIndex="97" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="69" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="128" name="br_ln0" coreId="0" opcode="br" nodeLabel="20.0" m_display="0" m_delay="0.44" m_topoIndex="98" m_clusterGroupNumber="-1">
+      <controlInputObjs>._crit_edge18</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>69</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="131" name=".preheader7.preheader" type="BlockType">
+    <controlInputObjs>._crit_edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader7</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="130" name="br_ln64" lineNumber="64" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="3976406034" contextFuncName="convolution2" opcode="br" nodeLabel="12.0" m_display="0" m_delay="0.4" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="64" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>.preheader7</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>64</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="139" name=".preheader7" type="BlockType">
+    <controlInputObjs>.preheader7.preheader</controlInputObjs>
+    <controlInputObjs>.split6</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.loopexit</controlOutputObjs>
+    <controlOutputObjs>.split6</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="h_2" lineNumber="64" originalName="h" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="108402432" contextFuncName="convolution2" bitwidth="4" opcode="phi" nodeLabel="28.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="64" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <controlInputObjs>.split6</controlInputObjs>
+      <controlInputObjs>.preheader7.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="empty_54" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="32" opcode="phi" nodeLabel="28.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <controlInputObjs>.split6</controlInputObjs>
+      <controlInputObjs>.preheader7.preheader</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="134" name="zext_ln64" lineNumber="64" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln64_fu_664_p1" coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="zext" nodeLabel="28.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="64" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="icmp_ln64" lineNumber="64" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln64_fu_668_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="convolution2" bitwidth="1" opcode="icmp" nodeLabel="28.0" m_display="0" m_delay="0.65" m_topoIndex="105" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="64" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="137" name="add_ln64" lineNumber="64" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln64_fu_674_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="4" opcode="add" nodeLabel="28.0" m_display="0" m_delay="0.72" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="64" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="138" name="br_ln64" lineNumber="64" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="28.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="64" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split6</controlInputObjs>
+      <controlInputObjs>.loopexit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>64</validLinenumbers>
+      <validLinenumbers>65</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="163" name=".split6" type="BlockType">
+    <controlInputObjs>.preheader7</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader7</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="add_ln65" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln65_fu_680_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="9" opcode="add" nodeLabel="28.0" m_display="0" m_delay="0.71" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="142" name="zext_ln65" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln65_fu_685_p1" coreId="540697965" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="28.0" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="143" name="m_0_addr_2" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="28.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>m_0</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="144" name="m_0_load_2" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="28.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="tmp_s" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="grp_fu_378_p4" coreId="111599208" contextFuncName="convolution2" bitwidth="5" opcode="partselect" nodeLabel="28.0" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="146" name="add_ln65_1" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln65_1_fu_690_p3" coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="bitconcatenate" nodeLabel="28.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="147" name="zext_ln65_1" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln65_1_fu_698_p1" coreId="0" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="28.0" m_display="0" m_topoIndex="114" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="148" name="secondKernel_addr_2" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="111531408" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="28.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="149" name="secondKernel_load_2" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="28.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="116" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="150" name="mul2" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="convolution2" bitwidth="32" opcode="fmul" nodeLabel="29.0" nodeLatency="2" m_display="0" m_delay="6.08" m_topoIndex="127" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="151" name="add_ln65_2" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln65_2_fu_703_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="9" opcode="add" nodeLabel="28.0" m_display="0" m_delay="0.71" m_topoIndex="117" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="152" name="zext_ln65_2" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln65_2_fu_708_p1" coreId="7955712" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="28.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="153" name="m_0_addr_3" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="28.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>m_0</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="154" name="m_0_load_3" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="28.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="120" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="155" name="add_ln65_3" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln65_3_fu_713_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="convolution2" bitwidth="9" opcode="add" nodeLabel="28.0" m_display="0" m_delay="0.71" m_topoIndex="121" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="156" name="zext_ln65_3" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln65_3_fu_718_p1" coreId="0" contextFuncName="convolution2" bitwidth="64" opcode="zext" nodeLabel="28.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="157" name="secondKernel_addr_3" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="9" opcode="getelementptr" nodeLabel="28.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="158" name="secondKernel_load_3" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="convolution2" bitwidth="32" opcode="load" nodeLabel="28.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="124" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="159" name="mul3" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="convolution2" bitwidth="32" opcode="fmul" nodeLabel="29.0" nodeLatency="2" m_display="0" m_delay="6.08" m_topoIndex="128" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="160" name="add2" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="convolution2" bitwidth="32" opcode="fadd" nodeLabel="32.0" nodeLatency="3" m_display="0" m_delay="5.71" m_topoIndex="129" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="161" name="add3" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="convolution2" bitwidth="32" opcode="fadd" nodeLabel="36.0" nodeLatency="3" m_display="0" m_delay="5.71" m_topoIndex="130" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="162" name="br_ln0" coreId="111601152" opcode="br" nodeLabel="39.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader7</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>65</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="166" name=".loopexit" type="BlockType">
+    <controlInputObjs>.preheader7</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>._crit_edge18</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="164" name="out_0_addr_write_ln65" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" opcode="store" nodeLabel="28.0" m_display="0" m_delay="1.09" m_topoIndex="125" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="br_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="111603688" contextFuncName="convolution2" opcode="br" nodeLabel="28.0" m_display="0" m_delay="0.44" m_topoIndex="126" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>._crit_edge18</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>65</validLinenumbers>
+      <validLinenumbers>73</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="177" name="._crit_edge18" type="BlockType">
+    <controlInputObjs>block_102</controlInputObjs>
+    <controlInputObjs>.loopexit50</controlInputObjs>
+    <controlInputObjs>.loopexit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_180</controlOutputObjs>
+    <controlOutputObjs>._crit_edge19</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="167" name="empty_58" lineNumber="65" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" bitwidth="32" opcode="phi" nodeLabel="40.0" m_display="0" m_topoIndex="132" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="65" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <controlInputObjs>.loopexit</controlInputObjs>
+      <controlInputObjs>.loopexit50</controlInputObjs>
+      <controlInputObjs>block_102</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="168" name="bitcast_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="bitcast_ln73_fu_723_p1" coreId="0" contextFuncName="convolution2" bitwidth="32" opcode="bitcast" nodeLabel="40.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="169" name="tmp_8" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="tmp_8_fu_727_p4" coreId="1819113472" contextFuncName="convolution2" bitwidth="8" opcode="partselect" nodeLabel="40.0" m_display="0" m_topoIndex="134" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="170" name="trunc_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="trunc_ln73_fu_737_p1" coreId="0" contextFuncName="convolution2" bitwidth="23" opcode="trunc" nodeLabel="40.0" m_display="0" m_topoIndex="135" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="171" name="icmp_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln73_fu_741_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="convolution2" bitwidth="1" opcode="icmp" nodeLabel="40.0" m_display="0" m_delay="0.79" m_topoIndex="136" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="172" name="icmp_ln73_1" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln73_1_fu_747_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="convolution2" bitwidth="1" opcode="icmp" nodeLabel="40.0" m_display="0" m_delay="0.98" m_topoIndex="137" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="173" name="or_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="or_ln73_fu_753_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="convolution2" bitwidth="1" opcode="or" nodeLabel="41.0" m_display="0" m_topoIndex="139" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="174" name="tmp_9" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="FCompare" implIndex="auto" control="no" opType="fcmp" coreId="19" contextFuncName="convolution2" bitwidth="1" opcode="fcmp" nodeLabel="40.0" nodeLatency="1" m_display="0" m_delay="2.57" m_topoIndex="138" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="175" name="and_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="and_ln73_fu_757_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="convolution2" bitwidth="1" opcode="and" nodeLabel="41.0" m_display="0" m_delay="0.25" m_topoIndex="140" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>fcmp</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="176" name="br_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="141" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>._crit_edge19</controlInputObjs>
+      <controlInputObjs>block_180</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>65</validLinenumbers>
+      <validLinenumbers>73</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="180" name="block_180" type="BlockType">
+    <controlInputObjs>._crit_edge18</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge19</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="178" name="out_0_addr_write_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="convolution2" opcode="store" nodeLabel="41.0" m_display="0" m_delay="1.09" m_topoIndex="142" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="179" name="br_ln73" lineNumber="73" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="111613672" contextFuncName="convolution2" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="143" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="73" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <controlInputObjs>._crit_edge19</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>73</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="182" name="._crit_edge19" type="BlockType">
+    <controlInputObjs>._crit_edge18</controlInputObjs>
+    <controlInputObjs>block_180</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_32</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="181" name="br_ln0" coreId="0" opcode="br" nodeLabel="41.0" m_display="0" m_topoIndex="144" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_32</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="185" name="block_185" type="BlockType">
+    <controlInputObjs>block_32</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_16</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="183" name="d_write_ln46" lineNumber="46" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="111532224" contextFuncName="convolution2" opcode="store" nodeLabel="3.0" m_display="0" m_delay="0.4" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="46" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="184" name="br_ln0" coreId="0" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_16</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>46</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="187" name="block_187" type="BlockType">
+    <controlInputObjs>block_16</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="186" name="_ln77" lineNumber="77" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="convolution2" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="77" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="convolution2"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>77</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <ScheduleInfo time="41"/>
+  <regnodes realName="tmp_13_reg_865">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="add4_reg_922">
+    <nodeIds>124</nodeIds>
+  </regnodes>
+  <regnodes realName="secondKernel_addr_2_reg_940">
+    <nodeIds>148</nodeIds>
+  </regnodes>
+  <regnodes realName="secondBias_addr_reg_783">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln68_reg_907">
+    <nodeIds>110</nodeIds>
+  </regnodes>
+  <regnodes realName="h_1_reg_254">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="h_2_reg_312">
+    <nodeIds>132</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_54_reg_323">
+    <nodeIds>133</nodeIds>
+  </regnodes>
+  <regnodes realName="m_0_addr_2_reg_935">
+    <nodeIds>143</nodeIds>
+  </regnodes>
+  <regnodes realName="arrayidx8524_promoted_reg_277">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln64_reg_930">
+    <nodeIds>137</nodeIds>
+  </regnodes>
+  <regnodes realName="add_reg_876">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="h_reg_232">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="add3_reg_975">
+    <nodeIds>161</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp89_reg_861">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp51_reg_857">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln73_reg_980">
+    <nodeIds>171</nodeIds>
+  </regnodes>
+  <regnodes realName="add1_reg_899">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="d_reg_763">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="m_0_addr_reg_843">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="secondKernel_addr_1_reg_894">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="mul3_reg_965">
+    <nodeIds>159</nodeIds>
+  </regnodes>
+  <regnodes realName="m_0_addr_1_reg_889">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_220">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="arrayidx17_sum1_reg_794">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln46_reg_778">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="cmp27_reg_853">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln73_1_reg_985">
+    <nodeIds>172</nodeIds>
+  </regnodes>
+  <regnodes realName="arrayidx74_sum3_reg_804">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_12_reg_824">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="arrayidx61_sum2_reg_799">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln46_1_reg_770">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="indvars_iv_next63_reg_817">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_393">
+    <nodeIds>57</nodeIds>
+    <nodeIds>90</nodeIds>
+    <nodeIds>122</nodeIds>
+    <nodeIds>149</nodeIds>
+  </regnodes>
+  <regnodes realName="m_0_load_3_reg_955">
+    <nodeIds>154</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_52_reg_265">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="m_0_addr_4_reg_912">
+    <nodeIds>116</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_47_reg_788">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_49_reg_243">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="secondKernel_addr_3_reg_950">
+    <nodeIds>157</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_399">
+    <nodeIds>58</nodeIds>
+    <nodeIds>91</nodeIds>
+    <nodeIds>123</nodeIds>
+    <nodeIds>150</nodeIds>
+  </regnodes>
+  <regnodes realName="secondKernel_load_3_reg_960">
+    <nodeIds>158</nodeIds>
+  </regnodes>
+  <regnodes realName="add2_reg_970">
+    <nodeIds>160</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln59_reg_884">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln54_reg_838">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_58_reg_335">
+    <nodeIds>167</nodeIds>
+  </regnodes>
+  <regnodes realName="secondBias_load_reg_809">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="secondKernel_addr_4_reg_917">
+    <nodeIds>121</nodeIds>
+  </regnodes>
+  <regnodes realName="out_0_addr_reg_830">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_14_reg_871">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_387">
+    <nodeIds>53</nodeIds>
+    <nodeIds>86</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>144</nodeIds>
+  </regnodes>
+  <regnodes realName="h_3_reg_289">
+    <nodeIds>105</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_56_reg_300">
+    <nodeIds>106</nodeIds>
+  </regnodes>
+  <regnodes realName="m_0_addr_3_reg_945">
+    <nodeIds>153</nodeIds>
+  </regnodes>
+  <regnodes realName="secondKernel_addr_reg_848">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <expressionNodes realName="arrayidx17_sum1_fu_445">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln54_fu_509">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="h_phi_fu_236">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_fu_515">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_224">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln60_fu_591">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln53_fu_496">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="arrayidx8524_promoted_phi_fu_280">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="h_3_phi_fu_293">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln55_1_fu_531">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln65_2_fu_708">
+    <nodeIds>152</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln65_3_fu_713">
+    <nodeIds>155</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_14_fu_571">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln73_fu_741">
+    <nodeIds>171</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln73_fu_737">
+    <nodeIds>170</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_51_fu_541">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_727">
+    <nodeIds>169</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond669_fu_463">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_56_phi_fu_303">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_fu_438">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln65_fu_685">
+    <nodeIds>142</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln68_fu_625">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln60_fu_601">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_58_phi_fu_338">
+    <nodeIds>167</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_0_addr_gep_fu_116">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln64_fu_664">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvars_iv_next63_fu_469">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln69_fu_646">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln60_1_fu_611">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln55_fu_521">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln65_3_fu_718">
+    <nodeIds>156</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_fu_491">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cmp27_fu_547">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="d_fu_92">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln65_2_fu_703">
+    <nodeIds>151</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln60_fu_597">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cmp51_fu_553">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="arrayidx61_sum2_fu_451">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_54_phi_fu_326">
+    <nodeIds>133</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_13_fu_564">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln55_1_fu_536">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="secondKernel_addr_3_gep_fu_211">
+    <nodeIds>157</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_1_fu_620">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="h_1_phi_fu_258">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln69_fu_641">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln64_fu_668">
+    <nodeIds>135</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln46_fu_413">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln65_1_fu_690">
+    <nodeIds>146</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cmp89_fu_559">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln65_fu_680">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln59_fu_585">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_0_addr_gep_fu_109">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln59_fu_579">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln68_fu_635">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln68_fu_629">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln65_1_fu_698">
+    <nodeIds>147</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln64_fu_674">
+    <nodeIds>137</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_52_phi_fu_268">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_378">
+    <nodeIds>118</nodeIds>
+    <nodeIds>145</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="secondKernel_addr_2_gep_fu_191">
+    <nodeIds>148</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="secondKernel_addr_gep_fu_129">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_47_fu_434">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln73_fu_723">
+    <nodeIds>168</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln69_1_fu_651">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_fu_475">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_0_addr_3_gep_fu_203">
+    <nodeIds>153</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="arrayidx74_sum3_fu_457">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_49_phi_fu_246">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln55_fu_526">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="secondKernel_addr_1_gep_fu_155">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln69_1_fu_659">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln46_fu_428">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln73_fu_753">
+    <nodeIds>173</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln73_1_fu_747">
+    <nodeIds>172</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_0_addr_4_gep_fu_163">
+    <nodeIds>116</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln46_1_fu_418">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_0_addr_1_gep_fu_147">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln54_fu_505">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="h_2_phi_fu_316">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_fu_606">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_fu_483">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="secondBias_addr_gep_fu_96">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln46_fu_422">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_0_addr_2_gep_fu_179">
+    <nodeIds>143</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln73_fu_757">
+    <nodeIds>175</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="secondKernel_addr_4_gep_fu_171">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_358">
+    <nodeIds>58</nodeIds>
+    <nodeIds>91</nodeIds>
+    <nodeIds>123</nodeIds>
+    <nodeIds>150</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_366">
+    <nodeIds>159</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_350">
+    <nodeIds>59</nodeIds>
+    <nodeIds>92</nodeIds>
+    <nodeIds>124</nodeIds>
+    <nodeIds>160</nodeIds>
+    <nodeIds>161</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_372">
+    <nodeIds>174</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln46_store_fu_501">
+    <nodeIds>183</nodeIds>
+  </ioNodes>
+  <ioNodes realName="d_5_load_fu_410">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln46_store_fu_405">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="m_0">
+    <nodeIds>53</nodeIds>
+    <nodeIds>86</nodeIds>
+    <nodeIds>117</nodeIds>
+    <nodeIds>154</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="m_0" portID="1">
+    <nodeIds>144</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="out_0">
+    <nodeIds>68</nodeIds>
+    <nodeIds>95</nodeIds>
+    <nodeIds>127</nodeIds>
+    <nodeIds>164</nodeIds>
+    <nodeIds>178</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="secondBias">
+    <nodeIds>24</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="secondKernel">
+    <nodeIds>57</nodeIds>
+    <nodeIds>90</nodeIds>
+    <nodeIds>122</nodeIds>
+    <nodeIds>158</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="secondKernel" portID="1">
+    <nodeIds>149</nodeIds>
+  </memoryPorts>
+  <ioPorts name="m_0(p0)">
+    <contents name="load">
+      <nodeIds>53</nodeIds>
+      <nodeIds>86</nodeIds>
+      <nodeIds>117</nodeIds>
+      <nodeIds>154</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="m_0(p1)">
+    <contents name="load">
+      <nodeIds>144</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_0(p0)">
+    <contents name="store">
+      <nodeIds>68</nodeIds>
+      <nodeIds>95</nodeIds>
+      <nodeIds>127</nodeIds>
+      <nodeIds>164</nodeIds>
+      <nodeIds>178</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="24" stage="2" latency="2"/>
+      <operations id="186" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="2"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="183" stage="1" latency="1"/>
+      <operations id="184" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="2" latency="2"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="2" latency="2"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="53" stage="1" latency="2"/>
+      <operations id="57" stage="1" latency="2"/>
+      <operations id="58" stage="3" latency="3"/>
+    </states>
+    <states id="7">
+      <operations id="58" stage="2" latency="3"/>
+    </states>
+    <states id="8">
+      <operations id="58" stage="1" latency="3"/>
+    </states>
+    <states id="9">
+      <operations id="59" stage="4" latency="4"/>
+    </states>
+    <states id="10">
+      <operations id="59" stage="3" latency="4"/>
+    </states>
+    <states id="11">
+      <operations id="59" stage="2" latency="4"/>
+    </states>
+    <states id="12">
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="4"/>
+      <operations id="60" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="2" latency="2"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="2" latency="2"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+    </states>
+    <states id="14">
+      <operations id="86" stage="1" latency="2"/>
+      <operations id="90" stage="1" latency="2"/>
+      <operations id="91" stage="3" latency="3"/>
+    </states>
+    <states id="15">
+      <operations id="91" stage="2" latency="3"/>
+    </states>
+    <states id="16">
+      <operations id="91" stage="1" latency="3"/>
+    </states>
+    <states id="17">
+      <operations id="92" stage="4" latency="4"/>
+    </states>
+    <states id="18">
+      <operations id="92" stage="3" latency="4"/>
+    </states>
+    <states id="19">
+      <operations id="92" stage="2" latency="4"/>
+    </states>
+    <states id="20">
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="4"/>
+      <operations id="93" stage="1" latency="1"/>
+    </states>
+    <states id="21">
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="2" latency="2"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="2" latency="2"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+    </states>
+    <states id="22">
+      <operations id="117" stage="1" latency="2"/>
+      <operations id="122" stage="1" latency="2"/>
+      <operations id="123" stage="3" latency="3"/>
+    </states>
+    <states id="23">
+      <operations id="123" stage="2" latency="3"/>
+    </states>
+    <states id="24">
+      <operations id="123" stage="1" latency="3"/>
+    </states>
+    <states id="25">
+      <operations id="124" stage="4" latency="4"/>
+    </states>
+    <states id="26">
+      <operations id="124" stage="3" latency="4"/>
+    </states>
+    <states id="27">
+      <operations id="124" stage="2" latency="4"/>
+    </states>
+    <states id="28">
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="4"/>
+      <operations id="125" stage="1" latency="1"/>
+    </states>
+    <states id="29">
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="2" latency="2"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="2" latency="2"/>
+      <operations id="151" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="2" latency="2"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="2" latency="2"/>
+      <operations id="164" stage="1" latency="1"/>
+      <operations id="165" stage="1" latency="1"/>
+    </states>
+    <states id="30">
+      <operations id="144" stage="1" latency="2"/>
+      <operations id="149" stage="1" latency="2"/>
+      <operations id="150" stage="3" latency="3"/>
+      <operations id="154" stage="1" latency="2"/>
+      <operations id="158" stage="1" latency="2"/>
+      <operations id="159" stage="3" latency="3"/>
+    </states>
+    <states id="31">
+      <operations id="150" stage="2" latency="3"/>
+      <operations id="159" stage="2" latency="3"/>
+    </states>
+    <states id="32">
+      <operations id="150" stage="1" latency="3"/>
+      <operations id="159" stage="1" latency="3"/>
+    </states>
+    <states id="33">
+      <operations id="160" stage="4" latency="4"/>
+    </states>
+    <states id="34">
+      <operations id="160" stage="3" latency="4"/>
+    </states>
+    <states id="35">
+      <operations id="160" stage="2" latency="4"/>
+    </states>
+    <states id="36">
+      <operations id="160" stage="1" latency="4"/>
+    </states>
+    <states id="37">
+      <operations id="161" stage="4" latency="4"/>
+    </states>
+    <states id="38">
+      <operations id="161" stage="3" latency="4"/>
+    </states>
+    <states id="39">
+      <operations id="161" stage="2" latency="4"/>
+    </states>
+    <states id="40">
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="161" stage="1" latency="4"/>
+      <operations id="162" stage="1" latency="1"/>
+    </states>
+    <states id="41">
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="169" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="171" stage="1" latency="1"/>
+      <operations id="172" stage="1" latency="1"/>
+      <operations id="174" stage="2" latency="2"/>
+    </states>
+    <states id="42">
+      <operations id="173" stage="1" latency="1"/>
+      <operations id="174" stage="1" latency="2"/>
+      <operations id="175" stage="1" latency="1"/>
+      <operations id="176" stage="1" latency="1"/>
+      <operations id="178" stage="1" latency="1"/>
+      <operations id="179" stage="1" latency="1"/>
+      <operations id="181" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="41">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="41">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="37" outState="38">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="39" outState="40">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="40" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="41">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="41" outState="42">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="42" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="convolution2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="46417" mMaxLatency="154609">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>18</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>8</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_46_1" mII="-1" mDepth="-1" mMinTripCount="16" mMaxTripCount="16" mMinLatency="46416" mMaxLatency="154608" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>17</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="1">
+      <basicBlocks>16</basicBlocks>
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_48_2" mII="-1" mDepth="-1" mMinTripCount="42" mMaxTripCount="42" mMinLatency="2898" mMaxLatency="9660" mType="1">
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <subRegions>9</subRegions>
+      <subRegions>10</subRegions>
+      <subRegions>11</subRegions>
+      <subRegions>12</subRegions>
+      <subRegions>13</subRegions>
+      <subRegions>14</subRegions>
+      <subRegions>15</subRegions>
+      <subRegions>16</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>40</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="VITIS_LOOP_54_4" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="64" mMaxLatency="64" mType="1">
+      <basicBlocks>48</basicBlocks>
+      <basicBlocks>61</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>70</basicBlocks>
+      <basicBlocks>72</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="VITIS_LOOP_59_5" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="64" mMaxLatency="64" mType="1">
+      <basicBlocks>79</basicBlocks>
+      <basicBlocks>94</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Region 4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>97</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="11" mTag="Region 5" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>100</basicBlocks>
+      <basicBlocks>102</basicBlocks>
+      <basicBlocks>104</basicBlocks>
+      <basicBlocks>131</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="12" mTag="VITIS_LOOP_68_7" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="64" mMaxLatency="64" mType="1">
+      <basicBlocks>112</basicBlocks>
+      <basicBlocks>126</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="13" mTag="Region 6" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>129</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="14" mTag="VITIS_LOOP_64_6" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="96" mMaxLatency="96" mType="1">
+      <basicBlocks>139</basicBlocks>
+      <basicBlocks>163</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="15" mTag="Region 7" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>166</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="16" mTag="Region 8" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>177</basicBlocks>
+      <basicBlocks>180</basicBlocks>
+      <basicBlocks>182</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="17" mTag="Region 9" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>185</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="18" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>187</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

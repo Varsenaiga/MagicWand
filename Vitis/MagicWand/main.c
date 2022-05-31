@@ -11,8 +11,7 @@ int main() {
 	readFile(file);
 	closeFile(file);
 
-	//printf("\n\nComparing Files:\n");
-	//compareFiles("test.txt","original.txt");
-
-	return 0;
+	printf("\n\nComparing Files:\n");
+	int r = compareFiles("original.txt", "test.txt");
+	return r;
 }

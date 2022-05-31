@@ -1,0 +1,2352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1654008624819">
+  <ports id="1" name="input_r" type="PortType" originalName="input" coreName="RAM" coreId="1953394531" bitwidth="32" iftype="IfTypeRegister" arraysize="384">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="out_r" type="PortType" coreName="RAM" coreId="695430688" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="4">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="198" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="199" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="202" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="203" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="206" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="207" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="210" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="211" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="214" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="215" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="216" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="217" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="218" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="221" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="224" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="225" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="226" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="234" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.9/@node_objs.5"/>
+  <edges id="235" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9/@node_objs.6"/>
+  <edges id="236" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="239" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="240" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="241" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="243" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="244" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="247" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="252" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="254" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="255" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="256" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="257" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="258" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="259" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.0" is_back_edge="1"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="263" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.3/@node_objs.1" is_back_edge="1"/>
+  <edges id="264" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.1" is_back_edge="1"/>
+  <edges id="265" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="266" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="267" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="270" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="273" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="278" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="280" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="281" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="282" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="283" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="285" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="286" source_obj="//@blocks.6/@node_objs.11" sink_obj="//@blocks.5/@node_objs.1" is_back_edge="1"/>
+  <edges id="287" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.1" is_back_edge="1"/>
+  <edges id="288" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="289" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="290" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="291" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="293" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="295" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="296" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="297" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="298" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="299" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="300" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="301" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="303" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="304" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="307" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="314" source_obj="//@blocks.6/@node_objs.4" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="315" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="316" source_obj="//@blocks.6/@node_objs.5" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="317" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="318" source_obj="//@blocks.6/@node_objs.6" sink_obj="//@blocks.6/@node_objs.7"/>
+  <edges id="319" sink_obj="//@blocks.6/@node_objs.8"/>
+  <edges id="321" source_obj="//@blocks.6/@node_objs.7" sink_obj="//@blocks.6/@node_objs.8"/>
+  <edges id="322" source_obj="//@blocks.6/@node_objs.8" sink_obj="//@blocks.6/@node_objs.9"/>
+  <edges id="323" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.10"/>
+  <edges id="324" source_obj="//@blocks.6/@node_objs.9" sink_obj="//@blocks.6/@node_objs.10"/>
+  <edges id="325" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.6/@node_objs.11"/>
+  <edges id="326" source_obj="//@blocks.6/@node_objs.10" sink_obj="//@blocks.6/@node_objs.11"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.12"/>
+  <edges id="328" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="329" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="332" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="337" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="338" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@blocks.8/@node_objs.3"/>
+  <edges id="341" source_obj="//@blocks.8/@node_objs.2" sink_obj="//@blocks.8/@node_objs.4"/>
+  <edges id="344" source_obj="//@blocks.8/@node_objs.4" sink_obj="//@blocks.8/@node_objs.5"/>
+  <edges id="345" source_obj="//@blocks.8/@node_objs.3" sink_obj="//@blocks.8/@node_objs.5"/>
+  <edges id="346" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.8/@node_objs.6"/>
+  <edges id="349" source_obj="//@blocks.8/@node_objs.5" sink_obj="//@blocks.8/@node_objs.7"/>
+  <edges id="350" source_obj="//@blocks.8/@node_objs.6" sink_obj="//@blocks.8/@node_objs.7"/>
+  <edges id="351" source_obj="//@blocks.8/@node_objs.7" sink_obj="//@blocks.8/@node_objs.8"/>
+  <edges id="353" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.8/@node_objs.8"/>
+  <edges id="354" source_obj="//@blocks.8/@node_objs.8" sink_obj="//@blocks.8/@node_objs.9"/>
+  <edges id="355" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.8/@node_objs.9"/>
+  <edges id="356" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.8/@node_objs.10"/>
+  <edges id="357" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.8/@node_objs.10"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.8/@node_objs.11"/>
+  <edges id="359" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="360" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.10/@node_objs.1"/>
+  <edges id="363" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.10/@node_objs.2"/>
+  <edges id="366" source_obj="//@blocks.10/@node_objs.1" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="367" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@blocks.20" sink_obj="//@blocks.10/@node_objs.3"/>
+  <edges id="372" source_obj="//@blocks.20/@node_objs.1" sink_obj="//@blocks.20/@node_objs.2"/>
+  <edges id="375" source_obj="//@blocks.20/@node_objs.0" sink_obj="//@blocks.20/@node_objs.3"/>
+  <edges id="376" edge_type="CtrlEdge" source_obj="//@blocks.21" sink_obj="//@blocks.20/@node_objs.4"/>
+  <edges id="377" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="388" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="391" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.11/@node_objs.2"/>
+  <edges id="393" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.11/@node_objs.3"/>
+  <edges id="394" source_obj="//@blocks.12/@node_objs.5" sink_obj="//@blocks.12/@node_objs.0" is_back_edge="1"/>
+  <edges id="395" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.12/@node_objs.0" is_back_edge="1"/>
+  <edges id="397" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="398" source_obj="//@blocks.13/@node_objs.7" sink_obj="//@blocks.12/@node_objs.1" is_back_edge="1"/>
+  <edges id="399" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.12/@node_objs.1" is_back_edge="1"/>
+  <edges id="400" source_obj="//@blocks.11/@node_objs.1" sink_obj="//@blocks.12/@node_objs.1"/>
+  <edges id="401" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12/@node_objs.1"/>
+  <edges id="402" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.12/@node_objs.2"/>
+  <edges id="403" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.12/@node_objs.3"/>
+  <edges id="404" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.12/@node_objs.4"/>
+  <edges id="406" source_obj="//@blocks.12/@node_objs.0" sink_obj="//@blocks.12/@node_objs.5"/>
+  <edges id="408" source_obj="//@blocks.12/@node_objs.4" sink_obj="//@blocks.12/@node_objs.6"/>
+  <edges id="409" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.12/@node_objs.6"/>
+  <edges id="410" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.12/@node_objs.6"/>
+  <edges id="411" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.13/@node_objs.0"/>
+  <edges id="413" source_obj="//@blocks.12/@node_objs.2" sink_obj="//@blocks.13/@node_objs.0"/>
+  <edges id="414" source_obj="//@blocks.13/@node_objs.0" sink_obj="//@blocks.13/@node_objs.1"/>
+  <edges id="415" source_obj="//@blocks.12/@node_objs.3" sink_obj="//@blocks.13/@node_objs.2"/>
+  <edges id="416" source_obj="//@blocks.11/@node_objs.2" sink_obj="//@blocks.13/@node_objs.2"/>
+  <edges id="417" source_obj="//@blocks.13/@node_objs.2" sink_obj="//@blocks.13/@node_objs.3"/>
+  <edges id="418" sink_obj="//@blocks.13/@node_objs.4"/>
+  <edges id="420" source_obj="//@blocks.13/@node_objs.3" sink_obj="//@blocks.13/@node_objs.4"/>
+  <edges id="421" source_obj="//@blocks.13/@node_objs.4" sink_obj="//@blocks.13/@node_objs.5"/>
+  <edges id="422" source_obj="//@blocks.13/@node_objs.1" sink_obj="//@blocks.13/@node_objs.6"/>
+  <edges id="423" source_obj="//@blocks.13/@node_objs.5" sink_obj="//@blocks.13/@node_objs.6"/>
+  <edges id="424" source_obj="//@blocks.12/@node_objs.1" sink_obj="//@blocks.13/@node_objs.7"/>
+  <edges id="425" source_obj="//@blocks.13/@node_objs.6" sink_obj="//@blocks.13/@node_objs.7"/>
+  <edges id="426" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.13/@node_objs.8"/>
+  <edges id="427" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="428" edge_type="CtrlEdge" source_obj="//@blocks.18" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="431" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="434" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="437" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="438" source_obj="//@blocks.12/@node_objs.1" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="439" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="440" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="441" source_obj="//@blocks.10/@node_objs.2" sink_obj="//@blocks.19/@node_objs.0"/>
+  <edges id="442" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.19/@node_objs.0"/>
+  <edges id="443" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.19/@node_objs.1"/>
+  <edges id="444" source_obj="//@blocks.20/@node_objs.1" sink_obj="//@blocks.21/@node_objs.0"/>
+  <edges id="445" source_obj="//@blocks.21/@node_objs.0" sink_obj="//@blocks.21/@node_objs.1"/>
+  <edges id="447" source_obj="//@blocks.21/@node_objs.0" sink_obj="//@blocks.21/@node_objs.2"/>
+  <edges id="449" source_obj="//@blocks.21/@node_objs.1" sink_obj="//@blocks.21/@node_objs.3"/>
+  <edges id="450" edge_type="CtrlEdge" source_obj="//@blocks.22" sink_obj="//@blocks.21/@node_objs.3"/>
+  <edges id="451" edge_type="CtrlEdge" source_obj="//@blocks.23" sink_obj="//@blocks.21/@node_objs.3"/>
+  <edges id="452" source_obj="//@blocks.20/@node_objs.0" sink_obj="//@blocks.23/@node_objs.0"/>
+  <edges id="453" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.23/@node_objs.1"/>
+  <edges id="454" source_obj="//@blocks.9/@node_objs.2" sink_obj="//@blocks.23/@node_objs.2"/>
+  <edges id="455" source_obj="//@blocks.9/@node_objs.3" sink_obj="//@blocks.23/@node_objs.3"/>
+  <edges id="456" source_obj="//@blocks.9/@node_objs.4" sink_obj="//@blocks.23/@node_objs.4"/>
+  <edges id="459" source_obj="//@blocks.23/@node_objs.1" sink_obj="//@blocks.23/@node_objs.5"/>
+  <edges id="460" source_obj="//@blocks.23/@node_objs.2" sink_obj="//@blocks.23/@node_objs.5"/>
+  <edges id="461" source_obj="//@blocks.23/@node_objs.3" sink_obj="//@blocks.23/@node_objs.5"/>
+  <edges id="462" source_obj="//@blocks.23/@node_objs.4" sink_obj="//@blocks.23/@node_objs.5"/>
+  <edges id="463" source_obj="//@blocks.23/@node_objs.0" sink_obj="//@blocks.23/@node_objs.5"/>
+  <edges id="464" source_obj="//@blocks.23/@node_objs.5" sink_obj="//@ports.1"/>
+  <edges id="465" source_obj="//@blocks.20/@node_objs.0" sink_obj="//@blocks.22/@node_objs.0"/>
+  <edges id="466" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.22/@node_objs.1"/>
+  <edges id="467" source_obj="//@blocks.9/@node_objs.2" sink_obj="//@blocks.22/@node_objs.2"/>
+  <edges id="468" source_obj="//@blocks.9/@node_objs.3" sink_obj="//@blocks.22/@node_objs.3"/>
+  <edges id="469" source_obj="//@blocks.9/@node_objs.4" sink_obj="//@blocks.22/@node_objs.4"/>
+  <edges id="470" source_obj="//@blocks.21/@node_objs.0" sink_obj="//@blocks.22/@node_objs.5"/>
+  <edges id="472" source_obj="//@blocks.22/@node_objs.1" sink_obj="//@blocks.22/@node_objs.6"/>
+  <edges id="473" source_obj="//@blocks.22/@node_objs.2" sink_obj="//@blocks.22/@node_objs.6"/>
+  <edges id="474" source_obj="//@blocks.22/@node_objs.3" sink_obj="//@blocks.22/@node_objs.6"/>
+  <edges id="475" source_obj="//@blocks.22/@node_objs.4" sink_obj="//@blocks.22/@node_objs.6"/>
+  <edges id="476" source_obj="//@blocks.22/@node_objs.5" sink_obj="//@blocks.22/@node_objs.6"/>
+  <edges id="477" source_obj="//@blocks.22/@node_objs.6" sink_obj="//@blocks.22/@node_objs.7"/>
+  <edges id="480" source_obj="//@blocks.22/@node_objs.7" sink_obj="//@blocks.22/@node_objs.8"/>
+  <edges id="481" source_obj="//@blocks.22/@node_objs.0" sink_obj="//@blocks.22/@node_objs.9"/>
+  <edges id="482" source_obj="//@blocks.22/@node_objs.8" sink_obj="//@blocks.22/@node_objs.9"/>
+  <edges id="483" source_obj="//@blocks.21/@node_objs.2" sink_obj="//@blocks.22/@node_objs.10"/>
+  <edges id="484" source_obj="//@blocks.20/@node_objs.1" sink_obj="//@blocks.22/@node_objs.10"/>
+  <edges id="485" source_obj="//@blocks.22/@node_objs.9" sink_obj="//@blocks.22/@node_objs.11"/>
+  <edges id="486" source_obj="//@blocks.20/@node_objs.0" sink_obj="//@blocks.22/@node_objs.11"/>
+  <edges id="487" edge_type="CtrlEdge" source_obj="//@blocks.21" sink_obj="//@blocks.22/@node_objs.12"/>
+  <edges id="488" source_obj="//@blocks.12/@node_objs.1" sink_obj="//@blocks.16/@node_objs.0"/>
+  <edges id="489" source_obj="//@blocks.9/@node_objs.2" sink_obj="//@blocks.16/@node_objs.0"/>
+  <edges id="490" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.16/@node_objs.1"/>
+  <edges id="491" source_obj="//@blocks.12/@node_objs.1" sink_obj="//@blocks.15/@node_objs.0"/>
+  <edges id="492" source_obj="//@blocks.9/@node_objs.3" sink_obj="//@blocks.15/@node_objs.0"/>
+  <edges id="493" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.15/@node_objs.1"/>
+  <edges id="494" source_obj="//@blocks.12/@node_objs.1" sink_obj="//@blocks.18/@node_objs.0"/>
+  <edges id="495" source_obj="//@blocks.9/@node_objs.4" sink_obj="//@blocks.18/@node_objs.0"/>
+  <edges id="496" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.18/@node_objs.1"/>
+  <edges id="497" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="498" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="499" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="500" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="596" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="597" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.9"/>
+  <edges id="598" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="599" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="600" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.8"/>
+  <edges id="601" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="602" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="603" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="604" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="605" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5" is_back_edge="1"/>
+  <edges id="606" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3" is_back_edge="1"/>
+  <edges id="607" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="608" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.10"/>
+  <edges id="609" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.20"/>
+  <edges id="610" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11"/>
+  <edges id="611" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.12"/>
+  <edges id="612" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.14"/>
+  <edges id="613" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.13"/>
+  <edges id="614" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.12" is_back_edge="1"/>
+  <edges id="615" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.18"/>
+  <edges id="616" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.17"/>
+  <edges id="617" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.16"/>
+  <edges id="618" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.15"/>
+  <edges id="619" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.19"/>
+  <edges id="620" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.19"/>
+  <edges id="621" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.19"/>
+  <edges id="622" edge_type="CtrlEdge" source_obj="//@blocks.18" sink_obj="//@blocks.19"/>
+  <edges id="623" edge_type="CtrlEdge" source_obj="//@blocks.19" sink_obj="//@blocks.10" is_back_edge="1"/>
+  <edges id="624" edge_type="CtrlEdge" source_obj="//@blocks.20" sink_obj="//@blocks.21"/>
+  <edges id="625" edge_type="CtrlEdge" source_obj="//@blocks.21" sink_obj="//@blocks.23"/>
+  <edges id="626" edge_type="CtrlEdge" source_obj="//@blocks.21" sink_obj="//@blocks.22"/>
+  <edges id="627" edge_type="CtrlEdge" source_obj="//@blocks.22" sink_obj="//@blocks.21" is_back_edge="1"/>
+  <edges id="628" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="629" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="630" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="631" edge_type="VirtEdge" source_obj="//@blocks.22/@node_objs.0" sink_obj="//@blocks.22/@node_objs.11"/>
+  <edges id="632" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="633" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.8/@node_objs.10"/>
+  <edges id="634" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.8/@node_objs.10"/>
+  <edges id="635" edge_type="VirtEdge" source_obj="//@blocks.9/@node_objs.5" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="636" edge_type="VirtEdge" source_obj="//@blocks.9/@node_objs.5" sink_obj="//@blocks.19/@node_objs.0"/>
+  <edges id="637" edge_type="VirtEdge" source_obj="//@blocks.10/@node_objs.0" sink_obj="//@blocks.19/@node_objs.0"/>
+  <edges id="638" edge_type="VirtEdge" source_obj="//@blocks.20/@node_objs.2" sink_obj="//@blocks.21/@node_objs.0"/>
+  <edges id="639" edge_type="VirtEdge" source_obj="//@blocks.20/@node_objs.3" sink_obj="//@blocks.23/@node_objs.0"/>
+  <edges id="640" edge_type="VirtEdge" source_obj="//@blocks.20/@node_objs.2" sink_obj="//@blocks.22/@node_objs.10"/>
+  <edges id="641" edge_type="VirtEdge" source_obj="//@blocks.20/@node_objs.3" sink_obj="//@blocks.22/@node_objs.0"/>
+  <edges id="642" edge_type="VirtEdge" source_obj="//@blocks.20/@node_objs.3" sink_obj="//@blocks.22/@node_objs.11"/>
+  <edges id="643" edge_type="VirtEdge" source_obj="//@blocks.21/@node_objs.0" sink_obj="//@blocks.22/@node_objs.10"/>
+  <edges id="644" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="645" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="646" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <blocks id="27" name="block_27" type="BlockType">
+    <controlOutputObjs>block_34</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="d" originalName="d" coreId="0" bitwidth="5" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="conv1" lineNumber="7" originalName="conv1" fileName="MagicWand/master.c" fileDirectory=".." rtlName="conv1_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="master" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="7" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="max1_0" lineNumber="8" originalName="max1[0]" fileName="MagicWand/master.c" fileDirectory=".." rtlName="max1_0_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="master" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="8" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="conv2_0" lineNumber="9" originalName="conv2[0]" fileName="MagicWand/master.c" fileDirectory=".." rtlName="conv2_0_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="master" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="9" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="max2_0" rtlName="max2_0_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="den1_0" lineNumber="11" originalName="den1[0]" fileName="MagicWand/master.c" fileDirectory=".." rtlName="den1_0_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="master" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="11" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="_ln15" lineNumber="15" fileName="MagicWand/master.c" fileDirectory=".." rtlName="grp_convolution1_1_fu_326" coreId="0" contextFuncName="master" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="15" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+      <dataInputObjs>input_r</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>convolution1_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="_ln16" lineNumber="16" fileName="MagicWand/master.c" fileDirectory=".." rtlName="grp_maxPool_1_fu_338" coreId="0" contextFuncName="master" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="16" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>maxPool_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln17" lineNumber="17" fileName="MagicWand/master.c" fileDirectory=".." rtlName="grp_convolution2_fu_344" coreId="0" contextFuncName="master" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="17" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>convolution2</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln18" lineNumber="18" fileName="MagicWand/master.c" fileDirectory=".." rtlName="grp_maxPool_fu_354" coreId="0" contextFuncName="master" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="18" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>maxPool</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="d_write_ln103" lineNumber="103" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" opcode="store" m_display="0" m_delay="0.4" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="103" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln103" lineNumber="103" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="103" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <controlInputObjs>block_34</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/master.c">
+      <validLinenumbers>7</validLinenumbers>
+      <validLinenumbers>8</validLinenumbers>
+      <validLinenumbers>9</validLinenumbers>
+      <validLinenumbers>11</validLinenumbers>
+      <validLinenumbers>15</validLinenumbers>
+      <validLinenumbers>16</validLinenumbers>
+      <validLinenumbers>17</validLinenumbers>
+      <validLinenumbers>18</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>103</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name="block_34" type="BlockType">
+    <controlInputObjs>block_27</controlInputObjs>
+    <controlInputObjs>block_95</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>dense1.exit.preheader</controlOutputObjs>
+    <controlOutputObjs>.split12</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="d_3" originalName="d" rtlName="fpext_32ns_64_2_no_dsp_1_U59" coreId="0" bitwidth="5" opcode="load" nodeLabel="8.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="zext_ln103" lineNumber="103" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="dexp_64ns_64ns_64_11_full_dsp_1_U54" coreId="0" contextFuncName="dense1" bitwidth="64" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="103" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="icmp_ln103" lineNumber="103" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln103_fu_455_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense1" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="0.69" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="103" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="add_ln103" lineNumber="103" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln103_fu_461_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense1" bitwidth="5" opcode="add" nodeLabel="8.0" m_display="0" m_delay="0.71" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="103" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln103" lineNumber="103" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="103" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split12</controlInputObjs>
+      <controlInputObjs>dense1.exit.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>103</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="45" name=".split12" type="BlockType">
+    <controlInputObjs>block_34</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_52</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="thirdBias_addr" lineNumber="105" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" bitwidth="4" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="105" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="thirdBias_load" lineNumber="105" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dense1" bitwidth="32" opcode="load" nodeLabel="8.0" nodeLatency="1" m_display="0" m_delay="0.61" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="105" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="den1_0_addr" lineNumber="105" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" bitwidth="4" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="105" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="empty_40" rtlName="empty_40_fu_467_p1" coreId="0" bitwidth="4" opcode="trunc" nodeLabel="8.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="p_shl" rtlName="p_shl_fu_476_p3" coreId="0" bitwidth="12" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="p_shl1" rtlName="p_shl1_fu_483_p3" coreId="0" bitwidth="9" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="p_shl1_cast" rtlName="p_shl1_cast_fu_490_p1" coreId="0" bitwidth="12" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="empty_41" rtlName="empty_41_fu_494_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" bitwidth="12" opcode="sub" nodeLabel="9.0" m_display="0" m_delay="0.77" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln106" lineNumber="106" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" opcode="br" nodeLabel="9.0" m_display="0" m_delay="0.4" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="106" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <controlInputObjs>block_52</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>105</validLinenumbers>
+      <validLinenumbers>106</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="52" name="block_52" type="BlockType">
+    <controlInputObjs>.split12</controlInputObjs>
+    <controlInputObjs>block_82</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_95</controlOutputObjs>
+    <controlOutputObjs>.split10</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="i" lineNumber="106" originalName="i" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fpext_32ns_64_2_no_dsp_1_U51" coreId="0" contextFuncName="dense1" bitwidth="4" opcode="phi" nodeLabel="10.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="106" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <controlInputObjs>block_82</controlInputObjs>
+      <controlInputObjs>.split12</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="add_lcssa_lcssa14_i" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" bitwidth="32" opcode="phi" nodeLabel="10.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <controlInputObjs>block_82</controlInputObjs>
+      <controlInputObjs>.split12</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="icmp_ln106" lineNumber="106" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln106_fu_500_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense1" bitwidth="1" opcode="icmp" nodeLabel="10.0" m_display="0" m_delay="0.65" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="106" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="add_ln106" lineNumber="106" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln106_fu_506_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense1" bitwidth="4" opcode="add" nodeLabel="10.0" m_display="0" m_delay="0.72" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="106" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln106" lineNumber="106" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" opcode="br" nodeLabel="10.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="106" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split10</controlInputObjs>
+      <controlInputObjs>block_95</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>106</validLinenumbers>
+      <validLinenumbers>112</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="57" name=".split10" type="BlockType">
+    <controlInputObjs>block_52</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_65</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp_6" lineNumber="106" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="tmp_6_fu_512_p3" coreId="0" contextFuncName="dense1" bitwidth="8" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="106" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln110" lineNumber="110" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln110_fu_520_p1" coreId="0" contextFuncName="dense1" bitwidth="12" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="110" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="br_ln110" lineNumber="110" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" opcode="br" nodeLabel="10.0" m_display="0" m_delay="0.4" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="110" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <controlInputObjs>block_65</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>106</validLinenumbers>
+      <validLinenumbers>110</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="65" name="block_65" type="BlockType">
+    <controlInputObjs>.split10</controlInputObjs>
+    <controlInputObjs>.split8</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_82</controlOutputObjs>
+    <controlOutputObjs>.split8</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="h" lineNumber="110" originalName="h" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fpext_32ns_64_2_no_dsp_1_U51" coreId="0" contextFuncName="dense1" bitwidth="5" opcode="phi" nodeLabel="11.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="110" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <controlInputObjs>.split8</controlInputObjs>
+      <controlInputObjs>.split10</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="add11_i" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreId="0" contextFuncName="dense1" bitwidth="32" opcode="phi" nodeLabel="11.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <controlInputObjs>.split8</controlInputObjs>
+      <controlInputObjs>.split10</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="zext_ln110_1" lineNumber="110" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fpext_32ns_64_2_no_dsp_1_U51" coreId="0" contextFuncName="dense1" bitwidth="8" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="110" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="icmp_ln110" lineNumber="110" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln110_fu_532_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense1" bitwidth="1" opcode="icmp" nodeLabel="11.0" m_display="0" m_delay="0.69" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="110" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="add_ln110" lineNumber="110" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln110_fu_538_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense1" bitwidth="5" opcode="add" nodeLabel="11.0" m_display="0" m_delay="0.71" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="110" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="br_ln110" lineNumber="110" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="110" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split8</controlInputObjs>
+      <controlInputObjs>block_82</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>110</validLinenumbers>
+      <validLinenumbers>112</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="80" name=".split8" type="BlockType">
+    <controlInputObjs>block_65</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_65</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="add_ln112" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln112_fu_544_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense1" bitwidth="8" opcode="add" nodeLabel="11.0" m_display="0" m_delay="0.7" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="zext_ln112" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fpext_32ns_64_2_no_dsp_1_U59" coreId="0" contextFuncName="dense1" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="max2_0_addr" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" bitwidth="8" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="max2_0_load" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="dense1" bitwidth="32" opcode="load" nodeLabel="11.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="tmp_5" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="tmp_5_fu_554_p4" coreId="0" contextFuncName="dense1" bitwidth="7" opcode="partselect" nodeLabel="11.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="tmp5" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="tmp5_fu_563_p3" coreId="0" contextFuncName="dense1" bitwidth="12" opcode="bitconcatenate" nodeLabel="11.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="add_ln112_1" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln112_1_fu_571_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense1" bitwidth="12" opcode="add" nodeLabel="11.0" m_display="0" m_delay="0.77" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="zext_ln112_1" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln112_1_fu_576_p1" coreId="0" contextFuncName="dense1" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="firstDense_addr" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" bitwidth="12" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="firstDense_load" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dense1" bitwidth="32" opcode="load" nodeLabel="11.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="mul_i" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="dense1" bitwidth="32" opcode="fmul" nodeLabel="12.0" nodeLatency="2" m_display="0" m_delay="6.08" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="add_i" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="dense1" bitwidth="32" opcode="fadd" nodeLabel="15.0" nodeLatency="3" m_display="0" m_delay="5.71" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln0" coreId="0" opcode="br" nodeLabel="18.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_65</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>112</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="82" name="block_82" type="BlockType">
+    <controlInputObjs>block_65</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_52</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="br_ln0" coreId="0" opcode="br" nodeLabel="11.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_52</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="95" name="block_95" type="BlockType">
+    <controlInputObjs>block_52</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_34</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="bitcast_ln116" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="bitcast_ln116_fu_581_p1" coreId="0" contextFuncName="dense1" bitwidth="32" opcode="bitcast" nodeLabel="19.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="tmp_1" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="tmp_1_fu_585_p4" coreId="0" contextFuncName="dense1" bitwidth="8" opcode="partselect" nodeLabel="19.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="trunc_ln116" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="trunc_ln116_fu_595_p1" coreId="0" contextFuncName="dense1" bitwidth="23" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="icmp_ln116" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln116_fu_599_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense1" bitwidth="1" opcode="icmp" nodeLabel="19.0" m_display="0" m_delay="0.79" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="icmp_ln116_1" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln116_1_fu_605_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense1" bitwidth="1" opcode="icmp" nodeLabel="19.0" m_display="0" m_delay="0.98" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="or_ln116" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="or_ln116_fu_611_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="dense1" bitwidth="1" opcode="or" nodeLabel="19.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="tmp_3" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U52" coreName="FCompare" implIndex="auto" control="no" opType="fcmp" coreId="19" contextFuncName="dense1" bitwidth="1" opcode="fcmp" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="2.57" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="and_ln116" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="and_ln116_fu_617_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="dense1" bitwidth="1" opcode="and" nodeLabel="19.0" m_display="0" m_topoIndex="70" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>fcmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="select_ln116" lineNumber="116" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dense1" bitwidth="32" opcode="select" nodeLabel="19.0" m_display="0" m_delay="0.41" m_topoIndex="71" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="116" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="den1_0_addr_write_ln112" lineNumber="112" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="dense1" opcode="store" nodeLabel="19.0" m_display="0" m_delay="0.61" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="112" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="d_write_ln103" lineNumber="103" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense1" opcode="store" nodeLabel="10.0" m_display="0" m_delay="0.4" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="103" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense1"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="br_ln0" coreId="0" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_34</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>116</validLinenumbers>
+      <validLinenumbers>112</validLinenumbers>
+      <validLinenumbers>103</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="103" name="dense1.exit.preheader" type="BlockType">
+    <controlInputObjs>block_34</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>dense1.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="d_1" originalName="d" coreId="0" bitwidth="3" opcode="alloca" nodeLabel="8.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="den2_0_3" originalName="den2[0][3]" coreId="0" bitwidth="32" opcode="alloca" nodeLabel="8.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="den2_0_3_1" originalName="den2[0][3]" coreId="0" bitwidth="32" opcode="alloca" nodeLabel="8.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="den2_0_3_2" originalName="den2[0][3]" coreId="4294967288" bitwidth="32" opcode="alloca" nodeLabel="8.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="den2_0_3_3" originalName="den2[0][3]" coreId="0" bitwidth="32" opcode="alloca" nodeLabel="8.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="d_1_write_ln124" lineNumber="124" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="store" nodeLabel="8.0" m_display="0" m_delay="0.4" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="124" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="br_ln124" lineNumber="124" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="124" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <controlInputObjs>dense1.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>124</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="109" name="dense1.exit" type="BlockType">
+    <controlInputObjs>dense1.exit.preheader</controlInputObjs>
+    <controlInputObjs>branch0</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>dense2.exit.preheader</controlOutputObjs>
+    <controlOutputObjs>.split6</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="d_4" lineNumber="126" originalName="d" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" bitwidth="3" opcode="load" nodeLabel="20.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="126" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="icmp_ln124" lineNumber="124" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="icmp_ln124_fu_635_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense2" bitwidth="1" opcode="icmp" nodeLabel="20.0" m_display="0" m_delay="0.53" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="124" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="add_ln124" lineNumber="124" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fptrunc_64ns_32_2_no_dsp_1_U58" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense2" bitwidth="3" opcode="add" nodeLabel="20.0" m_display="0" m_delay="0.61" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="124" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="br_ln124" lineNumber="124" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="124" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split6</controlInputObjs>
+      <controlInputObjs>dense2.exit.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>126</validLinenumbers>
+      <validLinenumbers>124</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="115" name=".split6" type="BlockType">
+    <controlInputObjs>dense1.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_124</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="trunc_ln126" lineNumber="126" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="trunc_ln126_fu_647_p1" coreId="0" contextFuncName="dense2" bitwidth="2" opcode="trunc" nodeLabel="20.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="126" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>mux</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>switch</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="tmp_s" lineNumber="126" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="mux_42_32_1_1_U55" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="dense2" bitwidth="32" opcode="mux" nodeLabel="20.0" m_display="0" m_delay="0.49" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="126" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="tmp_2" lineNumber="126" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="tmp_2_fu_665_p3" coreId="0" contextFuncName="dense2" bitwidth="6" opcode="bitconcatenate" nodeLabel="20.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="126" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="br_ln127" lineNumber="127" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="br" nodeLabel="20.0" m_display="0" m_delay="0.4" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="127" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <controlInputObjs>block_124</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>126</validLinenumbers>
+      <validLinenumbers>127</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="124" name="block_124" type="BlockType">
+    <controlInputObjs>.split6</controlInputObjs>
+    <controlInputObjs>.split4</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_137</controlOutputObjs>
+    <controlOutputObjs>.split4</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="i_2" lineNumber="127" originalName="i" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" bitwidth="5" opcode="phi" nodeLabel="21.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="127" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlInputObjs>.split6</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="den2_0_0" lineNumber="128" originalName="den2[0][0]" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" bitwidth="32" opcode="phi" nodeLabel="21.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>mux</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlInputObjs>.split6</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="zext_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln128_fu_683_p1" coreId="0" contextFuncName="dense2" bitwidth="64" opcode="zext" nodeLabel="21.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="zext_ln128_1" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreId="0" contextFuncName="dense2" bitwidth="6" opcode="zext" nodeLabel="21.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="icmp_ln127" lineNumber="127" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fptrunc_64ns_32_2_no_dsp_1_U58" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense2" bitwidth="1" opcode="icmp" nodeLabel="21.0" m_display="0" m_delay="0.69" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="127" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="122" name="add_ln127" lineNumber="127" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln127_fu_698_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense2" bitwidth="5" opcode="add" nodeLabel="21.0" m_display="0" m_delay="0.71" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="127" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="br_ln127" lineNumber="127" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreId="0" contextFuncName="dense2" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="127" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlInputObjs>block_137</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>127</validLinenumbers>
+      <validLinenumbers>128</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="135" name=".split4" type="BlockType">
+    <controlInputObjs>block_124</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_124</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="den1_0_addr_1" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" bitwidth="4" opcode="getelementptr" nodeLabel="21.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="den1_0_load" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="dense2" bitwidth="32" opcode="load" nodeLabel="21.0" nodeLatency="1" m_display="0" m_delay="0.61" m_topoIndex="95" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="128" name="add_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln128_fu_704_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense2" bitwidth="6" opcode="add" nodeLabel="21.0" m_display="0" m_delay="0.71" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="zext_ln128_2" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="zext_ln128_2_fu_709_p1" coreId="0" contextFuncName="dense2" bitwidth="64" opcode="zext" nodeLabel="21.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="130" name="secondDense_addr" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" bitwidth="6" opcode="getelementptr" nodeLabel="21.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="131" name="secondDense_load" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dense2" bitwidth="32" opcode="load" nodeLabel="21.0" nodeLatency="1" m_display="0" m_delay="1.09" m_topoIndex="99" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="mul_i9" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="dense2" bitwidth="32" opcode="fmul" nodeLabel="22.0" nodeLatency="2" m_display="0" m_delay="6.08" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="add_i2" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fadd" coreId="18" contextFuncName="dense2" bitwidth="32" opcode="fadd" nodeLabel="25.0" nodeLatency="3" m_display="0" m_delay="5.71" m_topoIndex="112" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="134" name="br_ln0" coreId="1701865808" opcode="br" nodeLabel="28.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_124</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>128</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="137" name="block_137" type="BlockType">
+    <controlInputObjs>block_124</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>branch3</controlOutputObjs>
+    <controlOutputObjs>.branch0_crit_edge</controlOutputObjs>
+    <controlOutputObjs>branch1</controlOutputObjs>
+    <controlOutputObjs>branch2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="136" name="_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="switch" nodeLabel="21.0" m_display="0" m_delay="0.65" m_topoIndex="100" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <controlInputObjs>branch3</controlInputObjs>
+      <controlInputObjs>.branch0_crit_edge</controlInputObjs>
+      <controlInputObjs>branch1</controlInputObjs>
+      <controlInputObjs>branch2</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>128</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="140" name="branch2" type="BlockType">
+    <controlInputObjs>block_137</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>branch0</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="138" name="den2_0_3_2_write_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreId="0" contextFuncName="dense2" opcode="store" nodeLabel="21.0" m_display="0" m_topoIndex="101" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="139" name="br_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreId="0" contextFuncName="dense2" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <controlInputObjs>branch0</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>128</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="143" name="branch1" type="BlockType">
+    <controlInputObjs>block_137</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>branch0</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="den2_0_3_1_write_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="store" nodeLabel="21.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="142" name="br_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <controlInputObjs>branch0</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>128</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="146" name=".branch0_crit_edge" type="BlockType">
+    <controlInputObjs>block_137</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>branch0</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="144" name="den2_0_3_write_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="store" nodeLabel="21.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="br_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <controlInputObjs>branch0</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>128</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="149" name="branch3" type="BlockType">
+    <controlInputObjs>block_137</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>branch0</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="147" name="den2_0_3_3_write_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="dense2" opcode="store" nodeLabel="21.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="148" name="br_ln128" lineNumber="128" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreId="0" contextFuncName="dense2" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="128" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <controlInputObjs>branch0</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>128</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="152" name="branch0" type="BlockType">
+    <controlInputObjs>branch2</controlInputObjs>
+    <controlInputObjs>branch1</controlInputObjs>
+    <controlInputObjs>.branch0_crit_edge</controlInputObjs>
+    <controlInputObjs>branch3</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>dense1.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="150" name="d_1_write_ln124" lineNumber="124" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreId="0" contextFuncName="dense2" opcode="store" nodeLabel="21.0" m_display="0" m_delay="0.4" m_topoIndex="109" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="124" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="dense2"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="151" name="br_ln0" coreId="0" opcode="br" nodeLabel="21.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
+      <controlInputObjs>dense1.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>124</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="158" name="dense2.exit.preheader" type="BlockType">
+    <controlInputObjs>dense1.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>dense2.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="153" name="sum" originalName="sum" coreId="0" bitwidth="64" opcode="alloca" nodeLabel="20.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="154" name="i_1" originalName="i" rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U57" coreId="0" bitwidth="3" opcode="alloca" nodeLabel="20.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="155" name="i_1_write_ln138" lineNumber="138" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreId="0" contextFuncName="softmax" opcode="store" nodeLabel="20.0" m_display="0" m_delay="0.4" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="138" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="156" name="sum_write_ln138" lineNumber="138" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreId="0" contextFuncName="softmax" opcode="store" nodeLabel="20.0" m_display="0" m_delay="0.4" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="138" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="157" name="br_ln138" lineNumber="138" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="softmax" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="138" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <controlInputObjs>dense2.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>138</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="164" name="dense2.exit" type="BlockType">
+    <controlInputObjs>dense2.exit.preheader</controlInputObjs>
+    <controlInputObjs>.split2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+    <controlOutputObjs>.split2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="159" name="i_3" lineNumber="140" originalName="i" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U57" coreId="0" contextFuncName="softmax" bitwidth="3" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="114" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="160" name="icmp_ln138" lineNumber="138" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="softmax" bitwidth="1" opcode="icmp" nodeLabel="29.0" m_display="0" m_delay="0.53" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="138" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="162" name="add_ln138" lineNumber="138" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="add_ln138_fu_747_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="softmax" bitwidth="3" opcode="add" nodeLabel="29.0" m_display="0" m_delay="0.61" m_topoIndex="116" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="138" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="163" name="br_ln138" lineNumber="138" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="softmax" opcode="br" nodeLabel="29.0" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="138" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split2</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>140</validLinenumbers>
+      <validLinenumbers>138</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="179" name=".split2" type="BlockType">
+    <controlInputObjs>dense2.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>dense2.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="165" name="sum_load" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="softmax" bitwidth="64" opcode="load" nodeLabel="42.0" m_display="0" m_topoIndex="133" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="166" name="den2_0_3_load_1" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="softmax" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>mux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="167" name="den2_0_3_1_load_1" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="softmax" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>mux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="168" name="den2_0_3_2_load_1" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." coreId="0" contextFuncName="softmax" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="120" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>mux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="169" name="den2_0_3_3_load_1" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U50" coreId="0" contextFuncName="softmax" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>mux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="171" name="trunc_ln140" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="tmp_4_fu_757_p5" coreId="0" contextFuncName="softmax" bitwidth="2" opcode="trunc" nodeLabel="29.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>mux</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="172" name="tmp_4" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="mux_42_32_1_1_U56" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="softmax" bitwidth="32" opcode="mux" nodeLabel="29.0" m_display="0" m_delay="0.49" m_topoIndex="123" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>fpext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="173" name="conv_i" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fpext_32ns_64_2_no_dsp_1_U51" coreName="Float2Double" implIndex="auto" control="no" opType="fpext" coreId="64" contextFuncName="softmax" bitwidth="64" opcode="fpext" nodeLabel="29.0" nodeLatency="1" m_display="0" m_delay="2.26" m_topoIndex="124" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>mux</dataInputObjs>
+      <dataOutputObjs>dexp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="174" name="tmp" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="dexp_64ns_64ns_64_11_full_dsp_1_U54" coreName="DExp_fulldsp" implIndex="fulldsp" control="no" opType="dexp" coreId="42" contextFuncName="softmax" bitwidth="64" opcode="dexp" nodeLabel="31.0" nodeLatency="10" m_display="0" m_delay="7.12" m_topoIndex="132" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>fpext</dataInputObjs>
+      <dataOutputObjs>dadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="175" name="sum_1" lineNumber="140" originalName="sum" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U57" coreName="DAddSub_fulldsp" implIndex="fulldsp" control="no" opType="dadd" coreId="37" contextFuncName="softmax" bitwidth="64" opcode="dadd" nodeLabel="42.0" nodeLatency="4" m_display="0" m_delay="5.46" m_topoIndex="134" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>dexp</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="176" name="i_1_write_ln138" lineNumber="138" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreId="0" contextFuncName="softmax" opcode="store" nodeLabel="29.0" m_display="0" m_delay="0.4" m_topoIndex="125" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="138" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="177" name="sum_write_ln140" lineNumber="140" fileName="MagicWand/model_functions.c" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U49" coreId="0" contextFuncName="softmax" opcode="store" nodeLabel="46.0" m_display="0" m_delay="0.4" m_topoIndex="135" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/model_functions.c" linenumber="140" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="softmax"/>
+      <dataInputObjs>dadd</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="178" name="br_ln0" coreId="0" opcode="br" nodeLabel="46.0" m_display="0" m_topoIndex="136" m_clusterGroupNumber="-1">
+      <controlInputObjs>dense2.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/model_functions.c">
+      <validLinenumbers>140</validLinenumbers>
+      <validLinenumbers>138</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="187" name=".preheader.preheader" type="BlockType">
+    <controlInputObjs>dense2.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="180" name="sum_load_1" coreId="0" bitwidth="64" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="126" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="181" name="den2_0_3_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="182" name="den2_0_3_1_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="183" name="den2_0_3_2_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="129" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="184" name="den2_0_3_3_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="29.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="185" name="_ln0" rtlName="grp_master_Pipeline_VITIS_LOOP_143_2_fu_360" coreId="0" opcode="call" nodeLabel="29.0" nodeLatency="1" m_display="0" m_delay="2.75" m_topoIndex="131" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>out_r</dataOutputObjs>
+      <constName>master_Pipeline_VITIS_LOOP_143_2</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="186" name="_ln23" lineNumber="23" fileName="MagicWand/master.c" fileDirectory=".." coreId="0" contextFuncName="master" opcode="ret" nodeLabel="47.0" m_display="0" m_topoIndex="137" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MagicWand/master.c" linenumber="23" fileDirectory="C:\Users\tiago\OneDrive\Desktop\Universidade\Tese\Dissertacao\MagicWand\Vitis" functionName="master"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="MagicWand/master.c">
+      <validLinenumbers>23</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <ScheduleInfo time="41"/>
+  <ScheduleInfo time="42"/>
+  <ScheduleInfo time="43"/>
+  <ScheduleInfo time="44"/>
+  <ScheduleInfo time="45"/>
+  <ScheduleInfo time="46"/>
+  <ScheduleInfo time="47"/>
+  <regnodes realName="empty_41_reg_849">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_3_2_reg_832">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="den1_0_load_reg_954">
+    <nodeIds>127</nodeIds>
+  </regnodes>
+  <regnodes realName="max2_0_load_reg_890">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_reg_917">
+    <nodeIds>113</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_3_1_load_reg_977">
+    <nodeIds>182</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_0_reg_316">
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="max2_0_addr_reg_880">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln103_reg_792">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_3_reg_820">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_3_load_reg_972">
+    <nodeIds>181</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_305">
+    <nodeIds>116</nodeIds>
+  </regnodes>
+  <regnodes realName="add11_i_reg_293">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_997">
+    <nodeIds>174</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln127_reg_939">
+    <nodeIds>122</nodeIds>
+  </regnodes>
+  <regnodes realName="den1_0_addr_1_reg_944">
+    <nodeIds>126</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_435">
+    <nodeIds>180</nodeIds>
+    <nodeIds>165</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_3_3_reg_838">
+    <nodeIds>100</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_929">
+    <nodeIds>154</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_6_reg_862">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="add_lcssa_lcssa14_i_reg_272">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_3_2_load_reg_982">
+    <nodeIds>183</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_4_reg_967">
+    <nodeIds>172</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_3_3_load_reg_987">
+    <nodeIds>184</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln126_reg_908">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="secondDense_addr_reg_949">
+    <nodeIds>130</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln124_reg_903">
+    <nodeIds>107</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_429">
+    <nodeIds>78</nodeIds>
+    <nodeIds>133</nodeIds>
+  </regnodes>
+  <regnodes realName="d_reg_782">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="thirdBias_addr_reg_797">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_i_reg_992">
+    <nodeIds>173</nodeIds>
+  </regnodes>
+  <regnodes realName="den2_0_3_1_reg_826">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="sum_reg_922">
+    <nodeIds>153</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_s_reg_912">
+    <nodeIds>112</nodeIds>
+  </regnodes>
+  <regnodes realName="d_1_reg_813">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_261">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="firstDense_load_reg_895">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln110_reg_867">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="firstDense_addr_reg_885">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="den1_0_addr_reg_802">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="secondDense_load_reg_959">
+    <nodeIds>131</nodeIds>
+  </regnodes>
+  <regnodes realName="h_reg_282">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln110_reg_875">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_424">
+    <nodeIds>77</nodeIds>
+    <nodeIds>132</nodeIds>
+  </regnodes>
+  <regnodes realName="thirdBias_load_reg_844">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln106_reg_857">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_40_reg_807">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_4_fu_757">
+    <nodeIds>172</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln112_fu_544">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln112_1_fu_571">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_265">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln110_fu_520">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_554">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln127_fu_692">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="den2_0_3_fu_168">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl1_fu_483">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln116_fu_595">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln116_fu_599">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln124_fu_641">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln126_fu_647">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_fu_476">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_665">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="thirdBias_addr_gep_fu_192">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="secondDense_addr_gep_fu_248">
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="d_fu_140">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_41_fu_494">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="max1_0_alloca_fu_148">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="den2_0_3_2_fu_176">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln110_1_fu_528">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp5_fu_563">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln127_fu_698">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln110_fu_538">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv2_0_alloca_fu_152">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln138_fu_741">
+    <nodeIds>160</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="den1_0_alloca_fu_160">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="d_1_fu_164">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln106_fu_506">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln103_fu_461">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln103_fu_449">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add11_i_phi_fu_297">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln106_fu_500">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sum_fu_184">
+    <nodeIds>153</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln128_fu_704">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_phi_fu_309">
+    <nodeIds>116</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_40_fu_467">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln116_fu_581">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="den1_0_addr_1_gep_fu_241">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="den2_0_3_1_fu_172">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln116_fu_617">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="den2_0_0_phi_fu_319">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln124_fu_635">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl1_cast_fu_490">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln128_fu_683">
+    <nodeIds>118</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_188">
+    <nodeIds>154</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln112_fu_549">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="max2_0_alloca_fu_156">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="firstDense_addr_gep_fu_223">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_585">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln128_2_fu_709">
+    <nodeIds>129</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln112_1_fu_576">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_alloca_fu_144">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln103_fu_455">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="den1_0_addr_gep_fu_205">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="h_phi_fu_286">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln110_fu_532">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln128_1_fu_688">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="den2_0_3_3_fu_180">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_651">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln116_fu_611">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln138_fu_747">
+    <nodeIds>162</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln116_fu_623">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_512">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln140_fu_753">
+    <nodeIds>171</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="max2_0_addr_gep_fu_211">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_lcssa_lcssa14_i_phi_fu_275">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln116_1_fu_605">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_master_Pipeline_VITIS_LOOP_143_2_fu_360">
+    <nodeIds>185</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_371">
+    <nodeIds>78</nodeIds>
+    <nodeIds>133</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_convolution1_1_fu_326">
+    <nodeIds>21</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_398">
+    <nodeIds>174</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_377">
+    <nodeIds>77</nodeIds>
+    <nodeIds>132</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_388">
+    <nodeIds>89</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_maxPool_1_fu_338">
+    <nodeIds>22</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_convolution2_fu_344">
+    <nodeIds>23</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_394">
+    <nodeIds>175</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_385">
+    <nodeIds>173</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_maxPool_fu_354">
+    <nodeIds>24</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln103_store_fu_524">
+    <nodeIds>93</nodeIds>
+  </ioNodes>
+  <ioNodes realName="d_3_load_fu_446">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_3_load_fu_738">
+    <nodeIds>159</nodeIds>
+  </ioNodes>
+  <ioNodes realName="d_4_load_fu_632">
+    <nodeIds>104</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln128_store_fu_719">
+    <nodeIds>141</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln128_store_fu_729">
+    <nodeIds>147</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln128_store_fu_714">
+    <nodeIds>138</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln124_store_fu_471">
+    <nodeIds>101</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln138_store_fu_673">
+    <nodeIds>155</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln138_store_fu_772">
+    <nodeIds>176</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln140_store_fu_777">
+    <nodeIds>177</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln128_store_fu_724">
+    <nodeIds>144</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln124_store_fu_734">
+    <nodeIds>150</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_407">
+    <nodeIds>167</nodeIds>
+    <nodeIds>182</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_419">
+    <nodeIds>180</nodeIds>
+    <nodeIds>165</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln138_store_fu_678">
+    <nodeIds>156</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_403">
+    <nodeIds>166</nodeIds>
+    <nodeIds>181</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_415">
+    <nodeIds>169</nodeIds>
+    <nodeIds>184</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln103_store_fu_441">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_411">
+    <nodeIds>168</nodeIds>
+    <nodeIds>183</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="den1_0">
+    <nodeIds>92</nodeIds>
+    <nodeIds>127</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="firstBias" portID="100">
+    <nodeIds>21</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="firstDense">
+    <nodeIds>76</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="firstKernel" portID="100">
+    <nodeIds>21</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="max2_0">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="max2_0" portID="100">
+    <nodeIds>24</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="secondBias" portID="100">
+    <nodeIds>23</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="secondDense">
+    <nodeIds>131</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="secondKernel" portID="100">
+    <nodeIds>23</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="thirdBias">
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <fsm>
+    <states id="1">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="2" latency="2"/>
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="21" stage="1" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="22" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="22" stage="1" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="23" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="23" stage="1" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="24" stage="2" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="2"/>
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="2" latency="2"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <states id="11">
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="89" stage="2" latency="2"/>
+      <operations id="93" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="2" latency="2"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="2" latency="2"/>
+      <operations id="81" stage="1" latency="1"/>
+    </states>
+    <states id="13">
+      <operations id="70" stage="1" latency="2"/>
+      <operations id="76" stage="1" latency="2"/>
+      <operations id="77" stage="3" latency="3"/>
+    </states>
+    <states id="14">
+      <operations id="77" stage="2" latency="3"/>
+    </states>
+    <states id="15">
+      <operations id="77" stage="1" latency="3"/>
+    </states>
+    <states id="16">
+      <operations id="78" stage="4" latency="4"/>
+    </states>
+    <states id="17">
+      <operations id="78" stage="3" latency="4"/>
+    </states>
+    <states id="18">
+      <operations id="78" stage="2" latency="4"/>
+    </states>
+    <states id="19">
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="4"/>
+      <operations id="79" stage="1" latency="1"/>
+    </states>
+    <states id="20">
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="2"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+    </states>
+    <states id="21">
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+    </states>
+    <states id="22">
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="2" latency="2"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="2" latency="2"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+    </states>
+    <states id="23">
+      <operations id="127" stage="1" latency="2"/>
+      <operations id="131" stage="1" latency="2"/>
+      <operations id="132" stage="3" latency="3"/>
+    </states>
+    <states id="24">
+      <operations id="132" stage="2" latency="3"/>
+    </states>
+    <states id="25">
+      <operations id="132" stage="1" latency="3"/>
+    </states>
+    <states id="26">
+      <operations id="133" stage="4" latency="4"/>
+    </states>
+    <states id="27">
+      <operations id="133" stage="3" latency="4"/>
+    </states>
+    <states id="28">
+      <operations id="133" stage="2" latency="4"/>
+    </states>
+    <states id="29">
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="4"/>
+      <operations id="134" stage="1" latency="1"/>
+    </states>
+    <states id="30">
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="162" stage="1" latency="1"/>
+      <operations id="163" stage="1" latency="1"/>
+      <operations id="166" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="169" stage="1" latency="1"/>
+      <operations id="171" stage="1" latency="1"/>
+      <operations id="172" stage="1" latency="1"/>
+      <operations id="173" stage="2" latency="2"/>
+      <operations id="176" stage="1" latency="1"/>
+      <operations id="180" stage="1" latency="1"/>
+      <operations id="181" stage="1" latency="1"/>
+      <operations id="182" stage="1" latency="1"/>
+      <operations id="183" stage="1" latency="1"/>
+      <operations id="184" stage="1" latency="1"/>
+      <operations id="185" stage="2" latency="2"/>
+    </states>
+    <states id="31">
+      <operations id="173" stage="1" latency="2"/>
+    </states>
+    <states id="32">
+      <operations id="174" stage="11" latency="11"/>
+    </states>
+    <states id="33">
+      <operations id="174" stage="10" latency="11"/>
+    </states>
+    <states id="34">
+      <operations id="174" stage="9" latency="11"/>
+    </states>
+    <states id="35">
+      <operations id="174" stage="8" latency="11"/>
+    </states>
+    <states id="36">
+      <operations id="174" stage="7" latency="11"/>
+    </states>
+    <states id="37">
+      <operations id="174" stage="6" latency="11"/>
+    </states>
+    <states id="38">
+      <operations id="174" stage="5" latency="11"/>
+    </states>
+    <states id="39">
+      <operations id="174" stage="4" latency="11"/>
+    </states>
+    <states id="40">
+      <operations id="174" stage="3" latency="11"/>
+    </states>
+    <states id="41">
+      <operations id="174" stage="2" latency="11"/>
+    </states>
+    <states id="42">
+      <operations id="174" stage="1" latency="11"/>
+    </states>
+    <states id="43">
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="175" stage="5" latency="5"/>
+    </states>
+    <states id="44">
+      <operations id="175" stage="4" latency="5"/>
+    </states>
+    <states id="45">
+      <operations id="175" stage="3" latency="5"/>
+    </states>
+    <states id="46">
+      <operations id="175" stage="2" latency="5"/>
+    </states>
+    <states id="47">
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="175" stage="1" latency="5"/>
+      <operations id="177" stage="1" latency="1"/>
+      <operations id="178" stage="1" latency="1"/>
+    </states>
+    <states id="48">
+      <operations id="185" stage="1" latency="2"/>
+      <operations id="186" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="29" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="30">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="30" outState="48">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="37" outState="38">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="39" outState="40">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="40" outState="41">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="41" outState="42">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="42" outState="43">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="43" outState="44">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="44" outState="45">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="45" outState="46">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="46" outState="47">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="47" outState="30">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="master" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="142339" mMaxLatency="442811">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>10</subRegions>
+      <subRegions>11</subRegions>
+      <subRegions>15</subRegions>
+      <subRegions>16</subRegions>
+      <subRegions>17</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="112523" mMaxLatency="412995">
+      <basicBlocks>27</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_103_1" mII="-1" mDepth="-1" mMinTripCount="16" mMaxTripCount="16" mMinLatency="29184" mMaxLatency="29184" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>9</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="1">
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_106_2" mII="-1" mDepth="-1" mMinTripCount="14" mMaxTripCount="14" mMinLatency="1820" mMaxLatency="1820" mType="1">
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>52</basicBlocks>
+      <basicBlocks>57</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="VITIS_LOOP_110_4" mII="-1" mDepth="-1" mMinTripCount="16" mMaxTripCount="16" mMinLatency="128" mMaxLatency="128" mType="1">
+      <basicBlocks>65</basicBlocks>
+      <basicBlocks>80</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>82</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="Region 4" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>95</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="10" mTag="Region 5" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>103</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="11" mTag="VITIS_LOOP_124_1" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="520" mMaxLatency="520" mType="1">
+      <subRegions>12</subRegions>
+      <subRegions>13</subRegions>
+      <subRegions>14</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="12" mTag="Region 6" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>109</basicBlocks>
+      <basicBlocks>115</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="13" mTag="VITIS_LOOP_127_2" mII="-1" mDepth="-1" mMinTripCount="16" mMaxTripCount="16" mMinLatency="128" mMaxLatency="128" mType="1">
+      <basicBlocks>124</basicBlocks>
+      <basicBlocks>135</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="14" mTag="Region 7" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>137</basicBlocks>
+      <basicBlocks>140</basicBlocks>
+      <basicBlocks>143</basicBlocks>
+      <basicBlocks>146</basicBlocks>
+      <basicBlocks>149</basicBlocks>
+      <basicBlocks>152</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="15" mTag="Region 8" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>158</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="16" mTag="VITIS_LOOP_138_1" mII="-1" mDepth="-1" mMinTripCount="4" mMaxTripCount="4" mMinLatency="72" mMaxLatency="72" mType="1">
+      <basicBlocks>164</basicBlocks>
+      <basicBlocks>179</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="17" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="37" mMaxLatency="37">
+      <basicBlocks>187</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

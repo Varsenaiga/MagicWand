@@ -62,7 +62,6 @@ CMakeFiles/MagicW.dir/model_functions.c.obj: ../model_functions.c \
   D:/Program\ Files\ (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/i686-w64-mingw32/include/sec_api/stdio_s.h \
   D:/Program\ Files\ (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/i686-w64-mingw32/include/_mingw_print_pop.h \
   ../model_functions.h \
-  ../utils.h \
   D:/Program\ Files\ (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/i686-w64-mingw32/include/math.h
 
 CMakeFiles/MagicW.dir/utils.c.obj: ../utils.c \

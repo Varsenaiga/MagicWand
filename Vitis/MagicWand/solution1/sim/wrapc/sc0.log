@@ -1,0 +1,44 @@
+   Build using "D:/Xilinx/Vitis_HLS/2021.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_master.cpp
+   Compiling (apcc) main.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'tiago' on host 'desktop-g74gfk5' (Windows NT_amd64 version 6.2) on Tue May 31 15:50:46 +0100 2022
+INFO: [HLS 200-10] In directory 'C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) file.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'tiago' on host 'desktop-g74gfk5' (Windows NT_amd64 version 6.2) on Tue May 31 15:50:50 +0100 2022
+INFO: [HLS 200-10] In directory 'C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) master.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'tiago' on host 'desktop-g74gfk5' (Windows NT_amd64 version 6.2) on Tue May 31 15:50:54 +0100 2022
+INFO: [HLS 200-10] In directory 'C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) utils.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'tiago' on host 'desktop-g74gfk5' (Windows NT_amd64 version 6.2) on Tue May 31 15:50:58 +0100 2022
+INFO: [HLS 200-10] In directory 'C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) model_functions.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'tiago' on host 'desktop-g74gfk5' (Windows NT_amd64 version 6.2) on Tue May 31 15:51:02 +0100 2022
+INFO: [HLS 200-10] In directory 'C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling apatb_master_ir.ll
+   Generating cosim.tv.exe

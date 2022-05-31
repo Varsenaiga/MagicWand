@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue May 31 16:27:30 2022
+# Process ID: 792
+# Current directory: C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/verilog/xsim.dir/master/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/verilog/webtalk.log
+# Journal file: C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/sim/verilog/xsim.dir/master/webtalk/xsim_webtalk.tcl -notrace

@@ -68,6 +68,11 @@ void readFile(FILE* file) {
 
             convolution1(BATCH, DATA_SIZE, data, FIRST_NUM_ROWS, FIRST_NUM_COLS, FIRST_NUM_KERNELS, firstKernel, firstBias, conv1);
             printData3D(BATCH, DATA_SIZE, FIRST_NUM_KERNELS, conv1);
+            /*printf("[");
+            for (i = 0; i < 8; i++) {
+                if (i == 7) printf("%.20f]\n", firstBias[i]);
+                else printf("%.20f,\t", firstBias[i]);
+            }*/
             maxPool(BATCH, DATA_SIZE, FIRST_NUM_KERNELS, conv1, 42, 1, max1, 3, 3);
             convolution2(42, 1, FIRST_NUM_KERNELS, max1, SECOND_NUM_ROWS, SECOND_NUM_COLS, SECOND_NUM_KERNELS, secondKernel, secondBias, conv2);
             maxPool(42, 1, SECOND_NUM_KERNELS, conv2, 14, 1, max2, 3, 1);

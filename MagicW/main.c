@@ -28,7 +28,7 @@ int main() {
 
     write2File(sMax[0], FOURTH_NUM_KERNELS, "../test.txt");*/
 
-    FILE* file = openFile("../negative/output_teste.txt", "r");
+    FILE* file = openFile("../wing/output_wing_dengyl.txt", "r");
     readFile(file);
     closeFile(file);
 

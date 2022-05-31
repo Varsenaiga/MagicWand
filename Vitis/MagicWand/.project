@@ -42,6 +42,16 @@
 			<location>C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>source/master.c</name>
+			<type>1</type>
+			<location>C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/master.c</location>
+		</link>
+		<link>
+			<name>source/master.h</name>
+			<type>1</type>
+			<location>C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/master.h</location>
+		</link>
+		<link>
 			<name>source/model_functions.c</name>
 			<type>1</type>
 			<location>C:/Users/tiago/OneDrive/Desktop/Universidade/Tese/Dissertacao/MagicWand/Vitis/MagicWand/model_functions.c</location>
